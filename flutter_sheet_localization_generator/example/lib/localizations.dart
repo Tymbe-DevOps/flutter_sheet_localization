@@ -18,9 +18,8 @@ extension AppLocalizationsExtensions on BuildContext {
   }
 }
 
-@SheetLocalization('1AcjI1BjmQpjlnPUZ7aVLbrnVR98xtATnSjU4CExM9fs', '0', 16)
-class AppLocalizationsDelegate
-    extends LocalizationsDelegate<AppLocalizationsData> {
+@SheetLocalization('1IgWiJd-V9p9CF8srgBCpecttFD5svfyDEH0gTtjJkUo', '0', 1)
+class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizationsData> {
   const AppLocalizationsDelegate();
 
   @override

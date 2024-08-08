@@ -47,8 +47,7 @@ import 'package:template_string/template_string.dart';
   }
 
   void _createLocalization(List<String> path, Localizations localizations) {
-    _buffer.writeln(
-        'final localizedLabels = ${_createLanguageMap(path, localizations)};');
+    _buffer.writeln('final localizedLabels = ${_createLanguageMap(path, localizations)};');
   }
 
   String _createLanguageMap(List<String> path, Localizations localizations) {
@@ -57,8 +56,7 @@ import 'package:template_string/template_string.dart';
     result.write(' <Locale, ${_buildClassNameFromPath(path)}>{');
 
     for (var languageCode in localizations.supportedLanguageCodes) {
-      final instance =
-          _createSectionInstance(path, languageCode, localizations);
+      final instance = _createSectionInstance(path, languageCode, localizations);
 
       final splits = languageCode.split(RegExp(r'[-_]'));
 
@@ -95,8 +93,7 @@ import 'package:template_string/template_string.dart';
       for (var caze in label.cases) {
         if (caze.condition is CategoryCondition) {
           final condition = caze.condition as CategoryCondition;
-          final fieldName =
-              '${label.normalizedKey}${createClassdName(condition.value)}';
+          final fieldName = '${label.normalizedKey}${createClassdName(condition.value)}';
           result.write(fieldName);
         } else {
           final fieldName = '${label.normalizedKey}';
@@ -152,12 +149,10 @@ import 'package:template_string/template_string.dart';
         final methodArguments = <ArgumentBuilder>[];
 
         /// Adding an argument for each category
-        final categoryCases =
-            label.cases.where((x) => x.condition is CategoryCondition);
+        final categoryCases = label.cases.where((x) => x.condition is CategoryCondition);
         for (var categoryCase in categoryCases) {
           final condition = categoryCase.condition as CategoryCondition;
-          final fieldName =
-              '_${label.normalizedKey}${createClassdName(condition.value)}';
+          final fieldName = '_${label.normalizedKey}${createClassdName(condition.value)}';
           result.addProperty('String', fieldName);
         }
 
@@ -178,8 +173,7 @@ import 'package:template_string/template_string.dart';
         }
 
         /// Default value
-        final defaultCase =
-            label.cases.map((x) => x.condition).whereType<DefaultCondition>();
+        final defaultCase = label.cases.map((x) => x.condition).whereType<DefaultCondition>();
 
         if (defaultCase.isNotEmpty) {
           result.addProperty('String', '_${label.normalizedKey}');
@@ -207,22 +201,18 @@ import 'package:template_string/template_string.dart';
         /// Creating method body
         final body = StringBuffer('{\n');
 
-        for (var c
-            in label.cases.where((x) => x.condition is CategoryCondition)) {
+        for (var c in label.cases.where((x) => x.condition is CategoryCondition)) {
           final condition = c.condition as CategoryCondition;
           final categoryField = createFieldName(condition.name);
           final categoryClassName = createClassdName(condition.name);
-          final categoryValue =
-              '$categoryClassName.${createFieldName(condition.value)}';
+          final categoryValue = '$categoryClassName.${createFieldName(condition.value)}';
           body.writeln('if($categoryField == $categoryValue) { ');
 
-          body.write(
-              'return _${label.normalizedKey}${createClassdName(condition.value)}');
+          body.write('return _${label.normalizedKey}${createClassdName(condition.value)}');
           if (label.templatedValues.isNotEmpty) {
             body.write('.insertTemplateValues({');
             for (var templatedValue in label.templatedValues) {
-              body.write(
-                  '\'${templatedValue.key}\' : ${createFieldName(templatedValue.key)},');
+              body.write('\'${templatedValue.key}\' : ${createFieldName(templatedValue.key)},');
             }
             body.write('}, locale : locale,)');
           }
@@ -236,8 +226,7 @@ import 'package:template_string/template_string.dart';
           if (label.templatedValues.isNotEmpty) {
             body.write('.insertTemplateValues({');
             for (var templatedValue in label.templatedValues) {
-              body.write(
-                  '\'${templatedValue.key}\' : ${createFieldName(templatedValue.key)},');
+              body.write('\'${templatedValue.key}\' : ${createFieldName(templatedValue.key)},');
             }
             body.write('}, locale: locale,)');
           }
@@ -286,7 +275,5 @@ String _buildClassNameFromPath(List<String> path) {
   return path.map((name) => createClassdName(name)).join();
 }
 
-String _escapeString(String value) => value
-    .replaceAll('\n', '\\n')
-    .replaceAll('\'', '\\\'')
-    .replaceAll('\$', '\\\$');
+String _escapeString(String value) =>
+    value.replaceAll('\n', '\\n').replaceAll('\'', '\\\'').replaceAll('\$', '\\\$');
