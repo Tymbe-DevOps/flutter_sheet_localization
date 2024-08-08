@@ -79,7 +79,7 @@ class MyHomePage extends StatelessWidget {
           Expanded(
             child: Column(
               children: <Widget>[
-                Text(labels.absence.addFile),
+                Text(labels.global.czechCrowns),
               ],
             ),
           ),

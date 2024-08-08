@@ -18,7 +18,7 @@ extension AppLocalizationsExtensions on BuildContext {
   }
 }
 
-@SheetLocalization('1IgWiJd-V9p9CF8srgBCpecttFD5svfyDEH0gTtjJkUo', '0', 1)
+@SheetLocalization('1IgWiJd-V9p9CF8srgBCpecttFD5svfyDEH0gTtjJkUo', '0', 1, langFallback: 'cs')
 class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizationsData> {
   const AppLocalizationsDelegate();
 

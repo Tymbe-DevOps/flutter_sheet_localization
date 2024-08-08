@@ -14,11 +14,13 @@ class DartLocalizationBuilder {
   DartLocalizationBuilder({
     this.nullSafety = true,
     this.jsonParser = true,
+    this.fallbackLocale,
   });
 
   StringBuffer _buffer = StringBuffer();
   final bool nullSafety;
   final bool jsonParser;
+  final String? fallbackLocale;
 
   String buildImports() {
     return '''
@@ -90,21 +92,48 @@ import 'package:template_string/template_string.dart';
     result.writeln('const ${_buildClassNameFromPath(path)}(');
 
     for (var label in section.labels) {
-      for (var caze in label.cases) {
-        if (caze.condition is CategoryCondition) {
-          final condition = caze.condition as CategoryCondition;
+      for (var labelCase in label.cases) {
+        var fallbackFieldName;
+        if (labelCase.condition is CategoryCondition) {
+          final condition = labelCase.condition as CategoryCondition;
           final fieldName = '${label.normalizedKey}${createClassdName(condition.value)}';
           result.write(fieldName);
+          fallbackFieldName = label.normalizedKey;
         } else {
           final fieldName = '${label.normalizedKey}';
           result.write(fieldName);
+          fallbackFieldName = label.normalizedKey;
         }
-        final translation = caze.translations.firstWhere(
+        var translation = labelCase.translations.firstWhere(
           (x) => x.languageCode == languageCode,
           orElse: () => Translation(languageCode, '?'),
         );
-        result.write(':');
-        result.write('\'${_escapeString(translation.value)}\',');
+        if (fallbackLocale != null && translation.value == '') {
+          translation = labelCase.translations.firstWhere(
+            (x) => x.languageCode == fallbackLocale,
+            orElse: () => Translation(languageCode, '?'),
+          );
+
+          print('USING FALLBACK');
+
+          result.write(':');
+          result.write('\'${_escapeString(translation.value)}\',');
+        } else if (fallbackLocale == null && translation.value == '') {
+          final temp = [...path];
+          temp.removeAt(0);
+          temp.removeAt(0);
+
+          print('USING CODE');
+
+          result.write(':');
+          result.write(
+              '\'${_escapeString(translation.value == "" ? temp.join('.') + '.${label.normalizedKey}' : translation.value)}\',');
+        } else {
+          print('USING TRANSLATION');
+
+          result.write(':');
+          result.write('\'${_escapeString(translation.value)}\',');
+        }
       }
     }
 
