@@ -19,8 +19,7 @@ class DataClassBuilder {
     String type,
     String name, {
     String? defaultValue,
-    PropertyBuilderJsonConverter jsonConverter =
-        defaultPropertyBuilderJsonConverter,
+    PropertyBuilderJsonConverter jsonConverter = defaultPropertyBuilderJsonConverter,
   }) {
     final isPrivate = name.startsWith('_');
     final property = PropertyBuilder(
@@ -70,8 +69,7 @@ class DataClassBuilder {
         buffer.write('{');
         for (var propertyName in propertyNames) {
           final property = _properties[propertyName]!;
-          buffer.write(
-              property.buildConstructorParameter(nullSafety: nullSafety));
+          buffer.write(property.buildConstructorParameter(nullSafety: nullSafety));
           buffer.writeln(',');
         }
         buffer.write('}');
@@ -84,8 +82,7 @@ class DataClassBuilder {
         for (var i = 0; i < propertyNames.length; i++) {
           var propertyName = propertyNames[i];
           final property = _properties[propertyName]!;
-          initializers.addAll(
-              property.buildConstructorInitializers(nullSafety: nullSafety));
+          initializers.addAll(property.buildConstructorInitializers(nullSafety: nullSafety));
         }
       }
 
@@ -139,8 +136,7 @@ class DataClassBuilder {
           var propertyName = propertyNames[i];
           var property = _properties[propertyName]!;
           propertyName = createFieldName(propertyName);
-          buffer.write(
-              '    _${property.argumentName} = ${property.argumentName}');
+          buffer.write('    _${property.argumentName} = ${property.argumentName}');
           buffer.writeln(i == propertyNames.length - 1 ? ';' : ',');
         }
       } else {
@@ -167,7 +163,7 @@ class DataClassBuilder {
         buffer.writeln();
 
         buffer.write(
-            '  const factory $name.${constructor.key}() = _$name${createClassdName(constructor.key)};');
+            '  const factory $name.${constructor.key}() = _$name${createClassName(constructor.key)};');
       }
 
       // Properties
@@ -177,8 +173,7 @@ class DataClassBuilder {
           var property = _properties[propertyName]!;
           final propertyType = property.type;
           propertyName = createFieldName(propertyName);
-          buffer.writeln(
-              '  final $propertyType${nullSafety ? '?' : ''} _${property.fieldName};');
+          buffer.writeln('  final $propertyType${nullSafety ? '?' : ''} _${property.fieldName};');
           final value = nullSafety
               ? '_${property.fieldName}!'
               : '_${property.fieldName} != null ? _${property.fieldName} : throw Exception()';
@@ -197,8 +192,7 @@ class DataClassBuilder {
 
     // JSON Parsers
     if (jsonParser) {
-      buffer.write(
-          '  factory $name.fromJson(Map<String, Object?> map) => $name(');
+      buffer.write('  factory $name.fromJson(Map<String, Object?> map) => $name(');
 
       if (propertyNames.isNotEmpty) {
         for (var i = 0; i < propertyNames.length; i++) {
@@ -223,8 +217,7 @@ class DataClassBuilder {
           var property = _properties[propertyName]!;
           final propertyType = property.type;
           propertyName = createFieldName(propertyName);
-          buffer.writeln(
-              '    $propertyType${nullSafety ? '?' : ''} ${property.argumentName},');
+          buffer.writeln('    $propertyType${nullSafety ? '?' : ''} ${property.argumentName},');
         }
         buffer.writeln('}');
       }
@@ -246,8 +239,7 @@ class DataClassBuilder {
       buffer.writeln('identical(this, other) || (other is $name');
       for (var propertyName in _properties.keys) {
         final property = _properties[propertyName]!;
-        buffer.writeln(
-            '     && ${property.fieldName} == other.${property.fieldName}');
+        buffer.writeln('     && ${property.fieldName} == other.${property.fieldName}');
       }
       buffer.writeln('  );');
 
@@ -272,11 +264,9 @@ class DataClassBuilder {
     if (!isConst) {
       for (var constructor in _constructors.entries) {
         buffer.writeln();
-        buffer.writeln(
-            'class _$name${createClassdName(constructor.key)} extends $name \{\n');
+        buffer.writeln('class _$name${createClassName(constructor.key)} extends $name \{\n');
 
-        buffer.writeln(
-            '  const _$name${createClassdName(constructor.key)}() : super._();');
+        buffer.writeln('  const _$name${createClassName(constructor.key)}() : super._();');
 
         // Properties
         if (propertyNames.isNotEmpty) {
@@ -295,8 +285,7 @@ class DataClassBuilder {
             buffer.writeln('  @override');
             buffer.writeln(
                 '  $propertyType get ${property.argumentName} => _${property.fieldName}Instance;');
-            buffer.writeln(
-                '  static final _${property.fieldName}Instance = $value;');
+            buffer.writeln('  static final _${property.fieldName}Instance = $value;');
           }
         }
 

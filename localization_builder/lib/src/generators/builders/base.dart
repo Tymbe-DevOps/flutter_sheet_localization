@@ -5,7 +5,7 @@ String createFieldName(String name) {
   return _removeSpecialCharacters(cased.camelCase);
 }
 
-String createClassdName(String name) {
+String createClassName(String name) {
   final cased = ReCase(name);
   return _removeSpecialCharacters(cased.pascalCase);
 }

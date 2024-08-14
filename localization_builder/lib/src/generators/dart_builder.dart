@@ -3,7 +3,6 @@ import 'package:localization_builder/src/definitions/category.dart';
 import 'package:localization_builder/src/definitions/condition.dart';
 import 'package:localization_builder/src/definitions/localizations.dart';
 import 'package:localization_builder/src/definitions/section.dart';
-import 'package:localization_builder/src/definitions/translation.dart';
 import 'package:localization_builder/src/generators/builders/base.dart';
 import 'package:localization_builder/src/generators/builders/property.dart';
 
@@ -91,49 +90,36 @@ import 'package:template_string/template_string.dart';
     final result = StringBuffer();
     result.writeln('const ${_buildClassNameFromPath(path)}(');
 
-    for (var label in section.labels) {
-      for (var labelCase in label.cases) {
-        var fallbackFieldName;
-        if (labelCase.condition is CategoryCondition) {
-          final condition = labelCase.condition as CategoryCondition;
-          final fieldName = '${label.normalizedKey}${createClassdName(condition.value)}';
-          result.write(fieldName);
-          fallbackFieldName = label.normalizedKey;
+    for (var localizationLabel in section.labels) {
+      for (var labelVariant in localizationLabel.cases) {
+        String fieldName;
+        if (labelVariant.condition is CategoryCondition) {
+          final categoryCondition = labelVariant.condition as CategoryCondition;
+          fieldName =
+              '${localizationLabel.normalizedKey}${createClassName(categoryCondition.value)}';
         } else {
-          final fieldName = '${label.normalizedKey}';
-          result.write(fieldName);
-          fallbackFieldName = label.normalizedKey;
+          fieldName = '${localizationLabel.normalizedKey}';
         }
-        var translation = labelCase.translations.firstWhere(
-          (x) => x.languageCode == languageCode,
-          orElse: () => Translation(languageCode, '?'),
-        );
-        if (fallbackLocale != null && translation.value == '') {
-          translation = labelCase.translations.firstWhere(
-            (x) => x.languageCode == fallbackLocale,
-            orElse: () => Translation(languageCode, '?'),
-          );
+        result.write(fieldName);
 
-          print('USING FALLBACK');
+        var matchingTranslation = labelVariant.translations
+            .firstWhere((translation) => translation.languageCode == languageCode);
 
-          result.write(':');
-          result.write('\'${_escapeString(translation.value)}\',');
-        } else if (fallbackLocale == null && translation.value == '') {
-          final temp = [...path];
-          temp.removeAt(0);
-          temp.removeAt(0);
+        var finalTranslationValue = matchingTranslation.value;
 
-          print('USING CODE');
+        if (fallbackLocale != null && matchingTranslation.value.isEmpty) {
+          matchingTranslation = labelVariant.translations
+              .firstWhere((translation) => translation.languageCode == fallbackLocale);
+          finalTranslationValue = matchingTranslation.value;
+        } else if (fallbackLocale == null && matchingTranslation.value.isEmpty) {
+          final pathWithoutPrefix = [...path];
+          pathWithoutPrefix.removeRange(0, 2);
 
-          result.write(':');
-          result.write(
-              '\'${_escapeString(translation.value == "" ? temp.join('.') + '.${label.normalizedKey}' : translation.value)}\',');
-        } else {
-          print('USING TRANSLATION');
-
-          result.write(':');
-          result.write('\'${_escapeString(translation.value)}\',');
+          finalTranslationValue =
+              pathWithoutPrefix.join('.') + '.${localizationLabel.normalizedKey}';
         }
+        result.write(':');
+        result.write('\'${_escapeString(finalTranslationValue)}\',');
       }
     }
 
@@ -181,7 +167,7 @@ import 'package:template_string/template_string.dart';
         final categoryCases = label.cases.where((x) => x.condition is CategoryCondition);
         for (var categoryCase in categoryCases) {
           final condition = categoryCase.condition as CategoryCondition;
-          final fieldName = '_${label.normalizedKey}${createClassdName(condition.value)}';
+          final fieldName = '_${label.normalizedKey}${createClassName(condition.value)}';
           result.addProperty('String', fieldName);
         }
 
@@ -192,7 +178,7 @@ import 'package:template_string/template_string.dart';
             .map((x) => x.name)
             .toSet();
         for (var categoryName in categories) {
-          final categoryClassName = createClassdName(categoryName);
+          final categoryClassName = createClassName(categoryName);
           methodArguments.add(
             ArgumentBuilder(
               name: createFieldName(categoryName),
@@ -233,11 +219,11 @@ import 'package:template_string/template_string.dart';
         for (var c in label.cases.where((x) => x.condition is CategoryCondition)) {
           final condition = c.condition as CategoryCondition;
           final categoryField = createFieldName(condition.name);
-          final categoryClassName = createClassdName(condition.name);
+          final categoryClassName = createClassName(condition.name);
           final categoryValue = '$categoryClassName.${createFieldName(condition.value)}';
           body.writeln('if($categoryField == $categoryValue) { ');
 
-          body.write('return _${label.normalizedKey}${createClassdName(condition.value)}');
+          body.write('return _${label.normalizedKey}${createClassName(condition.value)}');
           if (label.templatedValues.isNotEmpty) {
             body.write('.insertTemplateValues({');
             for (var templatedValue in label.templatedValues) {
@@ -301,7 +287,7 @@ import 'package:template_string/template_string.dart';
 }
 
 String _buildClassNameFromPath(List<String> path) {
-  return path.map((name) => createClassdName(name)).join();
+  return path.map((name) => createClassName(name)).join();
 }
 
 String _escapeString(String value) =>

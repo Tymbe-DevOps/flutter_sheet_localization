@@ -79,7 +79,8 @@ class MyHomePage extends StatelessWidget {
           Expanded(
             child: Column(
               children: <Widget>[
-                Text(labels.global.czechCrowns),
+                Text(labels.bottomnav.temping.shifts),
+                Text(labels.global.currency.creditsMoreThan4),
               ],
             ),
           ),
