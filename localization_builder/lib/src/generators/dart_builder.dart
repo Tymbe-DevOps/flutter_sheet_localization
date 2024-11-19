@@ -3,7 +3,6 @@ import 'package:localization_builder/src/definitions/category.dart';
 import 'package:localization_builder/src/definitions/condition.dart';
 import 'package:localization_builder/src/definitions/localizations.dart';
 import 'package:localization_builder/src/definitions/section.dart';
-import 'package:localization_builder/src/definitions/translation.dart';
 import 'package:localization_builder/src/generators/builders/base.dart';
 import 'package:localization_builder/src/generators/builders/property.dart';
 
@@ -14,11 +13,13 @@ class DartLocalizationBuilder {
   DartLocalizationBuilder({
     this.nullSafety = true,
     this.jsonParser = true,
+    this.fallbackLocale,
   });
 
   StringBuffer _buffer = StringBuffer();
   final bool nullSafety;
   final bool jsonParser;
+  final String? fallbackLocale;
 
   String buildImports() {
     return '''
@@ -47,8 +48,7 @@ import 'package:template_string/template_string.dart';
   }
 
   void _createLocalization(List<String> path, Localizations localizations) {
-    _buffer.writeln(
-        'final localizedLabels = ${_createLanguageMap(path, localizations)};');
+    _buffer.writeln('final localizedLabels = ${_createLanguageMap(path, localizations)};');
   }
 
   String _createLanguageMap(List<String> path, Localizations localizations) {
@@ -57,8 +57,7 @@ import 'package:template_string/template_string.dart';
     result.write(' <Locale, ${_buildClassNameFromPath(path)}>{');
 
     for (var languageCode in localizations.supportedLanguageCodes) {
-      final instance =
-          _createSectionInstance(path, languageCode, localizations);
+      final instance = _createSectionInstance(path, languageCode, localizations);
 
       final splits = languageCode.split(RegExp(r'[-_]'));
 
@@ -91,23 +90,36 @@ import 'package:template_string/template_string.dart';
     final result = StringBuffer();
     result.writeln('const ${_buildClassNameFromPath(path)}(');
 
-    for (var label in section.labels) {
-      for (var caze in label.cases) {
-        if (caze.condition is CategoryCondition) {
-          final condition = caze.condition as CategoryCondition;
-          final fieldName =
-              '${label.normalizedKey}${createClassdName(condition.value)}';
-          result.write(fieldName);
+    for (var localizationLabel in section.labels) {
+      for (var labelVariant in localizationLabel.cases) {
+        String fieldName;
+        if (labelVariant.condition is CategoryCondition) {
+          final categoryCondition = labelVariant.condition as CategoryCondition;
+          fieldName =
+              '${localizationLabel.normalizedKey}${createClassName(categoryCondition.value)}';
         } else {
-          final fieldName = '${label.normalizedKey}';
-          result.write(fieldName);
+          fieldName = '${localizationLabel.normalizedKey}';
         }
-        final translation = caze.translations.firstWhere(
-          (x) => x.languageCode == languageCode,
-          orElse: () => Translation(languageCode, '?'),
-        );
+        result.write(fieldName);
+
+        var matchingTranslation = labelVariant.translations
+            .firstWhere((translation) => translation.languageCode == languageCode);
+
+        var finalTranslationValue = matchingTranslation.value;
+
+        if (fallbackLocale != null && matchingTranslation.value.isEmpty) {
+          matchingTranslation = labelVariant.translations
+              .firstWhere((translation) => translation.languageCode == fallbackLocale);
+          finalTranslationValue = matchingTranslation.value;
+        } else if (fallbackLocale == null && matchingTranslation.value.isEmpty) {
+          final pathWithoutPrefix = [...path];
+          pathWithoutPrefix.removeRange(0, 2);
+
+          finalTranslationValue =
+              pathWithoutPrefix.join('.') + '.${localizationLabel.normalizedKey}';
+        }
         result.write(':');
-        result.write('\'${_escapeString(translation.value)}\',');
+        result.write('\'${_escapeString(finalTranslationValue)}\',');
       }
     }
 
@@ -152,12 +164,10 @@ import 'package:template_string/template_string.dart';
         final methodArguments = <ArgumentBuilder>[];
 
         /// Adding an argument for each category
-        final categoryCases =
-            label.cases.where((x) => x.condition is CategoryCondition);
+        final categoryCases = label.cases.where((x) => x.condition is CategoryCondition);
         for (var categoryCase in categoryCases) {
           final condition = categoryCase.condition as CategoryCondition;
-          final fieldName =
-              '_${label.normalizedKey}${createClassdName(condition.value)}';
+          final fieldName = '_${label.normalizedKey}${createClassName(condition.value)}';
           result.addProperty('String', fieldName);
         }
 
@@ -168,7 +178,7 @@ import 'package:template_string/template_string.dart';
             .map((x) => x.name)
             .toSet();
         for (var categoryName in categories) {
-          final categoryClassName = createClassdName(categoryName);
+          final categoryClassName = createClassName(categoryName);
           methodArguments.add(
             ArgumentBuilder(
               name: createFieldName(categoryName),
@@ -178,8 +188,7 @@ import 'package:template_string/template_string.dart';
         }
 
         /// Default value
-        final defaultCase =
-            label.cases.map((x) => x.condition).whereType<DefaultCondition>();
+        final defaultCase = label.cases.map((x) => x.condition).whereType<DefaultCondition>();
 
         if (defaultCase.isNotEmpty) {
           result.addProperty('String', '_${label.normalizedKey}');
@@ -207,22 +216,18 @@ import 'package:template_string/template_string.dart';
         /// Creating method body
         final body = StringBuffer('{\n');
 
-        for (var c
-            in label.cases.where((x) => x.condition is CategoryCondition)) {
+        for (var c in label.cases.where((x) => x.condition is CategoryCondition)) {
           final condition = c.condition as CategoryCondition;
           final categoryField = createFieldName(condition.name);
-          final categoryClassName = createClassdName(condition.name);
-          final categoryValue =
-              '$categoryClassName.${createFieldName(condition.value)}';
+          final categoryClassName = createClassName(condition.name);
+          final categoryValue = '$categoryClassName.${createFieldName(condition.value)}';
           body.writeln('if($categoryField == $categoryValue) { ');
 
-          body.write(
-              'return _${label.normalizedKey}${createClassdName(condition.value)}');
+          body.write('return _${label.normalizedKey}${createClassName(condition.value)}');
           if (label.templatedValues.isNotEmpty) {
             body.write('.insertTemplateValues({');
             for (var templatedValue in label.templatedValues) {
-              body.write(
-                  '\'${templatedValue.key}\' : ${createFieldName(templatedValue.key)},');
+              body.write('\'${templatedValue.key}\' : ${createFieldName(templatedValue.key)},');
             }
             body.write('}, locale : locale,)');
           }
@@ -236,8 +241,7 @@ import 'package:template_string/template_string.dart';
           if (label.templatedValues.isNotEmpty) {
             body.write('.insertTemplateValues({');
             for (var templatedValue in label.templatedValues) {
-              body.write(
-                  '\'${templatedValue.key}\' : ${createFieldName(templatedValue.key)},');
+              body.write('\'${templatedValue.key}\' : ${createFieldName(templatedValue.key)},');
             }
             body.write('}, locale: locale,)');
           }
@@ -283,10 +287,8 @@ import 'package:template_string/template_string.dart';
 }
 
 String _buildClassNameFromPath(List<String> path) {
-  return path.map((name) => createClassdName(name)).join();
+  return path.map((name) => createClassName(name)).join();
 }
 
-String _escapeString(String value) => value
-    .replaceAll('\n', '\\n')
-    .replaceAll('\'', '\\\'')
-    .replaceAll('\$', '\\\$');
+String _escapeString(String value) =>
+    value.replaceAll('\n', '\\n').replaceAll('\'', '\\\'').replaceAll('\$', '\\\$');

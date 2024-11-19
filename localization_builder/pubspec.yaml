@@ -10,7 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter 
-  template_string: ^0.6.0
+  template_string:
+    path: ../template_string
   recase: ^4.0.0
   yaml: ^3.1.0
   equatable: ^2.0.0

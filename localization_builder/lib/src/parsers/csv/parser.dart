@@ -1,4 +1,3 @@
-import 'package:localization_builder/src/definitions/label.dart';
 import 'package:localization_builder/src/definitions/localizations.dart';
 import 'package:localization_builder/src/definitions/section.dart';
 import 'package:localization_builder/src/definitions/translation.dart';
@@ -7,8 +6,7 @@ import '../parser.dart';
 import '../result.dart';
 import 'token.dart';
 
-class CsvLocalizationParser
-    extends LocalizationParser<Iterable<List>, CsvLocalizationToken> {
+class CsvLocalizationParser extends LocalizationParser<Iterable<List>, CsvLocalizationToken> {
   const CsvLocalizationParser();
 
   static const conditionKey = 'condition';
@@ -30,8 +28,7 @@ class CsvLocalizationParser
   bool _isReservedKey(String key) => reservedIndexKeys.contains(key);
 
   bool _isLanguageKey(String key) =>
-      !_isReservedKey(key) &&
-      !(key.trim().startsWith('(') && key.trim().endsWith(')'));
+      !_isReservedKey(key) && !(key.trim().startsWith('(') && key.trim().endsWith(')'));
 
   @override
   ParsingResult<Iterable<List>, CsvLocalizationToken> parse({
@@ -40,11 +37,8 @@ class CsvLocalizationParser
   }) {
     final fields = input.toList();
 
-    final index = fields[0]
-        .cast<String>()
-        .map(_uniformizeKey)
-        .takeWhile((x) => x.isNotEmpty)
-        .toList();
+    final index =
+        fields[0].cast<String>().map(_uniformizeKey).takeWhile((x) => x.isNotEmpty).toList();
 
     // Getting language codes
     final supportedLanguageCodes = index.where(_isLanguageKey).toList();

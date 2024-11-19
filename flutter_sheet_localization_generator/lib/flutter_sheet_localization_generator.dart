@@ -9,8 +9,7 @@ import 'package:source_gen/source_gen.dart';
 import 'package:build/build.dart';
 import 'package:http/http.dart' as http;
 
-class SheetLocalizationGenerator
-    extends GeneratorForAnnotation<SheetLocalization> {
+class SheetLocalizationGenerator extends GeneratorForAnnotation<SheetLocalization> {
   const SheetLocalizationGenerator();
 
   @override
@@ -19,8 +18,7 @@ class SheetLocalizationGenerator
     if (element is! ClassElement) {
       final name = element.name;
       throw InvalidGenerationSourceError('Generator cannot target `$name`.',
-          todo: 'Remove the SheetLocalization annotation from `$name`.',
-          element: element);
+          todo: 'Remove the SheetLocalization annotation from `$name`.', element: element);
     }
 
     if (!element.name.endsWith('Delegate')) {
@@ -46,26 +44,26 @@ class SheetLocalizationGenerator
     final name = '${element.name.replaceAll('Delegate', '')}Data';
     final docId = annotation.objectValue.getField('docId')!.toStringValue();
     final sheetId = annotation.objectValue.getField('sheetId')!.toStringValue();
+    final langFallback = annotation.objectValue.getField('langFallback')?.toStringValue();
+    print(langFallback);
     var localizations = await _downloadGoogleSheet(
       docId!,
       sheetId!,
       name,
     );
-    final builder = DartLocalizationBuilder();
+    final builder = DartLocalizationBuilder(fallbackLocale: langFallback);
     final code = StringBuffer();
     code.writeln(builder.build(localizations));
     return code.toString();
   }
 
-  Future<Localizations> _downloadGoogleSheet(
-      String documentId, String sheetId, String name) async {
+  Future<Localizations> _downloadGoogleSheet(String documentId, String sheetId, String name) async {
     final url =
         'https://docs.google.com/spreadsheets/d/$documentId/export?format=csv&id=$documentId&gid=$sheetId';
 
     log.info('Downloading csv from Google sheet url "$url" ...');
 
-    var response = await http
-        .get(Uri.parse(url), headers: {'accept': 'text/csv;charset=UTF-8'});
+    var response = await http.get(Uri.parse(url), headers: {'accept': 'text/csv;charset=UTF-8'});
 
     log.fine('Google sheet csv:\n ${response.body}');
 

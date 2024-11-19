@@ -7,10 +7,12 @@ class SheetLocalization {
   final String sheetId;
   final int version;
   final bool jsonSerializers;
+  final String? langFallback;
   const SheetLocalization(
     this.docId,
     this.sheetId,
     this.version, {
     this.jsonSerializers = true,
+    this.langFallback,
   });
 }
