@@ -5,10 +5,10 @@ packages:
     dependency: transitive
     description:
       name: clock
-      sha256: "6021e0172ab6e6eaa1d391afed0a99353921f00c54385c574dc53e55d67c092c"
+      sha256: fddb70d9b5277016c77a80201021d40a2247104d9f4aa7bab7157b7e3f05b84b
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.0"
+    version: "1.1.2"
   intl:
     dependency: "direct main"
     description:
@@ -21,18 +21,18 @@ packages:
     dependency: transitive
     description:
       name: meta
-      sha256: bdb68674043280c3428e9ec998512fb681678676b3c54e773629ffe74419f8c7
+      sha256: e3641ec5d63ebf0d9b41bd43201a66e3fc79a65db5f61fc181f04cd27aab950c
       url: "https://pub.dev"
     source: hosted
-    version: "1.15.0"
+    version: "1.16.0"
   path:
     dependency: transitive
     description:
       name: path
-      sha256: "2ad4cddff7f5cc0e2d13069f2a3f7a73ca18f66abd6f5ecf215219cdb3638edb"
+      sha256: "75cca69d1490965be98c73ceaea117e8a04dd21217b37b292c9ddbec0d955bc5"
       url: "https://pub.dev"
     source: hosted
-    version: "1.8.0"
+    version: "1.9.1"
   pedantic:
     dependency: "direct dev"
     description:
@@ -42,4 +42,4 @@ packages:
     source: hosted
     version: "1.11.1"
 sdks:
-  dart: ">=3.0.0 <4.0.0"
+  dart: ">=3.4.0 <4.0.0"
