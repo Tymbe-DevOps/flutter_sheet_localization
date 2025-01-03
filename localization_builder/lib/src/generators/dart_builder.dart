@@ -44,8 +44,7 @@ import 'package:template_string/template_string.dart';
       ],
       localizations,
     );
-    return DartFormatter(languageVersion: DartFormatter.latestLanguageVersion)
-        .format(_buffer.toString());
+    return DartFormatter().format(_buffer.toString());
   }
 
   void _createLocalization(List<String> path, Localizations localizations) {
