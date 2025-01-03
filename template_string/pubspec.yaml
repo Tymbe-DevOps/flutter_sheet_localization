@@ -1,6 +1,6 @@
 name: template_string
 description: A simple command-line application.
-version: 0.6.0
+version: 0.6.1
 homepage: https://github.com/aloisdeniel/flutter_sheet_localization
 
 environment:
