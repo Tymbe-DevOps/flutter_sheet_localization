@@ -12,9 +12,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       allAsRead: 'Označit vše jako přečtené',
       title: 'Upozornění',
     ),
-    select: const AppLocalizationsDataSelect(
-      hint: 'Vyberte ze seznamu',
-    ),
+    select: const AppLocalizationsDataSelect(hint: 'Vyberte ze seznamu'),
     absence: const AppLocalizationsDataAbsence(
       addFile: 'Připojit soubor',
       excuses: 'Omluvenky',
@@ -36,9 +34,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
             'Brzy ti dáme vědět, zda tebou uvedená objektivní překážka v práci byla schválena. Nejpozději následující pracovní den.',
         title: 'Zpracováváme zdůvodnění absence',
       ),
-      approved: const AppLocalizationsDataAbsenceApproved(
-        chip: 'Omluveno',
-      ),
+      approved: const AppLocalizationsDataAbsenceApproved(chip: 'Omluveno'),
       screen: const AppLocalizationsDataAbsenceScreen(
         buttonClarify: 'Upřesnit absenci',
         buttonExcuse: 'Omluvit absenci',
@@ -70,9 +66,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
     ),
     blog: const AppLocalizationsDataBlog(
       title: 'Tymbe blog',
-      banner: const AppLocalizationsDataBlogBanner(
-        hint: 'Tymbe blog',
-      ),
+      banner: const AppLocalizationsDataBlogBanner(hint: 'Tymbe blog'),
     ),
     userStatus: const AppLocalizationsDataUserStatus(
       missingHealthInsuranceCard:
@@ -161,7 +155,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
         upload: 'Uložit doklad',
         retake: 'Vyfotit znovu',
         next: 'Pokračovat',
-        legal: '',
+        legal: 'documentUpload.photoCheck.legal',
         description: 'Jestli se něco nepovedlo, fotku prosím zopakuj ',
         title: 'Je doklad k přečtení?',
       ),
@@ -286,7 +280,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
         ),
       ),
       income: const AppLocalizationsDataTaxIncome(
-        desc: '',
+        desc: 'tax.income.desc',
         name: 'Srážková daň',
       ),
       blocking: const AppLocalizationsDataTaxBlocking(
@@ -327,7 +321,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       deleteAccount: 'Smazat účet',
       reliability: 'Spolehlivost',
       noRating: 'Bez ratingu',
-      shifts: '',
+      shifts: 'profile.shifts',
       workedShifts: 'Odpracováno',
       levelHelpText: 'K čemu potřebujete level',
       level: 'Úroveň',
@@ -656,7 +650,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       unableToCancel: 'Probíhající brigádu nelze zrušit',
       cancelTempJob: 'Zrušit brigádu',
       reportAbsence: 'Nahlásit absenci',
-      empty: '',
+      empty: 'attendance.empty',
       tempJobs: 'brigády',
       tempJobsMoreThan4: 'brigád',
       tempJob: 'brigádu',
@@ -1211,9 +1205,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       error: const AppLocalizationsDataSignupError(
         emailTaken: 'Emailová adresa je již zabraná.',
       ),
-      button: const AppLocalizationsDataSignupButton(
-        signup: 'Vytvořit účet',
-      ),
+      button: const AppLocalizationsDataSignupButton(signup: 'Vytvořit účet'),
       input: const AppLocalizationsDataSignupInput(
         email: const AppLocalizationsDataSignupInputEmail(
           notValid: 'Neplatný e-mail',
@@ -1232,9 +1224,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
           label: 'Jméno',
         ),
       ),
-      appbar: const AppLocalizationsDataSignupAppbar(
-        title: 'Nový účet',
-      ),
+      appbar: const AppLocalizationsDataSignupAppbar(title: 'Nový účet'),
     ),
     login: const AppLocalizationsDataLogin(
       error: 'Neplatné přihlašovací údaje',
@@ -1281,9 +1271,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
     ),
     validator: const AppLocalizationsDataValidator(
       czech: const AppLocalizationsDataValidatorCzech(
-        zip: const AppLocalizationsDataValidatorCzechZip(
-          error: 'Neplatné PSČ',
-        ),
+        zip: const AppLocalizationsDataValidatorCzechZip(error: 'Neplatné PSČ'),
         nationalNumber: const AppLocalizationsDataValidatorCzechNationalNumber(
           error: 'Nejedná se o české rodné číslo',
         ),
@@ -1298,9 +1286,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
         body: 'Pro pokračování je potřeba se znovu přihlásit.',
         title: 'Přihlášení vypršelo',
       ),
-      hint: const AppLocalizationsDataDialogHint(
-        close: 'Zavřít nápovědu',
-      ),
+      hint: const AppLocalizationsDataDialogHint(close: 'Zavřít nápovědu'),
     ),
     error: const AppLocalizationsDataError(
       webOpenFailed: 'Nepodařilo se otevřít webovou stránku',
@@ -1347,9 +1333,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       skip: 'Přeskočit',
       goOn: 'Pokračovat',
       appname: 'Tymbe',
-      input: const AppLocalizationsDataGlobalInput(
-        required: 'Povinné pole',
-      ),
+      input: const AppLocalizationsDataGlobalInput(required: 'Povinné pole'),
       currency: const AppLocalizationsDataGlobalCurrency(
         creditsShort: 'Kr',
         credit: 'Kredit',
@@ -1364,1301 +1348,1240 @@ final localizedLabels = <Locale, AppLocalizationsData>{
   ),
   Locale.fromSubtags(languageCode: 'uk'): const AppLocalizationsData(
     notifications: const AppLocalizationsDataNotifications(
-      allAsRead: 'Označit vše jako přečtené',
-      title: 'Upozornění',
+      allAsRead: 'notifications.allAsRead',
+      title: 'notifications.title',
     ),
-    select: const AppLocalizationsDataSelect(
-      hint: 'Vyberte ze seznamu',
-    ),
+    select: const AppLocalizationsDataSelect(hint: 'select.hint'),
     absence: const AppLocalizationsDataAbsence(
-      addFile: 'Připojit soubor',
-      excuses: 'Omluvenky',
-      countDown: 'Nahraj do {{duration}}',
-      adminNote: 'Komentář administrátora',
+      addFile: 'absence.addFile',
+      excuses: 'absence.excuses',
+      countDown: 'absence.countDown',
+      adminNote: 'absence.adminNote',
       alert: const AppLocalizationsDataAbsenceAlert(
-        body:
-            'Abychom mohli absenci omluvit, potřebujeme znát více podrobností.',
-        title: 'Upřesněte důvod absence, nebo připojte soubor.',
+        body: 'absence.alert.body',
+        title: 'absence.alert.title',
       ),
       rejected: const AppLocalizationsDataAbsenceRejected(
-        chip: 'Zamítnuto',
-        title: 'Nedostatečná omluva',
+        chip: 'absence.rejected.chip',
+        title: 'absence.rejected.title',
       ),
       processing: const AppLocalizationsDataAbsenceProcessing(
-        chip: 'Zpracováváme',
-        button: 'Zobrazit moje zdůvodnění absence',
-        description:
-            'Brzy ti dáme vědět, zda tebou uvedená objektivní překážka v práci byla schválena. Nejpozději následující pracovní den.',
-        title: 'Zpracováváme zdůvodnění absence',
+        chip: 'absence.processing.chip',
+        button: 'absence.processing.button',
+        description: 'absence.processing.description',
+        title: 'absence.processing.title',
       ),
       approved: const AppLocalizationsDataAbsenceApproved(
-        chip: 'Omluveno',
+        chip: 'absence.approved.chip',
       ),
       screen: const AppLocalizationsDataAbsenceScreen(
-        buttonClarify: 'Upřesnit absenci',
-        buttonExcuse: 'Omluvit absenci',
-        description:
-            'Pokud se vyskytla objektivní překážka v práci, dodej nám prosím její potvrzení, aby si se vyhl případné penalizaci.',
-        title: 'Omluva absence',
+        buttonClarify: 'absence.screen.buttonClarify',
+        buttonExcuse: 'absence.screen.buttonExcuse',
+        description: 'absence.screen.description',
+        title: 'absence.screen.title',
         reason: const AppLocalizationsDataAbsenceScreenReason(
-          label: 'Upřesnění',
+          label: 'absence.screen.reason.label',
         ),
         category: const AppLocalizationsDataAbsenceScreenCategory(
-          other: 'Ostatní důvody',
-          familyDeath: 'Úmrtí v rodině',
-          familyReasons: 'Rodinné důvody',
-          traffic: 'Dopravní situace',
-          illness: 'Nemoc',
-          label: 'Důvod absence',
+          other: 'absence.screen.category.other',
+          familyDeath: 'absence.screen.category.familyDeath',
+          familyReasons: 'absence.screen.category.familyReasons',
+          traffic: 'absence.screen.category.traffic',
+          illness: 'absence.screen.category.illness',
+          label: 'absence.screen.category.label',
         ),
       ),
       clarification: const AppLocalizationsDataAbsenceClarification(
-        button: 'Upřesnit absenci',
-        title: 'Potřebujeme upřesnit důvod absence',
+        button: 'absence.clarification.button',
+        title: 'absence.clarification.title',
       ),
       missing: const AppLocalizationsDataAbsenceMissing(
-        button: 'Zdůvodnit absenci',
-        description:
-            'Zrušil jsi směnu 24 hodin před začátkem, nebo jsi nedorazil. Pokud se jednalo o objektivní překážku v práci, dodej nám prosím zdůvodnění. V opačném případě ti hrozí dočasný ban.',
-        title: 'Neomluvená absence',
+        button: 'absence.missing.button',
+        description: 'absence.missing.description',
+        title: 'absence.missing.title',
       ),
     ),
     blog: const AppLocalizationsDataBlog(
-      title: 'Tymbe blog',
-      banner: const AppLocalizationsDataBlogBanner(
-        hint: 'Tymbe blog',
-      ),
+      title: 'blog.title',
+      banner: const AppLocalizationsDataBlogBanner(hint: 'blog.banner.hint'),
     ),
     userStatus: const AppLocalizationsDataUserStatus(
       missingHealthInsuranceCard:
           const AppLocalizationsDataUserStatusMissingHealthInsuranceCard(
-        mainButton: 'Nahrát kartičku',
-        description:
-            'Abychom tě mohli nechat pracovat na brigádě, potřebujeme informace o tvém pojištění.',
-        title: 'Chybějící kartička pojištěnce',
+        mainButton: 'userStatus.missingHealthInsuranceCard.mainButton',
+        description: 'userStatus.missingHealthInsuranceCard.description',
+        title: 'userStatus.missingHealthInsuranceCard.title',
       ),
       missingPhoneNumber:
           const AppLocalizationsDataUserStatusMissingPhoneNumber(
-        mainButton: 'Zadat telefonní číslo',
-        description:
-            'Předtím, než tě necháme přihlásit se na brigádu, potřebujeme znát tvé telefonní číslo, abychom tě v případě problémů mohli jednoduše kontaktovat.',
-        title: 'Chybějící telefonní číslo',
+        mainButton: 'userStatus.missingPhoneNumber.mainButton',
+        description: 'userStatus.missingPhoneNumber.description',
+        title: 'userStatus.missingPhoneNumber.title',
       ),
       missingBankAccount:
           const AppLocalizationsDataUserStatusMissingBankAccount(
-        mainButton: 'Zadat číslo účtu',
-        description:
-            'Předtím, než tě necháme přihlásit se na brigádu, potřebujeme znát tvé číslo bankovního účtu, na který ti budeme posílat výplatu.',
-        title: 'Chybějící číslo bankovního účtu',
+        mainButton: 'userStatus.missingBankAccount.mainButton',
+        description: 'userStatus.missingBankAccount.description',
+        title: 'userStatus.missingBankAccount.title',
       ),
       idNotVerified: const AppLocalizationsDataUserStatusIdNotVerified(
-        mainButton: 'Ověřit profil',
-        description:
-            'Abychom tě mohli nechat pracovat na brigádě, potřebujeme tvůj profil ověřit. Jakmile jej ověříme, budeš se moct na brigády hlásit.',
-        title: 'Neověřený profil',
+        mainButton: 'userStatus.idNotVerified.mainButton',
+        description: 'userStatus.idNotVerified.description',
+        title: 'userStatus.idNotVerified.title',
       ),
       expiredIdCard: const AppLocalizationsDataUserStatusExpiredIdCard(
-        mainButton: 'Nahrát nový doklad',
-        description: 'Platnost tvého dokladu vypršela',
-        title: 'Neověřený doklad',
+        mainButton: 'userStatus.expiredIdCard.mainButton',
+        description: 'userStatus.expiredIdCard.description',
+        title: 'userStatus.expiredIdCard.title',
       ),
     ),
     documentUpload: const AppLocalizationsDataDocumentUpload(
-      title: 'Kamera',
+      title: 'documentUpload.title',
       success: const AppLocalizationsDataDocumentUploadSuccess(
-        button: 'Rozumím',
-        description:
-            'Ověříme ho jak nejrychleji to půjde. Nejdéle následující pracovní den.',
-        title: 'Doklad nahrán',
+        button: 'documentUpload.success.button',
+        description: 'documentUpload.success.description',
+        title: 'documentUpload.success.title',
       ),
       dataFill: const AppLocalizationsDataDocumentUploadDataFill(
-        button: 'Dokončit',
-        info:
-            'Pokračováním souhlasíš s zpracováním osobních údajů pro účely zprostředkování brigád a pro zaměstnavatele.',
-        birthplace: 'Místo narození',
-        birthdate: 'Datum narození',
-        sex: 'Pohlaví',
-        noPersonalId: 'Nemám české rodné číslo',
-        personalInfo: 'Osobní údaje',
-        nationality: 'Národnost',
-        personalId: 'Rodné číslo',
-        documentValidTo: 'Platnost do',
-        documentValidFrom: 'Datum vydání',
-        documentId: 'Číslo dokladu*',
-        healthInsuranceCode: 'Kód pojišťovny',
-        title: 'Doplňte následující údaje',
+        button: 'documentUpload.dataFill.button',
+        info: 'documentUpload.dataFill.info',
+        birthplace: 'documentUpload.dataFill.birthplace',
+        birthdate: 'documentUpload.dataFill.birthdate',
+        sex: 'documentUpload.dataFill.sex',
+        noPersonalId: 'documentUpload.dataFill.noPersonalId',
+        personalInfo: 'documentUpload.dataFill.personalInfo',
+        nationality: 'documentUpload.dataFill.nationality',
+        personalId: 'documentUpload.dataFill.personalId',
+        documentValidTo: 'documentUpload.dataFill.documentValidTo',
+        documentValidFrom: 'documentUpload.dataFill.documentValidFrom',
+        documentId: 'documentUpload.dataFill.documentId',
+        healthInsuranceCode: 'documentUpload.dataFill.healthInsuranceCode',
+        title: 'documentUpload.dataFill.title',
         duplicateId:
             const AppLocalizationsDataDocumentUploadDataFillDuplicateId(
-          button: 'LIVE CHAT',
-          message:
-              'Zkotroluj prosím své rodné číslo. Pokud se ti něco nezdá, kontaktuj naší podporu přes live chat.',
-          title: 'Rodné číslo již použil jiný uživatel',
+          button: 'documentUpload.dataFill.duplicateId.button',
+          message: 'documentUpload.dataFill.duplicateId.message',
+          title: 'documentUpload.dataFill.duplicateId.title',
         ),
         permanentAddress:
             const AppLocalizationsDataDocumentUploadDataFillPermanentAddress(
-          appBarTitle: 'Změna telefonu',
-          submit: 'Uložit',
-          contactAddress: 'Kontaktní adresa',
-          subitle: 'Trvalé bydliště',
-          title: 'Adresa trvalého bydliště',
+          appBarTitle: 'documentUpload.dataFill.permanentAddress.appBarTitle',
+          submit: 'documentUpload.dataFill.permanentAddress.submit',
+          contactAddress:
+              'documentUpload.dataFill.permanentAddress.contactAddress',
+          subitle: 'documentUpload.dataFill.permanentAddress.subitle',
+          title: 'documentUpload.dataFill.permanentAddress.title',
         ),
       ),
       filesCheck: const AppLocalizationsDataDocumentUploadFilesCheck(
-        uploadMore: 'Přidat další',
-        next: 'Pokračovat',
+        uploadMore: 'documentUpload.filesCheck.uploadMore',
+        next: 'documentUpload.filesCheck.next',
         hint: const AppLocalizationsDataDocumentUploadFilesCheckHint(
-          description:
-              'Ujisti se prosím, že jsi vyfotil všechny strany i části dokumentu.',
-          title: 'Nahrál jsi všechny části?',
+          description: 'documentUpload.filesCheck.hint.description',
+          title: 'documentUpload.filesCheck.hint.title',
         ),
       ),
       photoCheck: const AppLocalizationsDataDocumentUploadPhotoCheck(
-        upload: 'Uložit doklad',
-        retake: 'Vyfotit znovu',
-        next: 'Pokračovat',
-        legal: '',
-        description: 'Jestli se něco nepovedlo, fotku prosím zopakuj ',
-        title: 'Je doklad k přečtení?',
+        upload: 'documentUpload.photoCheck.upload',
+        retake: 'documentUpload.photoCheck.retake',
+        next: 'documentUpload.photoCheck.next',
+        legal: 'documentUpload.photoCheck.legal',
+        description: 'documentUpload.photoCheck.description',
+        title: 'documentUpload.photoCheck.title',
       ),
       filePicker: const AppLocalizationsDataDocumentUploadFilePicker(
         type: const AppLocalizationsDataDocumentUploadFilePickerType(
-          images: 'Obrázky',
-          files: 'Soubory',
-          title: 'Jaký typ chceš nahrát?',
+          images: 'documentUpload.filePicker.type.images',
+          files: 'documentUpload.filePicker.type.files',
+          title: 'documentUpload.filePicker.type.title',
         ),
       ),
       photoTake: const AppLocalizationsDataDocumentUploadPhotoTake(
-        general: 'Vyfoť dokument',
-        backPage: 'Vyfoť zadní stranu',
-        frontPage: 'Vyfoť přední stranu',
+        general: 'documentUpload.photoTake.general',
+        backPage: 'documentUpload.photoTake.backPage',
+        frontPage: 'documentUpload.photoTake.frontPage',
       ),
       noCameraAvailable:
           const AppLocalizationsDataDocumentUploadNoCameraAvailable(
-        description:
-            'Nahrajte prosím soubory z úpložiště zařízení pomocí tlačítka v levo dole nebo v nastavení aplikace povolte přístup k fotoaparátu.',
-        title: 'Kamera nebo povolení k jejímu použití není k dispozici',
+        description: 'documentUpload.noCameraAvailable.description',
+        title: 'documentUpload.noCameraAvailable.title',
       ),
       identificationPick:
           const AppLocalizationsDataDocumentUploadIdentificationPick(
-        residencePermit: 'Povolení k pobytu',
-        visa: 'Krátkodobě vízum',
-        idCard: 'Občanský průkaz',
-        description:
-            'S ověřenou identitou budeš moci snadno uzavírat pracovní smlouvy on-line',
-        subtitle: 'Jaký doklad chceš ověřit?',
-        title: 'Ověření identity',
+        residencePermit: 'documentUpload.identificationPick.residencePermit',
+        visa: 'documentUpload.identificationPick.visa',
+        idCard: 'documentUpload.identificationPick.idCard',
+        description: 'documentUpload.identificationPick.description',
+        subtitle: 'documentUpload.identificationPick.subtitle',
+        title: 'documentUpload.identificationPick.title',
       ),
       popDialog: const AppLocalizationsDataDocumentUploadPopDialog(
-        message: 'O neuložená data přijdeš a budeš je muset nahrát znovu.',
-        title: 'Přerušit nahrávání dokladu?',
+        message: 'documentUpload.popDialog.message',
+        title: 'documentUpload.popDialog.title',
         button: const AppLocalizationsDataDocumentUploadPopDialogButton(
-          continueUpload: 'Pokračovat v nahrávání',
-          leaveScreen: 'Přerušit',
+          continueUpload: 'documentUpload.popDialog.button.continueUpload',
+          leaveScreen: 'documentUpload.popDialog.button.leaveScreen',
         ),
       ),
     ),
     supportChat: const AppLocalizationsDataSupportChat(
-      title: 'Zeptej se na cokoliv',
+      title: 'supportChat.title',
     ),
     documentType: const AppLocalizationsDataDocumentType(
-      infoCard: 'Informační karta',
-      entryHealthCheck: 'Vstupní lékařská prohlídka',
-      contractDPC: 'DPČ',
-      contractDPP: 'DPP',
-      contractHPP: 'Pracovní poměr',
-      medicalExamination: 'Vstupní lékařská prohlídka',
-      safetyShoesS1: 'Bezpečnostní obuv S1',
-      vzv: 'VZV',
-      oldAgePension: 'Výměr starobní důchod',
-      parentalLeave: 'Výměr mateřská/rodičovská dovolená',
-      invalidPension3: 'Výměr invalidní důchod III. Stupně',
-      invalidPension12: 'Výměr invalidní důchod I. a II. Stupně',
-      ztpCard: 'Průkaz ZTP/P',
-      taxpayerDeclaration: 'Čestné prohlášení živnostníka - ZP',
-      jobApplicantConfirmation:
-          'Potvrzení o evidenci uchazeče o zaměstnání na ÚP',
-      employerConfirmation:
-          'Potvrzení jiného zaměstnavatele, že odvádí min. pojistné',
-      nzv: 'NZV (motopaleťák)',
-      covidTestVaccination: 'COVID-19 test/očkování',
-      criminalRecord: 'Výpis z rejstříku trestů',
-      pinkie: 'Prohlášení poplatníka (základní sleva na dani)',
-      drivingLicense: 'Řidičský průkaz skupina B',
-      healthCard: 'Zdravotní (potravinářský) průkaz',
-      student: 'Potvrzení o studiu',
-      healthInsuranceCard: 'Kartička pojištěnce',
-      idCard: 'Občanský průkaz / Vízum',
+      infoCard: 'documentType.infoCard',
+      entryHealthCheck: 'documentType.entryHealthCheck',
+      contractDPC: 'documentType.contractDPC',
+      contractDPP: 'documentType.contractDPP',
+      contractHPP: 'documentType.contractHPP',
+      medicalExamination: 'documentType.medicalExamination',
+      safetyShoesS1: 'documentType.safetyShoesS1',
+      vzv: 'documentType.vzv',
+      oldAgePension: 'documentType.oldAgePension',
+      parentalLeave: 'documentType.parentalLeave',
+      invalidPension3: 'documentType.invalidPension3',
+      invalidPension12: 'documentType.invalidPension12',
+      ztpCard: 'documentType.ztpCard',
+      taxpayerDeclaration: 'documentType.taxpayerDeclaration',
+      jobApplicantConfirmation: 'documentType.jobApplicantConfirmation',
+      employerConfirmation: 'documentType.employerConfirmation',
+      nzv: 'documentType.nzv',
+      covidTestVaccination: 'documentType.covidTestVaccination',
+      criminalRecord: 'documentType.criminalRecord',
+      pinkie: 'documentType.pinkie',
+      drivingLicense: 'documentType.drivingLicense',
+      healthCard: 'documentType.healthCard',
+      student: 'documentType.student',
+      healthInsuranceCard: 'documentType.healthInsuranceCard',
+      idCard: 'documentType.idCard',
     ),
     updateRequired: const AppLocalizationsDataUpdateRequired(
-      button: 'Aktualizovat aplikaci',
-      description: 'Pro pokračování je potřeba stáhnout novou verzi aplikace',
-      title: 'Nutná aktualizace',
+      button: 'updateRequired.button',
+      description: 'updateRequired.description',
+      title: 'updateRequired.title',
     ),
     emergencyShutdown: const AppLocalizationsDataEmergencyShutdown(
-      description:
-          'Omlouváme se, aplikace je nyní nedostupná. Zkus to prosím později.',
-      title: 'Něco se nám nepovedlo...',
+      description: 'emergencyShutdown.description',
+      title: 'emergencyShutdown.title',
       button: const AppLocalizationsDataEmergencyShutdownButton(
-        contactSupport: 'Kontaktovat podporu',
-        launchWebApp: 'Vyřídit brigádu přes web',
-        closeApp: 'Zavřít aplikaci',
+        contactSupport: 'emergencyShutdown.button.contactSupport',
+        launchWebApp: 'emergencyShutdown.button.launchWebApp',
+        closeApp: 'emergencyShutdown.button.closeApp',
       ),
     ),
     components: const AppLocalizationsDataComponents(
       scrollView: const AppLocalizationsDataComponentsScrollView(
-        loadMoreFun: 'Načíst další ({{left}})',
+        loadMoreFun: 'components.scrollView.loadMoreFun',
       ),
     ),
     documentTileStateEnum: const AppLocalizationsDataDocumentTileStateEnum(
-      valid: 'Do {{date}}',
-      processing: 'Čeká na ověření',
-      expired: 'Platnost dokladu vypršela',
-      notUploaded: 'Nemáte ve svém profilu',
-      rejected: 'Doklad byl zamítnut',
+      valid: 'documentTileStateEnum.valid',
+      processing: 'documentTileStateEnum.processing',
+      expired: 'documentTileStateEnum.expired',
+      notUploaded: 'documentTileStateEnum.notUploaded',
+      rejected: 'documentTileStateEnum.rejected',
     ),
     tax: const AppLocalizationsDataTax(
       adjustment: const AppLocalizationsDataTaxAdjustment(
-        base: 'Základní',
+        base: 'tax.adjustment.base',
         healthAdditional:
             const AppLocalizationsDataTaxAdjustmentHealthAdditional(
-          desc: 'do minima',
-          name: 'Doplatek zdravotního pojištění',
+          desc: 'tax.adjustment.healthAdditional.desc',
+          name: 'tax.adjustment.healthAdditional.name',
         ),
         disabilityDiscount:
             const AppLocalizationsDataTaxAdjustmentDisabilityDiscount(
-          name: 'Sleva pro ZTP/P',
+          name: 'tax.adjustment.disabilityDiscount.name',
         ),
         disabilityRetirementDiscount:
             const AppLocalizationsDataTaxAdjustmentDisabilityRetirementDiscount(
-          name: 'Sleva pro invalidní důchodce',
+          name: 'tax.adjustment.disabilityRetirementDiscount.name',
         ),
         studentDiscount: const AppLocalizationsDataTaxAdjustmentStudentDiscount(
-          name: 'Sleva na studenta',
+          name: 'tax.adjustment.studentDiscount.name',
         ),
         taxpayerDiscount:
             const AppLocalizationsDataTaxAdjustmentTaxpayerDiscount(
-          name: 'Sleva na poplatníka',
+          name: 'tax.adjustment.taxpayerDiscount.name',
         ),
       ),
       income: const AppLocalizationsDataTaxIncome(
-        desc: '',
-        name: 'Srážková daň',
+        desc: 'tax.income.desc',
+        name: 'tax.income.name',
       ),
       blocking: const AppLocalizationsDataTaxBlocking(
-        desc: 'na doplatek zdravotního pojištění',
-        name: 'Předběžná alokace',
+        desc: 'tax.blocking.desc',
+        name: 'tax.blocking.name',
       ),
       health: const AppLocalizationsDataTaxHealth(
-        desc: '4,5% z vyměřovacího základu',
-        name: 'Zdravotní pojištění',
+        desc: 'tax.health.desc',
+        name: 'tax.health.name',
       ),
       social: const AppLocalizationsDataTaxSocial(
-        desc: '6,5% z vyměřovacího základu',
-        name: 'Sociální pojištění',
+        desc: 'tax.social.desc',
+        name: 'tax.social.name',
       ),
       advance: const AppLocalizationsDataTaxAdvance(
-        desc: '15% z příjmu do 4 000 Kč u DPČ',
-        name: 'Zálohová daň',
+        desc: 'tax.advance.desc',
+        name: 'tax.advance.name',
       ),
     ),
     profile: const AppLocalizationsDataProfile(
-      changePassword: 'Změnit heslo',
-      logout: 'Odhlásit se',
-      support: 'LIVE CHAT (podpora)',
-      applicationSettings: 'Nastavení aplikace',
-      notificationSettings: 'Notifikace',
-      fontSizeSettings: 'Velikost písma',
-      blog: 'Blog',
-      paymentInfo: 'Platební údaje',
-      settingsAndSupport: 'Nastavení a support',
-      myIDCopy: 'Tvoje ID zkopírováno do schránky',
-      myID: 'ID',
-      emptyDocuments: 'Zatím žádné dokumenty',
-      allContractsFun: 'Všechny dokumenty ({{total}})',
-      documents: 'Dokumenty',
-      allDocuments: 'Všechny doklady',
-      myDocuments: 'Moje doklady',
-      licenses: 'Licence',
-      deleteAccount: 'Smazat účet',
-      reliability: 'Spolehlivost',
-      noRating: 'Bez ratingu',
-      shifts: '',
-      workedShifts: 'Odpracováno',
-      levelHelpText: 'K čemu potřebujete level',
-      level: 'Úroveň',
-      lives: 'Životy',
-      age: 'let',
-      title: 'Můj profil',
+      changePassword: 'profile.changePassword',
+      logout: 'profile.logout',
+      support: 'profile.support',
+      applicationSettings: 'profile.applicationSettings',
+      notificationSettings: 'profile.notificationSettings',
+      fontSizeSettings: 'profile.fontSizeSettings',
+      blog: 'profile.blog',
+      paymentInfo: 'profile.paymentInfo',
+      settingsAndSupport: 'profile.settingsAndSupport',
+      myIDCopy: 'profile.myIDCopy',
+      myID: 'profile.myID',
+      emptyDocuments: 'profile.emptyDocuments',
+      allContractsFun: 'profile.allContractsFun',
+      documents: 'profile.documents',
+      allDocuments: 'profile.allDocuments',
+      myDocuments: 'profile.myDocuments',
+      licenses: 'profile.licenses',
+      deleteAccount: 'profile.deleteAccount',
+      reliability: 'profile.reliability',
+      noRating: 'profile.noRating',
+      shifts: 'profile.shifts',
+      workedShifts: 'profile.workedShifts',
+      levelHelpText: 'profile.levelHelpText',
+      level: 'profile.level',
+      lives: 'profile.lives',
+      age: 'profile.age',
+      title: 'profile.title',
       vacation: const AppLocalizationsDataProfileVacation(
-        link: 'Vzít si dovolenou',
-        title: 'Dovolená',
+        link: 'profile.vacation.link',
+        title: 'profile.vacation.title',
         screen: const AppLocalizationsDataProfileVacationScreen(
-          selectDate: 'Vyberte datum',
-          noVacation:
-              'Zatím nemáš nárok na dovolenou. Ten ti vzniká po odpracování 80 hodin v daném roce.',
-          description:
-              'Vyber si, kdy za odpočívání dostaneš zaplaceno. 😉 Fakt! Máš odpracováno tolik, že si můžeš vzít placenou dovolenou po 4 hodinách.',
-          title: 'Dovolenkové směny',
+          selectDate: 'profile.vacation.screen.selectDate',
+          noVacation: 'profile.vacation.screen.noVacation',
+          description: 'profile.vacation.screen.description',
+          title: 'profile.vacation.screen.title',
           hourlyWage: const AppLocalizationsDataProfileVacationScreenHourlyWage(
-            description:
-                'Částka, kterou dostaneš, závisí na tvých odpracovaných směnách. ',
-            title: 'Hodinovka',
+            description: 'profile.vacation.screen.hourlyWage.description',
+            title: 'profile.vacation.screen.hourlyWage.title',
           ),
           relax: const AppLocalizationsDataProfileVacationScreenRelax(
-            description:
-                'Když čerpáš dovolenou, nemůžeš se přihlásit na žádnou směnu. ',
-            title: 'Odpočívej',
+            description: 'profile.vacation.screen.relax.description',
+            title: 'profile.vacation.screen.relax.title',
           ),
         ),
       ),
       salaryLimit: const AppLocalizationsDataProfileSalaryLimit(
-        description:
-            'Po zapnutí funkce bude aplikace bránit v přihlášení na směny, kterými bys překročil rozhodný příjem 4000 Kč na DPČ. Díky tomu ti nebudeme provádět předběžnou alokaci pro případné odvody na sociálním a zdravotním pojištění a ty si budeš moct vyplatit celou částku získanou za směnu.\n\nPři vypnutí funkce ti aplikce dovolí překročit rozhodný příjem na DPČ. My ti ale budeme muset držet alokaci na případné odvody. Tuto alokaci dostaneš k vyplacení po zpracování mezd za daný měsíc, pokud rozhodný příjem nepřekročíš.',
-        title: 'Hlídání rozhodného příjmu',
+        description: 'profile.salaryLimit.description',
+        title: 'profile.salaryLimit.title',
         error: const AppLocalizationsDataProfileSalaryLimitError(
-          typeAvoidTaxes:
-              'V tomto měsíci tuto funkci už vypnout nemůžeš, protože máš vyplaceno více, než bys po případném překročení rozhodného příjmu měl mít vyplaceno. Vypnout funkci můžeš, pokud v daném měsíci nemáš vyplaceno více než 4000 Kč.',
-          typeNone:
-              'V tomto měsíci tuto funkci už použít nemůžeš, protože máš přihlášené směny, jejichž výdělek překračuje rozhodný příjem.',
+          typeAvoidTaxes: 'profile.salaryLimit.error.typeAvoidTaxes',
+          typeNone: 'profile.salaryLimit.error.typeNone',
         ),
       ),
       accountVerification: const AppLocalizationsDataProfileAccountVerification(
         changeSuccess:
             const AppLocalizationsDataProfileAccountVerificationChangeSuccess(
-          button: 'Rozumím',
-          message:
-              'Jakmile ověříme tvůj doklad totožnosti, automaticky ti upravíme změněné osobní údaje. Ty pak uvidíš ve svém profilu.',
-          title: 'To je vše',
+          button: 'profile.accountVerification.changeSuccess.button',
+          message: 'profile.accountVerification.changeSuccess.message',
+          title: 'profile.accountVerification.changeSuccess.title',
         ),
         success: const AppLocalizationsDataProfileAccountVerificationSuccess(
-          button: 'Prohlédnout brigády',
-          message:
-              'Jakmile ověříme tvůj doklad totožnosti, budeš se moci přihlásit na brigádu. Zatím mrkni na naši nabídku.',
-          title: 'Vše připraveno',
+          button: 'profile.accountVerification.success.button',
+          message: 'profile.accountVerification.success.message',
+          title: 'profile.accountVerification.success.title',
         ),
         personalDataChanges:
             const AppLocalizationsDataProfileAccountVerificationPersonalDataChanges(
-          button: 'Nahrát doklad',
-          message:
-              'Abychom mohli změnit tvoje osobní údaje, potřebujeme od tebe nahrát nový průkaz totožnosti, na kterém budou tyto údaje. Jejich změnu pak uděláme za tebe.',
-          title: 'Změnu musíme ověřit',
+          button: 'profile.accountVerification.personalDataChanges.button',
+          message: 'profile.accountVerification.personalDataChanges.message',
+          title: 'profile.accountVerification.personalDataChanges.title',
         ),
         intro: const AppLocalizationsDataProfileAccountVerificationIntro(
-          stepFour: 'Telefonní číslo ',
-          stepThree: 'Vyplnit bankovní účet',
-          stepTwo: 'Kartičku pojištěnce',
-          stepOne: 'Nahrát průkaz totožnosti',
-          subTitle: 'Budeme od tebe potřebovat:',
-          button: 'Nahrát doklad',
-          message:
-              'Abychom s tebou mohli uzavírat smlouvy a vyplácet ti odměny, potřebujeme ověřit tvou identitu a doplnit pár informací o tobě - musíme vědět třeba to, že je ti víc než 16 a na brigádu můžeš a další věci, na které narazíš v následujících krocích.',
-          title: 'Pojďme ověřit tvůj účet',
-          pageTitle: 'Ověření účtu',
+          stepFour: 'profile.accountVerification.intro.stepFour',
+          stepThree: 'profile.accountVerification.intro.stepThree',
+          stepTwo: 'profile.accountVerification.intro.stepTwo',
+          stepOne: 'profile.accountVerification.intro.stepOne',
+          subTitle: 'profile.accountVerification.intro.subTitle',
+          button: 'profile.accountVerification.intro.button',
+          message: 'profile.accountVerification.intro.message',
+          title: 'profile.accountVerification.intro.title',
+          pageTitle: 'profile.accountVerification.intro.pageTitle',
         ),
       ),
       editProfile: const AppLocalizationsDataProfileEditProfile(
-        access: 'Přístupové údaje',
-        gender: 'Pohlaví',
-        processing: 'Doklad ověřujeme',
-        validTo: 'Ověřeno do',
-        verified: 'Ověřeno',
-        unverified: 'Neověřeno',
-        changeInformation: 'Změnit údaje',
-        contactAddress: 'Kontaktní adresa',
-        permanentAddress: 'Trvalé bydlíště',
-        email: 'E-mail',
-        phoneNumber: 'Telefonní číslo',
-        contactInformation: 'Kontaktní údaje',
-        verifyIdentity: 'Ověřit identitu',
-        personalInformation: 'Osobní údaje',
-        title: 'Osobní a kontaktní údaje',
+        access: 'profile.editProfile.access',
+        gender: 'profile.editProfile.gender',
+        processing: 'profile.editProfile.processing',
+        validTo: 'profile.editProfile.validTo',
+        verified: 'profile.editProfile.verified',
+        unverified: 'profile.editProfile.unverified',
+        changeInformation: 'profile.editProfile.changeInformation',
+        contactAddress: 'profile.editProfile.contactAddress',
+        permanentAddress: 'profile.editProfile.permanentAddress',
+        email: 'profile.editProfile.email',
+        phoneNumber: 'profile.editProfile.phoneNumber',
+        contactInformation: 'profile.editProfile.contactInformation',
+        verifyIdentity: 'profile.editProfile.verifyIdentity',
+        personalInformation: 'profile.editProfile.personalInformation',
+        title: 'profile.editProfile.title',
         editPhoneNumber:
             const AppLocalizationsDataProfileEditProfileEditPhoneNumber(
-          subtitle:
-              'Tvůj telefon potřebujeme znát, abychom tě mohli včas informovat, kdyby se něco změnilo ve tvých brigádách',
-          title: 'Změna telefoního čísla',
-          appBarTitle: 'Telefonní číslo',
+          subtitle: 'profile.editProfile.editPhoneNumber.subtitle',
+          title: 'profile.editProfile.editPhoneNumber.title',
+          appBarTitle: 'profile.editProfile.editPhoneNumber.appBarTitle',
           duplicateError:
               const AppLocalizationsDataProfileEditProfileEditPhoneNumberDuplicateError(
             message:
-                'Zkotroluj prosím své číslo. Pokud se ti něco nezdá, kontaktuj naší podporu přes live chat.',
-            title: 'Zadané telefonní číslo již používá jiný uživatel. ',
+                'profile.editProfile.editPhoneNumber.duplicateError.message',
+            title: 'profile.editProfile.editPhoneNumber.duplicateError.title',
           ),
           button:
               const AppLocalizationsDataProfileEditProfileEditPhoneNumberButton(
-            text: 'Uložit',
+            text: 'profile.editProfile.editPhoneNumber.button.text',
           ),
           input:
               const AppLocalizationsDataProfileEditProfileEditPhoneNumberInput(
-            label: 'Nový telefon',
+            label: 'profile.editProfile.editPhoneNumber.input.label',
             error:
                 const AppLocalizationsDataProfileEditProfileEditPhoneNumberInputError(
-              empty: 'Povinné pole',
-              prefix: 'Nepodporovaná předvolba, pouze +420 nebo +421.',
-              format: 'Neplatný formát',
+              empty: 'profile.editProfile.editPhoneNumber.input.error.empty',
+              prefix: 'profile.editProfile.editPhoneNumber.input.error.prefix',
+              format: 'profile.editProfile.editPhoneNumber.input.error.format',
             ),
           ),
         ),
         setPhoneNumber:
             const AppLocalizationsDataProfileEditProfileSetPhoneNumber(
-          title: 'Nastavení telefoního čísla',
+          title: 'profile.editProfile.setPhoneNumber.title',
         ),
         appBar: const AppLocalizationsDataProfileEditProfileAppBar(
-          title: 'Můj profil',
+          title: 'profile.editProfile.appBar.title',
         ),
       ),
       editContactInformation:
           const AppLocalizationsDataProfileEditContactInformation(
-        title: 'Doplnění adresy',
-        subtitle: 'Kontaktní adresa',
-        sameAsPermanent: 'Použít adresu trvalého bydliště',
+        title: 'profile.editContactInformation.title',
+        subtitle: 'profile.editContactInformation.subtitle',
+        sameAsPermanent: 'profile.editContactInformation.sameAsPermanent',
         button: const AppLocalizationsDataProfileEditContactInformationButton(
-          submit: 'Dokončit',
+          submit: 'profile.editContactInformation.button.submit',
         ),
         country: const AppLocalizationsDataProfileEditContactInformationCountry(
-          hint: 'CZK',
-          label: 'Země',
+          hint: 'profile.editContactInformation.country.hint',
+          label: 'profile.editContactInformation.country.label',
         ),
         zip: const AppLocalizationsDataProfileEditContactInformationZip(
-          hint: '61300',
-          label: 'PSČ',
+          hint: 'profile.editContactInformation.zip.hint',
+          label: 'profile.editContactInformation.zip.label',
         ),
         city: const AppLocalizationsDataProfileEditContactInformationCity(
-          hint: 'Brno',
-          label: 'Město',
+          hint: 'profile.editContactInformation.city.hint',
+          label: 'profile.editContactInformation.city.label',
         ),
         street: const AppLocalizationsDataProfileEditContactInformationStreet(
-          hint: 'Černopolní 228',
-          label: 'Ulice a číslo popisné / orientační',
+          hint: 'profile.editContactInformation.street.hint',
+          label: 'profile.editContactInformation.street.label',
         ),
       ),
       changePasswordScreen:
           const AppLocalizationsDataProfileChangePasswordScreen(
-        title: 'Změň si heslo pro Tymbe',
-        button: 'Uložit heslo',
+        title: 'profile.changePasswordScreen.title',
+        button: 'profile.changePasswordScreen.button',
         appBar: const AppLocalizationsDataProfileChangePasswordScreenAppBar(
-          title: 'Změnit heslo',
+          title: 'profile.changePasswordScreen.appBar.title',
         ),
         input: const AppLocalizationsDataProfileChangePasswordScreenInput(
           newPassword:
               const AppLocalizationsDataProfileChangePasswordScreenInputNewPassword(
-            label: 'Nové heslo',
-            hint: 'Nové heslo',
+            label: 'profile.changePasswordScreen.input.newPassword.label',
+            hint: 'profile.changePasswordScreen.input.newPassword.hint',
           ),
           oldPassword:
               const AppLocalizationsDataProfileChangePasswordScreenInputOldPassword(
-            label: 'Staré heslo',
-            hint: 'Staré heslo',
+            label: 'profile.changePasswordScreen.input.oldPassword.label',
+            hint: 'profile.changePasswordScreen.input.oldPassword.hint',
           ),
         ),
       ),
       paymentInfoScreen: const AppLocalizationsDataProfilePaymentInfoScreen(
-        paymentNote: 'Nepovinná poznámka k platbě',
-        invalidBankCode: 'Neplatný kód banky',
-        submit: 'Uložit platební údaje',
-        invalidAccountNumber: 'Číslo účtu neexistuje',
-        bankCode: 'Kód banky',
-        accountNumber: 'Číslo účtu',
+        paymentNote: 'profile.paymentInfoScreen.paymentNote',
+        invalidBankCode: 'profile.paymentInfoScreen.invalidBankCode',
+        submit: 'profile.paymentInfoScreen.submit',
+        invalidAccountNumber: 'profile.paymentInfoScreen.invalidAccountNumber',
+        bankCode: 'profile.paymentInfoScreen.bankCode',
+        accountNumber: 'profile.paymentInfoScreen.accountNumber',
       ),
       utilities: const AppLocalizationsDataProfileUtilities(
-        own: 'Vlastní',
-        allUtilitiesFun: 'Všechny pomůcky ({{total}})',
-        empty: 'Zatím žádné pomůcky',
-        heading: 'Pomůcky',
+        own: 'profile.utilities.own',
+        allUtilitiesFun: 'profile.utilities.allUtilitiesFun',
+        empty: 'profile.utilities.empty',
+        heading: 'profile.utilities.heading',
         hint: const AppLocalizationsDataProfileUtilitiesHint(
-          description:
-              'Na některých směnách zaměstnavatelé vyžadují pracovní pomůcky. Pokud na takovou směnu narazíš a chtěl by si se na ni přihlásit, napiš nám na Live chat, abychom se domluvili na poskytnutí pracovních pomůcek.',
-          title: 'Pracovní pomůcky',
+          description: 'profile.utilities.hint.description',
+          title: 'profile.utilities.hint.title',
         ),
       ),
       signableDocs: const AppLocalizationsDataProfileSignableDocs(
-        olderDocumentsHelp:
-            'Pro informace o starších dokumentech nás prosím kontaktuj přes live chat.',
+        olderDocumentsHelp: 'profile.signableDocs.olderDocumentsHelp',
       ),
       nonSignableDocs: const AppLocalizationsDataProfileNonSignableDocs(
-        empty: 'Zatím žádné doklady',
-        invalidOne: '{{amount}} NEPLATNÝ',
-        invalidZero: '{{amount}} NEPLATNÝCH',
-        invalidMultiple: '{{amount}} NEPLATNÉ',
-        heading: 'Doklady',
+        empty: 'profile.nonSignableDocs.empty',
+        invalidOne: 'profile.nonSignableDocs.invalid',
+        invalidZero: 'profile.nonSignableDocs.invalid',
+        invalidMultiple: 'profile.nonSignableDocs.invalid',
+        heading: 'profile.nonSignableDocs.heading',
         snackbar: const AppLocalizationsDataProfileNonSignableDocsSnackbar(
-          documentDeleted: 'Doklad úspěšně smazán',
+          documentDeleted: 'profile.nonSignableDocs.snackbar.documentDeleted',
         ),
       ),
       nonSignableDocsDetailScreen:
           const AppLocalizationsDataProfileNonSignableDocsDetailScreen(
-        verifyNewDocument: 'Ověřit nový doklad',
-        unsupportedFormat: 'Nepodporovaný formát \n souboru',
-        notAvailable: 'Náhled není dostupný',
-        serverError: 'Nepodařilo se načíst náhled',
+        verifyNewDocument:
+            'profile.nonSignableDocsDetailScreen.verifyNewDocument',
+        unsupportedFormat:
+            'profile.nonSignableDocsDetailScreen.unsupportedFormat',
+        notAvailable: 'profile.nonSignableDocsDetailScreen.notAvailable',
+        serverError: 'profile.nonSignableDocsDetailScreen.serverError',
         approvedDelete:
             const AppLocalizationsDataProfileNonSignableDocsDetailScreenApprovedDelete(
           subtitle:
-              'Pokud některé údaje na dokladu již nejsou platné, nahraj nám prosím nový doklad pomocí tlačítka \"ověřit nový doklad\" na spodu obrazovky.',
-          title: 'Ověřený doklad nelze smazat',
+              'profile.nonSignableDocsDetailScreen.approvedDelete.subtitle',
+          title: 'profile.nonSignableDocsDetailScreen.approvedDelete.title',
         ),
       ),
       nonSignableDocsDetailStatus:
           const AppLocalizationsDataProfileNonSignableDocsDetailStatus(
         verified:
             const AppLocalizationsDataProfileNonSignableDocsDetailStatusVerified(
-          subtitle: 'Doklad je platný do',
-          title: 'Ověřeno',
+          subtitle: 'profile.nonSignableDocsDetailStatus.verified.subtitle',
+          title: 'profile.nonSignableDocsDetailStatus.verified.title',
         ),
         processing:
             const AppLocalizationsDataProfileNonSignableDocsDetailStatusProcessing(
-          subtitle: 'Zkontrolujeme ho během 24 hodin',
-          title: 'Doklad se zpracovává',
+          subtitle: 'profile.nonSignableDocsDetailStatus.processing.subtitle',
+          title: 'profile.nonSignableDocsDetailStatus.processing.title',
         ),
         expired:
             const AppLocalizationsDataProfileNonSignableDocsDetailStatusExpired(
-          subtitle: 'Nahraj prosím nový',
-          title: 'Doklad je neplatný',
+          subtitle: 'profile.nonSignableDocsDetailStatus.expired.subtitle',
+          title: 'profile.nonSignableDocsDetailStatus.expired.title',
         ),
         notUploaded:
             const AppLocalizationsDataProfileNonSignableDocsDetailStatusNotUploaded(
-          subtitle: 'Nahraj prosím nový',
-          title: 'Doklad není nahraný',
+          subtitle: 'profile.nonSignableDocsDetailStatus.notUploaded.subtitle',
+          title: 'profile.nonSignableDocsDetailStatus.notUploaded.title',
         ),
         rejected:
             const AppLocalizationsDataProfileNonSignableDocsDetailStatusRejected(
-          subtitle: 'Nahraj prosím nový',
-          title: 'Zamítnuto - špatný formát dokladu',
+          subtitle: 'profile.nonSignableDocsDetailStatus.rejected.subtitle',
+          title: 'profile.nonSignableDocsDetailStatus.rejected.title',
         ),
       ),
       applicationSettingsScreen:
           const AppLocalizationsDataProfileApplicationSettingsScreen(
-        toc: 'Podmínky a zpracování osobních údajů',
-        language: 'Jazyk',
-        localization: 'Lokalizace',
+        toc: 'profile.applicationSettingsScreen.toc',
+        language: 'profile.applicationSettingsScreen.language',
+        localization: 'profile.applicationSettingsScreen.localization',
         deleteAccount:
             const AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccount(
-          title: 'Opravdu chceš smazat účet?',
-          subtitle:
-              'Z legislativních důvodů nejdříve musíme ověřit, zda tvůj účet můžeme plně smazat nebo pouze archivovat, abychom zachovali podepsané smlouvy. Kontaktuj prosím naši podporu přes Live chat.',
-          contactSupport: 'LIVE CHAT',
-          later: 'Zatím ne',
+          title: 'profile.applicationSettingsScreen.deleteAccount.title',
+          subtitle: 'profile.applicationSettingsScreen.deleteAccount.subtitle',
+          contactSupport:
+              'profile.applicationSettingsScreen.deleteAccount.contactSupport',
+          later: 'profile.applicationSettingsScreen.deleteAccount.later',
           appBar:
               const AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccountAppBar(
-            title: 'Smazání účtu',
+            title:
+                'profile.applicationSettingsScreen.deleteAccount.appBar.title',
           ),
         ),
         signOut:
             const AppLocalizationsDataProfileApplicationSettingsScreenSignOut(
-          title: 'Opravdu se chceš odhlásit?',
-          subtitle: 'Klidně se můžeš přihlásit potom',
-          buttonFilled: 'Odhlásit se',
-          buttonOutlined: 'Zatím ne',
+          title: 'profile.applicationSettingsScreen.signOut.title',
+          subtitle: 'profile.applicationSettingsScreen.signOut.subtitle',
+          buttonFilled:
+              'profile.applicationSettingsScreen.signOut.buttonFilled',
+          buttonOutlined:
+              'profile.applicationSettingsScreen.signOut.buttonOutlined',
           appBar:
               const AppLocalizationsDataProfileApplicationSettingsScreenSignOutAppBar(
-            title: 'Odhlásit se',
+            title: 'profile.applicationSettingsScreen.signOut.appBar.title',
           ),
         ),
         appBar:
             const AppLocalizationsDataProfileApplicationSettingsScreenAppBar(
-          title: 'Nastavení aplikace',
+          title: 'profile.applicationSettingsScreen.appBar.title',
         ),
       ),
       notificationSettingsScreen:
           const AppLocalizationsDataProfileNotificationSettingsScreen(
-        title: 'Notifikace',
+        title: 'profile.notificationSettingsScreen.title',
         invitationEmail:
             const AppLocalizationsDataProfileNotificationSettingsScreenInvitationEmail(
-          description: 'Maximálně 1x týdně',
-          label: 'Dostávat emaily o pozvánkách na směny',
+          description:
+              'profile.notificationSettingsScreen.invitationEmail.description',
+          label: 'profile.notificationSettingsScreen.invitationEmail.label',
         ),
       ),
       fontSizeSettingsScreen:
           const AppLocalizationsDataProfileFontSizeSettingsScreen(
-        title: 'Velikost písma',
-        label: 'Použít vlastní velikost písma',
+        title: 'profile.fontSizeSettingsScreen.title',
+        label: 'profile.fontSizeSettingsScreen.label',
         option: const AppLocalizationsDataProfileFontSizeSettingsScreenOption(
-          value5: 'obrovské',
-          value4: 'velké',
-          value3: 'středně velké',
-          value2: 'střední',
-          value1: 'základní',
+          value5: 'profile.fontSizeSettingsScreen.option.value5',
+          value4: 'profile.fontSizeSettingsScreen.option.value4',
+          value3: 'profile.fontSizeSettingsScreen.option.value3',
+          value2: 'profile.fontSizeSettingsScreen.option.value2',
+          value1: 'profile.fontSizeSettingsScreen.option.value1',
         ),
       ),
       footer: const AppLocalizationsDataProfileFooter(
-        version: 'Verze {{version}} ({{buildNumber}})',
+        version: 'profile.footer.version',
       ),
     ),
     tyApiGender: const AppLocalizationsDataTyApiGender(
-      female: 'žena',
-      male: 'muž',
+      female: 'tyApiGender.female',
+      male: 'tyApiGender.male',
     ),
     attendance: const AppLocalizationsDataAttendance(
-      olderAttendanceHelp:
-          'Pro informace o starší docházce nás prosím kontaktuj přes live chat.',
-      m: 'm',
-      h: 'h',
-      hoursMoreThan4: 'hodin',
-      hour: 'hodinu',
-      hours: 'hodiny',
-      from: 'od',
-      rejected: 'Pozvánka zamítnuta',
-      systemCanceled: 'Zrušeno systémem',
-      canceledLate: 'Zrušeno po termínu',
-      canceledEarly: 'Zrušeno v termínu',
-      absentNok: 'Neomluvená absence',
-      alcoholDrugs: 'Nezpůsobilý práce',
-      absentOk: 'Omluvená absence',
-      completed: 'Potvrzená docházka',
-      confirmed: 'K vyplacení',
-      awaitingApproval: 'Čeká na schválení',
-      awaitingPayment: 'Zpracovaní platby',
-      unableToCancel: 'Probíhající brigádu nelze zrušit',
-      cancelTempJob: 'Zrušit brigádu',
-      reportAbsence: 'Nahlásit absenci',
-      empty: '',
-      tempJobs: 'brigády',
-      tempJobsMoreThan4: 'brigád',
-      tempJob: 'brigádu',
-      youAreSignedOn: 'Jsi přihlášen na',
-      getCredits: 'Získej {{amount}}',
+      olderAttendanceHelp: 'attendance.olderAttendanceHelp',
+      m: 'attendance.m',
+      h: 'attendance.h',
+      hoursMoreThan4: 'attendance.hoursMoreThan4',
+      hour: 'attendance.hour',
+      hours: 'attendance.hours',
+      from: 'attendance.from',
+      rejected: 'attendance.rejected',
+      systemCanceled: 'attendance.systemCanceled',
+      canceledLate: 'attendance.canceledLate',
+      canceledEarly: 'attendance.canceledEarly',
+      absentNok: 'attendance.absentNok',
+      alcoholDrugs: 'attendance.alcoholDrugs',
+      absentOk: 'attendance.absentOk',
+      completed: 'attendance.completed',
+      confirmed: 'attendance.confirmed',
+      awaitingApproval: 'attendance.awaitingApproval',
+      awaitingPayment: 'attendance.awaitingPayment',
+      unableToCancel: 'attendance.unableToCancel',
+      cancelTempJob: 'attendance.cancelTempJob',
+      reportAbsence: 'attendance.reportAbsence',
+      empty: 'attendance.empty',
+      tempJobs: 'attendance.tempJobs',
+      tempJobsMoreThan4: 'attendance.tempJobsMoreThan4',
+      tempJob: 'attendance.tempJob',
+      youAreSignedOn: 'attendance.youAreSignedOn',
+      getCredits: 'attendance.getCredits',
       review: const AppLocalizationsDataAttendanceReview(
-        finish: 'Dokončit',
-        title: 'Hodnocení směny',
+        finish: 'attendance.review.finish',
+        title: 'attendance.review.title',
         success: const AppLocalizationsDataAttendanceReviewSuccess(
-          button: 'Jít do Peněženky',
-          title: 'Získal jsi {{amount}}',
+          button: 'attendance.review.success.button',
+          title: 'attendance.review.success.title',
         ),
         option: const AppLocalizationsDataAttendanceReviewOption(
-          great: 'Skvělá',
-          bad: 'Špatná',
+          great: 'attendance.review.option.great',
+          bad: 'attendance.review.option.bad',
         ),
         hint: const AppLocalizationsDataAttendanceReviewHint(
-          button: 'Ok, tak do toho',
-          body4:
-              'Díky tomu se i Ty můžeš podílet na zlepšování kvality našich brigád!',
-          body3:
-              'Z dotazníku uděláme anonymizovanou statistiku a tam, kde se budou sbíhat kritické hlasy, navrhneme zadavateli brigády zlepšení. Chceme, aby se Tobě i ostatním brigády líbily a aby vše klapalo, jak má.',
-          body2:
-              'Žádný strach, vedoucí ani jiný pracovník zadavatele nemá k dotazníkům přístup.',
-          body1:
-              'Vážíme si Tvého názoru a tak bychom Tě rádi odměnili za to, že nám řekneš, jaká byla Tvá brigáda.',
-          body:
-              'Nepředáváme firmě, u které si brigádoval, tvé osobní údaje. Naším cílem je zlepšit podmínky brigádníků',
-          title: 'Tvoje odpovědi v dotazníku nikomu nepošleme!',
+          button: 'attendance.review.hint.button',
+          body4: 'attendance.review.hint.body4',
+          body3: 'attendance.review.hint.body3',
+          body2: 'attendance.review.hint.body2',
+          body1: 'attendance.review.hint.body1',
+          body: 'attendance.review.hint.body',
+          title: 'attendance.review.hint.title',
         ),
       ),
       detail: const AppLocalizationsDataAttendanceDetail(
-        absencesHeader: 'Omluva absence',
-        shiftHeader: 'Směna',
-        paidDeposit: 'Vyplacena záloha',
-        rateShiftFun: 'Ohodnotit směnu - {{amount}}',
-        rewardEstimate: 'Orientační výpočet odměny',
-        manko: 'Manko',
-        netWage: 'Čistá odměna',
-        tax: 'Daně',
-        noSurchargesGrossWage: 'Hrubá odměna (bez příplatků)',
-        grossWage: 'Hrubá odměna',
-        reward: 'Odměna',
-        workHours: 'Pracovní doba',
-        shiftDate: 'Datum směny',
+        absencesHeader: 'attendance.detail.absencesHeader',
+        shiftHeader: 'attendance.detail.shiftHeader',
+        paidDeposit: 'attendance.detail.paidDeposit',
+        rateShiftFun: 'attendance.detail.rateShiftFun',
+        rewardEstimate: 'attendance.detail.rewardEstimate',
+        manko: 'attendance.detail.manko',
+        netWage: 'attendance.detail.netWage',
+        tax: 'attendance.detail.tax',
+        noSurchargesGrossWage: 'attendance.detail.noSurchargesGrossWage',
+        grossWage: 'attendance.detail.grossWage',
+        reward: 'attendance.detail.reward',
+        workHours: 'attendance.detail.workHours',
+        shiftDate: 'attendance.detail.shiftDate',
       ),
       absence: const AppLocalizationsDataAttendanceAbsence(
-        approved: 'Omluvená absence',
-        rejected: 'Neuznaná absence',
-        clarification: 'Upřesnění absence',
-        processing: 'Zpracováváme absenci',
-        missing: 'Nezdůvodněná absence',
+        approved: 'attendance.absence.approved',
+        rejected: 'attendance.absence.rejected',
+        clarification: 'attendance.absence.clarification',
+        processing: 'attendance.absence.processing',
+        missing: 'attendance.absence.missing',
       ),
       cancelApplication: const AppLocalizationsDataAttendanceCancelApplication(
-        blogHint: 'Jak to funguje?',
-        title: 'Opravdu chceš směnu zrušit?',
+        blogHint: 'attendance.cancelApplication.blogHint',
+        title: 'attendance.cancelApplication.title',
       ),
       vacation: const AppLocalizationsDataAttendanceVacation(
         cancel: const AppLocalizationsDataAttendanceVacationCancel(
-          body:
-              'Neboj, o dovolenou nepřijdeš. Můžeš si ji znovu zadat k vybrání na jiný datum.',
-          title: 'Opravdu chceš zrušit dovolenou?',
-          button: 'Zrušit dovolenou',
+          body: 'attendance.vacation.cancel.body',
+          title: 'attendance.vacation.cancel.title',
+          button: 'attendance.vacation.cancel.button',
         ),
       ),
       cancelApplicationWithExcuse:
           const AppLocalizationsDataAttendanceCancelApplicationWithExcuse(
-        body:
-            'Budeš přesměrován na detail docházky kde musíš dodat omluvenku (vysvětlení absence).\nPokud omluvenku nedodáš, hrozí ti BAN.\nOpravdu chceš směnu zrušit?',
-        title: 'Snažíš se zrušit směnu po termínu',
+        body: 'attendance.cancelApplicationWithExcuse.body',
+        title: 'attendance.cancelApplicationWithExcuse.title',
       ),
     ),
     credits: const AppLocalizationsDataCredits(
-      toPayout: 'Kredity k vyplacení',
-      payout: 'Vyplatit kredity',
-      surveyCredits: 'Vyplň dotazník a získej kredity',
-      claimedCredits: 'Získané kredity',
-      title: 'Kredity',
+      toPayout: 'credits.toPayout',
+      payout: 'credits.payout',
+      surveyCredits: 'credits.surveyCredits',
+      claimedCredits: 'credits.claimedCredits',
+      title: 'credits.title',
       payoutScreen: const AppLocalizationsDataCreditsPayoutScreen(
-        title: 'Výplata kreditů',
+        title: 'credits.payoutScreen.title',
       ),
       history: const AppLocalizationsDataCreditsHistory(
-        title: 'Získané kredity',
+        title: 'credits.history.title',
       ),
       claimableCredits: const AppLocalizationsDataCreditsClaimableCredits(
-        empty: 'Zatím žádné dotazníky',
+        empty: 'credits.claimableCredits.empty',
       ),
       hint: const AppLocalizationsDataCreditsHint(
-        body:
-            'Kromě domluvené mzdy za práci rozdává Tymbe kredity. Každá brigáda má svou předem stanovenou hodinovou odměnu. Tu určuje zaměstnavatel dle svých interních předpisů. \n \n S Tymbe však navíc můžeš u některých směn získat zpeněžitelné Tymbe kredity za to, že nám řekneš, jak se Ti na brigádě líbilo. Stačí vyplnit dotazník spokojenosti.',
-        title: 'Co jsou to kredity?',
-        bottomWidget: '1 kredit = 1 Kč',
+        body: 'credits.hint.body',
+        title: 'credits.hint.title',
+        bottomWidget: 'credits.hint.bottomWidget',
       ),
     ),
     wallet: const AppLocalizationsDataWallet(
-      inNWorkingDaysOne: '{{amount}} pracovního dne',
-      inNWorkingDaysMultiple: '{{amount}} pracovních dnů',
-      inNWorkingDaysZero: '{{amount}} pracovních dnů',
-      isOnTheWayFun: '{{amount}} je na cestě',
-      totalEarnedCongratulations: '{{amount}}! Gratulujeme :)',
-      totalEarned: 'Celkem už jste si s Tymbe vydělali:',
-      olderPayouts: 'Starší výplaty',
-      getCredits: 'Získej kredity',
-      creditsHelp: 'Co jsou kredity?',
-      credits: 'Kredity',
-      payout: 'Vyplatit',
-      toPayout: 'K výplatě',
+      inNWorkingDaysOne: 'wallet.inNWorkingDays',
+      inNWorkingDaysMultiple: 'wallet.inNWorkingDays',
+      inNWorkingDaysZero: 'wallet.inNWorkingDays',
+      isOnTheWayFun: 'wallet.isOnTheWayFun',
+      totalEarnedCongratulations: 'wallet.totalEarnedCongratulations',
+      totalEarned: 'wallet.totalEarned',
+      olderPayouts: 'wallet.olderPayouts',
+      getCredits: 'wallet.getCredits',
+      creditsHelp: 'wallet.creditsHelp',
+      credits: 'wallet.credits',
+      payout: 'wallet.payout',
+      toPayout: 'wallet.toPayout',
       payoutStatus: const AppLocalizationsDataWalletPayoutStatus(
-        processing: 'Vyřizujeme',
-        text: 'Momentálně vyplácíme do {{days}}.',
+        processing: 'wallet.payoutStatus.processing',
+        text: 'wallet.payoutStatus.text',
       ),
       dialog: const AppLocalizationsDataWalletDialog(
-        close: 'Zavřít',
-        body:
-            'Odesíláme do {{days}} po kliku na tlačítko vyplatit. Následně příkaz zpracovává banka.',
-        title: 'Peníze vyplácíme do {{days}}',
+        close: 'wallet.dialog.close',
+        body: 'wallet.dialog.body',
+        title: 'wallet.dialog.title',
       ),
       paymentTransaction: const AppLocalizationsDataWalletPaymentTransaction(
-        paymentNote: 'Poznámka',
-        moneySent: 'Peníze odeslány',
-        sentToBankAt: 'Zadán příkaz bance: {{date}}',
+        paymentNote: 'wallet.paymentTransaction.paymentNote',
+        moneySent: 'wallet.paymentTransaction.moneySent',
+        sentToBankAt: 'wallet.paymentTransaction.sentToBankAt',
       ),
       paymentRequest: const AppLocalizationsDataWalletPaymentRequest(
-        requested: 'Zažádáno: {{date}}',
-        paidOut: 'VYPLACENO {{date}}',
-        specificSymbol: 'Specifický symbol',
-        variableSymbol: 'Variabilní symbol',
-        bankAccount: 'Bankovní účet',
-        heading: 'Detaily transakce',
-        title: 'Výplata',
+        requested: 'wallet.paymentRequest.requested',
+        paidOut: 'wallet.paymentRequest.paidOut',
+        specificSymbol: 'wallet.paymentRequest.specificSymbol',
+        variableSymbol: 'wallet.paymentRequest.variableSymbol',
+        bankAccount: 'wallet.paymentRequest.bankAccount',
+        heading: 'wallet.paymentRequest.heading',
+        title: 'wallet.paymentRequest.title',
       ),
       processing: const AppLocalizationsDataWalletProcessing(
-        empty: 'Zatím žádné platby',
-        title: 'Platby ve zpracování',
+        empty: 'wallet.processing.empty',
+        title: 'wallet.processing.title',
       ),
       payoutSuccess: const AppLocalizationsDataWalletPayoutSuccess(
-        bodyBottom: '(záleží na vaši bance)',
-        body: 'Za chvíli dorazí na váš účet',
-        title: 'Příkaz k vyplacení odeslán',
+        bodyBottom: 'wallet.payoutSuccess.bodyBottom',
+        body: 'wallet.payoutSuccess.body',
+        title: 'wallet.payoutSuccess.title',
       ),
       exekuce: const AppLocalizationsDataWalletExekuce(
-        blockedAmount: 'Z toho důvodu nelze {{amountWithCurrency}} vyplatit',
+        blockedAmount: 'wallet.exekuce.blockedAmount',
       ),
       payoutScreen: const AppLocalizationsDataWalletPayoutScreen(
-        youCanPayMax: 'Vyplatit lze maximálně {{amountWithCurrency}}',
-        exekuceWarning: 'Evidujeme u tebe exekuci',
-        sendConfirm: 'Poslat na můj účet',
-        send: 'Vyplatit',
-        changeAccount: 'Změnit',
-        chooseAccount: 'Vyberte účet',
-        bankAccount: 'Bankovní účet',
-        totalPayout: 'Celkem k výplatě',
-        choosePayouts: 'Vyberte příjmy k výplatě',
-        title: 'Výplata peněz',
+        youCanPayMax: 'wallet.payoutScreen.youCanPayMax',
+        exekuceWarning: 'wallet.payoutScreen.exekuceWarning',
+        sendConfirm: 'wallet.payoutScreen.sendConfirm',
+        send: 'wallet.payoutScreen.send',
+        changeAccount: 'wallet.payoutScreen.changeAccount',
+        chooseAccount: 'wallet.payoutScreen.chooseAccount',
+        bankAccount: 'wallet.payoutScreen.bankAccount',
+        totalPayout: 'wallet.payoutScreen.totalPayout',
+        choosePayouts: 'wallet.payoutScreen.choosePayouts',
+        title: 'wallet.payoutScreen.title',
       ),
       payoutsScreen: const AppLocalizationsDataWalletPayoutsScreen(
-        title: 'Výplaty',
+        title: 'wallet.payoutsScreen.title',
       ),
       detail: const AppLocalizationsDataWalletDetail(
-        paySupplement: 'příplatek',
-        beingProcessed: 'Zpracovává se',
-        leftToPayout: 'Zbývá k výplatě:',
-        toPayout: 'K vyplacení',
-        allPaidOut: 'Vše vyplaceno!',
-        preparingPayoutReceipt: 'Výplatní lístek se připravuje ...',
-        payoutReceipt: 'Výplatní lístek',
-        cutsAndTaxes: 'Srážky a daně',
+        paySupplement: 'wallet.detail.paySupplement',
+        beingProcessed: 'wallet.detail.beingProcessed',
+        leftToPayout: 'wallet.detail.leftToPayout',
+        toPayout: 'wallet.detail.toPayout',
+        allPaidOut: 'wallet.detail.allPaidOut',
+        preparingPayoutReceipt: 'wallet.detail.preparingPayoutReceipt',
+        payoutReceipt: 'wallet.detail.payoutReceipt',
+        cutsAndTaxes: 'wallet.detail.cutsAndTaxes',
         payroll: const AppLocalizationsDataWalletDetailPayroll(
-          notReadyYet: 'Výplatní páska bude dostupná začátkem příštího měsíce',
+          notReadyYet: 'wallet.detail.payroll.notReadyYet',
         ),
       ),
       hint: const AppLocalizationsDataWalletHint(
-        button: 'Zavřít nápovědu',
-        body:
-            'Najdeš tu přehled o výdělku z tvých odpracovaných směn. Ten si můžeš nechat vyplatit na svůj bankovní účet.',
-        title: 'K čemu slouží peněženka?',
+        button: 'wallet.hint.button',
+        body: 'wallet.hint.body',
+        title: 'wallet.hint.title',
       ),
     ),
     day: const AppLocalizationsDataDay(
-      yesterday: 'Včera',
-      today: 'Dnes',
-      tomorrow: 'Zítra',
+      yesterday: 'day.yesterday',
+      today: 'day.today',
+      tomorrow: 'day.tomorrow',
     ),
     month: const AppLocalizationsDataMonth(
-      december: 'Prosinec',
-      november: 'Listopad',
-      october: 'Říjen',
-      september: 'Září',
-      august: 'Srpen',
-      july: 'Červenec',
-      june: 'Červen',
-      may: 'Květen',
-      april: 'Duben',
-      march: 'Březen',
-      february: 'Únor',
-      january: 'Leden',
+      december: 'month.december',
+      november: 'month.november',
+      october: 'month.october',
+      september: 'month.september',
+      august: 'month.august',
+      july: 'month.july',
+      june: 'month.june',
+      may: 'month.may',
+      april: 'month.april',
+      march: 'month.march',
+      february: 'month.february',
+      january: 'month.january',
     ),
     failure: const AppLocalizationsDataFailure(
-      unableToDeleteDocument: 'Chyba při odstraňování dokumentu',
-      invalidPhoneNumber: 'Neplatné telefonní číslo',
-      expiredResetToken: 'Platnost odkazu vypršela',
-      invalidResetToken: 'Neplatný odkaz na reset hesla',
-      accountAlreadyVerified: 'Účet byl již aktivován',
-      expiredVerifyToken: 'Platnost odkazu vypršela',
-      invalidVerifyToken: 'Neplatný aktivační odkaz',
-      noInternet: 'Vyskytl se problém s připojením k internetu.',
+      unableToDeleteDocument: 'failure.unableToDeleteDocument',
+      invalidPhoneNumber: 'failure.invalidPhoneNumber',
+      expiredResetToken: 'failure.expiredResetToken',
+      invalidResetToken: 'failure.invalidResetToken',
+      accountAlreadyVerified: 'failure.accountAlreadyVerified',
+      expiredVerifyToken: 'failure.expiredVerifyToken',
+      invalidVerifyToken: 'failure.invalidVerifyToken',
+      noInternet: 'failure.noInternet',
       invitation: const AppLocalizationsDataFailureInvitation(
-        reject: 'Chyba při odmítnutí pozvánky',
-        accept: 'Chyba při kontrole údajů pro přijmutí pozvánky',
-        fetch: 'Nepodařilo se načíst pozvánky',
+        reject: 'failure.invitation.reject',
+        accept: 'failure.invitation.accept',
+        fetch: 'failure.invitation.fetch',
       ),
       phoneNumberAlreadyTaken:
           const AppLocalizationsDataFailurePhoneNumberAlreadyTaken(
-        body:
-            'Zkotroluj prosím své zadané číslo. Pokud se ti něco nezdá, kontaktuj naší podporu přes live chat.',
-        title: 'Zadané telefonní číslo již používá jiný uživatel. ',
+        body: 'failure.phoneNumberAlreadyTaken.body',
+        title: 'failure.phoneNumberAlreadyTaken.title',
       ),
       invalidResetPasswordToken:
           const AppLocalizationsDataFailureInvalidResetPasswordToken(
-        message: 'Zkuste heslo resetovat znovu.',
-        title: 'Neplatný odkaz',
+        message: 'failure.invalidResetPasswordToken.message',
+        title: 'failure.invalidResetPasswordToken.title',
       ),
       general: const AppLocalizationsDataFailureGeneral(
-        message: 'Něco se u nás pokazilo',
-        title: 'Chyba',
+        message: 'failure.general.message',
+        title: 'failure.general.title',
       ),
     ),
     appSettings: const AppLocalizationsDataAppSettings(
-      language: 'Jazyk',
+      language: 'appSettings.language',
       title: 'Мова',
     ),
     activateAccount: const AppLocalizationsDataActivateAccount(
-      successMessage: 'Nyní se do něj můžeš přihlášit',
-      success: 'Účet byl úspěšne aktivován',
+      successMessage: 'activateAccount.successMessage',
+      success: 'activateAccount.success',
     ),
     newPassword: const AppLocalizationsDataNewPassword(
-      button: 'Vytvořit heslo',
-      title: 'Nové heslo',
+      button: 'newPassword.button',
+      title: 'newPassword.title',
       success: const AppLocalizationsDataNewPasswordSuccess(
-        body: 'Přihlas se do Tymbe znovu.',
-        title: 'Změna hesla byla úspěšná',
+        body: 'newPassword.success.body',
+        title: 'newPassword.success.title',
       ),
     ),
     forgottenPassword: const AppLocalizationsDataForgottenPassword(
-      button: 'Resetovat heslo',
-      body: 'Zadej e-mailovou adresu a my ti heslo resetujeme.',
-      title: 'Nepamatuješ si heslo?',
+      button: 'forgottenPassword.button',
+      body: 'forgottenPassword.body',
+      title: 'forgottenPassword.title',
       success: const AppLocalizationsDataForgottenPasswordSuccess(
-        techSupport: 'LIVE CHAT',
-        sendEmailAgain: 'Odeslat e-mail znovu',
-        body:
-            'V e-mailu najdeš odkaz na nastavení nového hesla. Zkontroluj také schránku SPAM. Pokud e-mail nedorazil, kontaktuj nás přes live chat',
-        title: 'Odeslali jsem ti e-mail',
+        techSupport: 'forgottenPassword.success.techSupport',
+        sendEmailAgain: 'forgottenPassword.success.sendEmailAgain',
+        body: 'forgottenPassword.success.body',
+        title: 'forgottenPassword.success.title',
       ),
       appbar: const AppLocalizationsDataForgottenPasswordAppbar(
-        title: 'Zapomenuté heslo',
+        title: 'forgottenPassword.appbar.title',
       ),
     ),
     shifts: const AppLocalizationsDataShifts(
       knowledgeTest: const AppLocalizationsDataShiftsKnowledgeTest(
-        errorMessage:
-            'Pro pokračování potřebujete alespoň {{amount}} bodů, prosím opravte červeně znázorněné odpovědi.',
-        points: 'Body: {{amount}}/{{total}}',
-        finishTest: 'Dokončit test',
-        fillOutTest: 'Vyplnit test',
+        errorMessage: 'shifts.knowledgeTest.errorMessage',
+        points: 'shifts.knowledgeTest.points',
+        finishTest: 'shifts.knowledgeTest.finishTest',
+        fillOutTest: 'shifts.knowledgeTest.fillOutTest',
       ),
       claim: const AppLocalizationsDataShiftsClaim(
-        title: 'Přihlášení na brigádu',
-        completed: 'Směna přihlášena!',
+        title: 'shifts.claim.title',
+        completed: 'shifts.claim.completed',
         overview: const AppLocalizationsDataShiftsClaimOverview(
-          button: 'OK, závazně přihlásit',
-          confirm: 'Přihlašuješ se na tuto brigádu',
-          title: 'Závazně přihlásit',
+          button: 'shifts.claim.overview.button',
+          confirm: 'shifts.claim.overview.confirm',
+          title: 'shifts.claim.overview.title',
         ),
         signature: const AppLocalizationsDataShiftsClaimSignature(
-          hint: 'Zde se prosím podepiš',
-          title: 'Už jen podpis',
+          hint: 'shifts.claim.signature.hint',
+          title: 'shifts.claim.signature.title',
           button: const AppLocalizationsDataShiftsClaimSignatureButton(
-            next: 'Pokračovat',
-            signAgain: 'Podepsat znovu',
+            next: 'shifts.claim.signature.button.next',
+            signAgain: 'shifts.claim.signature.button.signAgain',
           ),
         ),
         limitsPredictions:
             const AppLocalizationsDataShiftsClaimLimitsPredictions(
-          rejectShift: 'Na směnu nechci',
-          assumption: 'Předpoklad',
-          limit: 'Maximální limit',
+          rejectShift: 'shifts.claim.limitsPredictions.rejectShift',
+          assumption: 'shifts.claim.limitsPredictions.assumption',
+          limit: 'shifts.claim.limitsPredictions.limit',
           contractSalaryInfo:
-              'Jde o maximální limit odpracovaných hodin na dané smlouvě. Tvoje odpracované hodiny započítávají historické směny, ke kterým je přičten i odhad času stráveného na směně, na kterou se právě hlásíš.',
-          contractHoursInfo:
-              'Jde o maximální limit tvé hrubé mzdy, který když překročíš, budeme za tebe muset hradit odvody na sociální a zdravotní pojištění, ale i doplatek zdravotního pojištění a dohromady už je to docela dost peněz (pár tisíc). Jak z toho ven? Nahrej doklad ve své šatně, pokud jsi student, v evidenci UP, zkrátka pokud jsi státní pojištěnec nebo si hradíš pojištění jinde. Tvá čistá odměna pak bude o poznání vyšší. Tvoje vydělané peníze se počítahí z historických směn vázajících se ke stejné smlouvě, ke kterým je přičten i odhad výdělku stráveného na směně, na kterou se právě hlásíš.',
-          contractHours: 'Předpokládané hodiny na smlouvě',
-          contractSalary: 'Předpokládaná hrubá mzda',
-          description:
-              'Zobrazené limity představují předpoklad tvých limitů na smlouvě po odpracování směny, na kterou se právě hlásíš.',
-          title: 'Předpoklad limitů',
+              'shifts.claim.limitsPredictions.contractSalaryInfo',
+          contractHoursInfo: 'shifts.claim.limitsPredictions.contractHoursInfo',
+          contractHours: 'shifts.claim.limitsPredictions.contractHours',
+          contractSalary: 'shifts.claim.limitsPredictions.contractSalary',
+          description: 'shifts.claim.limitsPredictions.description',
+          title: 'shifts.claim.limitsPredictions.title',
           warning:
               const AppLocalizationsDataShiftsClaimLimitsPredictionsWarning(
-            description:
-                'Odpracováním této směny dosáhneš rozhodný příjem a budeš muset hradit nejen odvody na sociální a zdravotní pojištění, ale i doplatek zdravotního pojištění a dohromady už je to docela dost peněz (pár tisíc). Jak z toh ven? Nahrej doklad ve své šatně, pokud jsi student, v evidenci UP, zkrátka pokud jsi státní pojištěnec nebo si hradíš pojištění jinde. Tvá čistá odměna pak bude o poznání vyšší ;)',
-            title: 'Ty nezahálíš, ale pozor!',
+            description: 'shifts.claim.limitsPredictions.warning.description',
+            title: 'shifts.claim.limitsPredictions.warning.title',
           ),
         ),
         button: const AppLocalizationsDataShiftsClaimButton(
-          readAndAgree: 'Četl/a jsem a souhlasím',
+          readAndAgree: 'shifts.claim.button.readAndAgree',
         ),
         hint: const AppLocalizationsDataShiftsClaimHint(
-          button: 'Pokračovat',
-          title: 'Nejprve je třeba podepsat dokumenty',
+          button: 'shifts.claim.hint.button',
+          title: 'shifts.claim.hint.title',
         ),
       ),
       label: const AppLocalizationsDataShiftsLabel(
-        utilities: 'Pomůcky',
-        conditions: 'Podmínky',
-        lastPlace: 'Poslední místo',
-        physicallyChallengingJob: 'Fyzicky náročná brigáda',
+        utilities: 'shifts.label.utilities',
+        conditions: 'shifts.label.conditions',
+        lastPlace: 'shifts.label.lastPlace',
+        physicallyChallengingJob: 'shifts.label.physicallyChallengingJob',
       ),
       detail: const AppLocalizationsDataShiftsDetail(
-        claimError: 'Nelze se přihlásit na směnu',
-        showOnMap: 'Zobrazit na mapě',
-        loading: 'Načítání směny',
+        claimError: 'shifts.detail.claimError',
+        showOnMap: 'shifts.detail.showOnMap',
+        loading: 'shifts.detail.loading',
         issue: const AppLocalizationsDataShiftsDetailIssue(
-          hpp: 'Požádat o HPP',
-          salaryLimit: 'Vypnout hlídání příjmu',
+          hpp: 'shifts.detail.issue.hpp',
+          salaryLimit: 'shifts.detail.issue.salaryLimit',
         ),
         vacation: const AppLocalizationsDataShiftsDetailVacation(
-          title: 'Dovolená',
+          title: 'shifts.detail.vacation.title',
           info: const AppLocalizationsDataShiftsDetailVacationInfo(
-            description:
-                'Nejedná se o klasickou směnu ale výběr dovolené. Není třeba nikam chodit.',
-            title: 'Odpočinek si zaloužíš!',
+            description: 'shifts.detail.vacation.info.description',
+            title: 'shifts.detail.vacation.info.title',
           ),
         ),
         footer: const AppLocalizationsDataShiftsDetailFooter(
           invitation: const AppLocalizationsDataShiftsDetailFooterInvitation(
-            title: 'Na tuto směnu máš pozvánku',
+            title: 'shifts.detail.footer.invitation.title',
           ),
         ),
         accountInReview: const AppLocalizationsDataShiftsDetailAccountInReview(
-          description:
-              'Předtím, než ti ukážeme detaily naších nabídek, potřebujeme ověřit tvůj účet. Tvůj doklad totožnosti už máme a ověříme ho co nejdříve, nejdéle do následujícího pracovního dne od nahrání. Děkujeme za trpělivost.',
-          title: 'Tvůj účet ověřujeme',
+          description: 'shifts.detail.accountInReview.description',
+          title: 'shifts.detail.accountInReview.title',
         ),
         accountInactive: const AppLocalizationsDataShiftsDetailAccountInactive(
-          description:
-              'Předtím, než ti ukážeme detaily naších nabídek, si prosím ověř svůj účet nahráním dokladu totožnosti.',
-          title: 'Nemáš ověřený účet',
+          description: 'shifts.detail.accountInactive.description',
+          title: 'shifts.detail.accountInactive.title',
           button: const AppLocalizationsDataShiftsDetailAccountInactiveButton(
-            back: 'Zpět na nabídky',
-            verifyAccount: 'Ověřit účet',
+            back: 'shifts.detail.accountInactive.button.back',
+            verifyAccount: 'shifts.detail.accountInactive.button.verifyAccount',
           ),
         ),
         error: const AppLocalizationsDataShiftsDetailError(
-          missingDocument:
-              'Směna vyžaduje doklad, který nemáš nahraný ve svém profilu',
-          salaryLimitExceeded:
-              'Máš zapnuté hlídání překročení rozhodného příjmu a touto směnou by si rozhodný příjem překročil. Hlídání si můžeš vypnout ve svém profilu.',
+          missingDocument: 'shifts.detail.error.missingDocument',
+          salaryLimitExceeded: 'shifts.detail.error.salaryLimitExceeded',
         ),
         surcharge: const AppLocalizationsDataShiftsDetailSurcharge(
-          forWeekend: 'víkend',
-          forNight: 'práci v noci',
-          forHoliday: 'svátek',
-          reason: 'příplatek za',
+          forWeekend: 'shifts.detail.surcharge.forWeekend',
+          forNight: 'shifts.detail.surcharge.forNight',
+          forHoliday: 'shifts.detail.surcharge.forHoliday',
+          reason: 'shifts.detail.surcharge.reason',
         ),
         loadingError: const AppLocalizationsDataShiftsDetailLoadingError(
-          retry: 'Načíst znovu',
-          title: 'Nepodařilo se načíst detail brigády',
+          retry: 'shifts.detail.loadingError.retry',
+          title: 'shifts.detail.loadingError.title',
         ),
         notAvailable: const AppLocalizationsDataShiftsDetailNotAvailable(
-          title: 'Brigáda již není dostupná',
+          title: 'shifts.detail.notAvailable.title',
         ),
         section: const AppLocalizationsDataShiftsDetailSection(
           location: const AppLocalizationsDataShiftsDetailSectionLocation(
-            title: 'Provozovna',
+            title: 'shifts.detail.section.location.title',
           ),
           instructionNewcommers:
               const AppLocalizationsDataShiftsDetailSectionInstructionNewcommers(
-            title: 'Informace pro nováčky',
+            title: 'shifts.detail.section.instructionNewcommers.title',
           ),
           emergencyContact:
               const AppLocalizationsDataShiftsDetailSectionEmergencyContact(
-            copied: 'Nouzový kontakt zkopírován do schránky',
-            title: 'Nouzový kontakt',
+            copied: 'shifts.detail.section.emergencyContact.copied',
+            title: 'shifts.detail.section.emergencyContact.title',
           ),
           description: const AppLocalizationsDataShiftsDetailSectionDescription(
-            title: 'Popis brigády',
+            title: 'shifts.detail.section.description.title',
           ),
           instruction: const AppLocalizationsDataShiftsDetailSectionInstruction(
-            title: 'Informace',
+            title: 'shifts.detail.section.instruction.title',
           ),
           documents: const AppLocalizationsDataShiftsDetailSectionDocuments(
-            title: 'Dokumenty k podpisu',
+            title: 'shifts.detail.section.documents.title',
           ),
           utilities: const AppLocalizationsDataShiftsDetailSectionUtilities(
-            title: 'Vyžadované pomůcky',
+            title: 'shifts.detail.section.utilities.title',
             error: const AppLocalizationsDataShiftsDetailSectionUtilitiesError(
-              description:
-                  'Pro směnu jsou vyžadované pracovní pomůcky. V případě zájmu o směnu nás prosím kontaktuj přes live chat, abychom se domluvili na jejich poskytnutí.',
-              title: 'Chybí ti pomůcky',
+              description: 'shifts.detail.section.utilities.error.description',
+              title: 'shifts.detail.section.utilities.error.title',
             ),
             item: const AppLocalizationsDataShiftsDetailSectionUtilitiesItem(
-              added: 'Přidáno ',
+              added: 'shifts.detail.section.utilities.item.added',
             ),
           ),
           requirements:
               const AppLocalizationsDataShiftsDetailSectionRequirements(
-            title: 'Podmínky nástupu',
+            title: 'shifts.detail.section.requirements.title',
             error:
                 const AppLocalizationsDataShiftsDetailSectionRequirementsError(
-              expired: 'Platnost vypršela',
-              notInProfile: 'Ještě nemáš ve svém profilu',
+              expired: 'shifts.detail.section.requirements.error.expired',
+              notInProfile:
+                  'shifts.detail.section.requirements.error.notInProfile',
               description:
-                  'Pro možnost přijmout směnu nahraj do svého profilu všechny potřebné dokumenty uvedené níže. Potom prosím počkej, až je ověříme, nejdéle další pracovní den.',
-              title: 'Zatím nesplňuješ všechny podmínky',
+                  'shifts.detail.section.requirements.error.description',
+              title: 'shifts.detail.section.requirements.error.title',
             ),
           ),
         ),
         label: const AppLocalizationsDataShiftsDetailLabel(
-          contractType: 'Smlouva',
-          employer: 'Zaměstnavatel',
-          credits: 'Kredity',
-          pay: 'Odměna',
-          time: 'Čas',
-          when: 'Kdy',
-          offersMore: 'volých míst',
-          offers: 'volná místa',
-          offer: 'volné místo',
-          noOffers: 'Žádné volné místo',
-          addedDateDays: 'dny',
-          addedDateDay: 'dnem',
-          addedDateToday: 'Přidáno dnes',
-          addedDate: 'Přidáno před',
+          contractType: 'shifts.detail.label.contractType',
+          employer: 'shifts.detail.label.employer',
+          credits: 'shifts.detail.label.credits',
+          pay: 'shifts.detail.label.pay',
+          time: 'shifts.detail.label.time',
+          when: 'shifts.detail.label.when',
+          offersMore: 'shifts.detail.label.offersMore',
+          offers: 'shifts.detail.label.offers',
+          offer: 'shifts.detail.label.offer',
+          noOffers: 'shifts.detail.label.noOffers',
+          addedDateDays: 'shifts.detail.label.addedDateDays',
+          addedDateDay: 'shifts.detail.label.addedDateDay',
+          addedDateToday: 'shifts.detail.label.addedDateToday',
+          addedDate: 'shifts.detail.label.addedDate',
           extra: const AppLocalizationsDataShiftsDetailLabelExtra(
-            holiday: 'příplatek za ve svátek',
-            weekendNight: 'příplatek za práci o víkendu a v noci',
+            holiday: 'shifts.detail.label.extra.holiday',
+            weekendNight: 'shifts.detail.label.extra.weekendNight',
           ),
         ),
         button: const AppLocalizationsDataShiftsDetailButton(
-          apply: 'Přihlásit se na brigádu',
+          apply: 'shifts.detail.button.apply',
         ),
       ),
       filter: const AppLocalizationsDataShiftsFilter(
         date: const AppLocalizationsDataShiftsFilterDate(
-          to: 'do {{date}}',
-          from: 'od {{date}}',
-          chip: 'Datum',
-          reset: 'Zrušit výběr',
-          save: 'Uložit',
+          to: 'shifts.filter.date.to',
+          from: 'shifts.filter.date.from',
+          chip: 'shifts.filter.date.chip',
+          reset: 'shifts.filter.date.reset',
+          save: 'shifts.filter.date.save',
           bottomSheet: const AppLocalizationsDataShiftsFilterDateBottomSheet(
-            error: 'Hodnota Od je starší než Do',
-            show: 'Zobrazit',
-            to: 'Do',
-            from: 'Od',
-            title: 'Zobrazit brigády',
+            error: 'shifts.filter.date.bottomSheet.error',
+            show: 'shifts.filter.date.bottomSheet.show',
+            to: 'shifts.filter.date.bottomSheet.to',
+            from: 'shifts.filter.date.bottomSheet.from',
+            title: 'shifts.filter.date.bottomSheet.title',
             hint: const AppLocalizationsDataShiftsFilterDateBottomSheetHint(
-              to: 'Neurčito',
-              from: 'Dnes',
+              to: 'shifts.filter.date.bottomSheet.hint.to',
+              from: 'shifts.filter.date.bottomSheet.hint.from',
             ),
           ),
         ),
         search: const AppLocalizationsDataShiftsFilterSearch(
-          save: 'Hledat zadaný výraz',
-          hint: 'Hledat firmu / pracovní pozici',
-          title: 'Hledat firmu',
+          save: 'shifts.filter.search.save',
+          hint: 'shifts.filter.search.hint',
+          title: 'shifts.filter.search.title',
         ),
         locality: const AppLocalizationsDataShiftsFilterLocality(
-          anywhere: 'Zobrazit všechny brigády',
-          title: 'Lokalita',
+          anywhere: 'shifts.filter.locality.anywhere',
+          title: 'shifts.filter.locality.title',
         ),
       ),
       feed: const AppLocalizationsDataShiftsFeed(
-        plusExtra: '\+ příplatky',
-        lastPlace: 'Poslední místo',
-        endActiveFilter:
-            'Bohužel víc toho pro tebe pro zadané vyhledávání nebo lokalitu nemáme. \n\n Můžeš si upravit vyhledávání a lokalitu, nebo to zkus později, až se objeví nové brigády 💪',
-        end: 'To je prozatím vše, brzo ale očekávej nové brigády 💪',
-        reload: 'Načíst znovu',
-        errorLoading: 'Tak tohle se nepovedlo 😢',
-        errorLoadingInternet: 'Slabé připojení k internetu',
+        plusExtra: 'shifts.feed.plusExtra',
+        lastPlace: 'shifts.feed.lastPlace',
+        endActiveFilter: 'shifts.feed.endActiveFilter',
+        end: 'shifts.feed.end',
+        reload: 'shifts.feed.reload',
+        errorLoading: 'shifts.feed.errorLoading',
+        errorLoadingInternet: 'shifts.feed.errorLoadingInternet',
         ban: const AppLocalizationsDataShiftsFeedBan(
-          labelNote: 'Důvod banu:',
-          description:
-              'V období, kdy máš ban, se nemůžeš přihlásit na novou brigádu',
-          unlimited: 's neomezenou platností',
-          title: 'Byl jsi zabanován',
+          labelNote: 'shifts.feed.ban.labelNote',
+          description: 'shifts.feed.ban.description',
+          unlimited: 'shifts.feed.ban.unlimited',
+          title: 'shifts.feed.ban.title',
         ),
         invitation: const AppLocalizationsDataShiftsFeedInvitation(
-          title: 'Tvoje pozvánky na směny',
-          expiration: 'Pozvánka vyprší za',
+          title: 'shifts.feed.invitation.title',
+          expiration: 'shifts.feed.invitation.expiration',
           button: const AppLocalizationsDataShiftsFeedInvitationButton(
-            reject: 'Odmítnout',
-            accept: 'Přijmout',
+            reject: 'shifts.feed.invitation.button.reject',
+            accept: 'shifts.feed.invitation.button.accept',
           ),
         ),
         empty: const AppLocalizationsDataShiftsFeedEmpty(
-          loadAgain: 'Načíst znovu',
-          noFilter:
-              'Mrzí nás to, zrovna pro tebe v nabídce nic nemáme. Zkus prosím to později.',
-          loadAgainWithoutFilter: 'Zobrazit všechny brigády',
-          activeFilter:
-              'Bohužel pro tebe nemáme nic, co by odpovídalo tvému vyhledávání nebo nastavené lokalitě. \n\n Brzo ale očekávej nové brigády 💪',
+          loadAgain: 'shifts.feed.empty.loadAgain',
+          noFilter: 'shifts.feed.empty.noFilter',
+          loadAgainWithoutFilter: 'shifts.feed.empty.loadAgainWithoutFilter',
+          activeFilter: 'shifts.feed.empty.activeFilter',
         ),
       ),
       list: const AppLocalizationsDataShiftsList(
-        tomorrow: 'Zítra',
-        today: 'Dnes',
-        search: 'Hledat',
-        anywhere: 'Kdekoliv',
+        tomorrow: 'shifts.list.tomorrow',
+        today: 'shifts.list.today',
+        search: 'shifts.list.search',
+        anywhere: 'shifts.list.anywhere',
       ),
     ),
     signup: const AppLocalizationsDataSignup(
-      tocLink: 'podmínkami použití',
-      tocAgree: 'Souhlasím s',
-      title: 'Založení nového účtu',
+      tocLink: 'signup.tocLink',
+      tocAgree: 'signup.tocAgree',
+      title: 'signup.title',
       finish: const AppLocalizationsDataSignupFinish(
         success: const AppLocalizationsDataSignupFinishSuccess(
-          button: 'Otevřít aplikaci',
-          body: 'Všechny údaje můžeš upravit ve svém profilu.',
-          title: 'Děkujeme',
+          button: 'signup.finish.success.button',
+          body: 'signup.finish.success.body',
+          title: 'signup.finish.success.title',
         ),
         source: const AppLocalizationsDataSignupFinishSource(
-          otherHint: 'Kde jinde?',
-          other: 'Jiné',
+          otherHint: 'signup.finish.source.otherHint',
+          other: 'signup.finish.source.other',
         ),
         gender: const AppLocalizationsDataSignupFinishGender(
-          woman: 'Ženy',
-          man: 'Muže',
-          body:
-              'Respektujeme všechny gendery, ale zákon o prací definuje jenom 2.',
-          title: 'Hledáš brigádu spíše pro',
+          woman: 'signup.finish.gender.woman',
+          man: 'signup.finish.gender.man',
+          body: 'signup.finish.gender.body',
+          title: 'signup.finish.gender.title',
         ),
         locality: const AppLocalizationsDataSignupFinishLocality(
-          invalid: 'Vyber správnou lokalitu ze seznamu',
-          hint: 'Město',
-          label: 'Lokalita',
-          body: 'Vyber si lokalitu',
-          title: 'Kde hledáš práci?',
+          invalid: 'signup.finish.locality.invalid',
+          hint: 'signup.finish.locality.hint',
+          label: 'signup.finish.locality.label',
+          body: 'signup.finish.locality.body',
+          title: 'signup.finish.locality.title',
         ),
         password: const AppLocalizationsDataSignupFinishPassword(
-          tooShort: 'Heslo musí mít alespoň 8 znaků',
-          submit: 'Uložit heslo',
-          title: 'Nastav si heslo',
+          tooShort: 'signup.finish.password.tooShort',
+          submit: 'signup.finish.password.submit',
+          title: 'signup.finish.password.title',
         ),
       ),
       success: const AppLocalizationsDataSignupSuccess(
-        techSupport: 'LIVE CHAT',
-        sendEmailAgain: 'Odeslat e-mail znovu',
-        body:
-            'V e-mailu ověříš svůj nový Tymbe profil. Zkontroluj také schránku SPAM. Pokud e-mail nedorazil, kontaktuj nás přes live chat.',
-        title: 'Odeslali jsem ti e-mail',
+        techSupport: 'signup.success.techSupport',
+        sendEmailAgain: 'signup.success.sendEmailAgain',
+        body: 'signup.success.body',
+        title: 'signup.success.title',
       ),
       error: const AppLocalizationsDataSignupError(
-        emailTaken: 'Emailová adresa je již zabraná.',
+        emailTaken: 'signup.error.emailTaken',
       ),
       button: const AppLocalizationsDataSignupButton(
-        signup: 'Vytvořit účet',
+        signup: 'signup.button.signup',
       ),
       input: const AppLocalizationsDataSignupInput(
         email: const AppLocalizationsDataSignupInputEmail(
-          notValid: 'Neplatný e-mail',
-          missing: 'Zadej e-mail',
-          hint: 'karel.novak@gmail.com',
-          label: 'E-mail',
+          notValid: 'signup.input.email.notValid',
+          missing: 'signup.input.email.missing',
+          hint: 'signup.input.email.hint',
+          label: 'signup.input.email.label',
         ),
         lastName: const AppLocalizationsDataSignupInputLastName(
-          missing: 'Zadej příjmení',
-          hint: 'Novák',
-          label: 'Příjmení',
+          missing: 'signup.input.lastName.missing',
+          hint: 'signup.input.lastName.hint',
+          label: 'signup.input.lastName.label',
         ),
         firstName: const AppLocalizationsDataSignupInputFirstName(
-          missing: 'Zadej jméno',
-          hint: 'Karel',
-          label: 'Jméno',
+          missing: 'signup.input.firstName.missing',
+          hint: 'signup.input.firstName.hint',
+          label: 'signup.input.firstName.label',
         ),
       ),
       appbar: const AppLocalizationsDataSignupAppbar(
-        title: 'Nový účet',
+        title: 'signup.appbar.title',
       ),
     ),
     login: const AppLocalizationsDataLogin(
-      error: 'Neplatné přihlašovací údaje',
-      subtitle: 'Nejdřív se přihlas',
-      title: 'Ahoj, Tymbere!',
+      error: 'login.error',
+      subtitle: 'login.subtitle',
+      title: 'login.title',
       label: const AppLocalizationsDataLoginLabel(
-        tymbeCz: 'Tymbe.cz',
-        label: 'label',
-        noAccount: 'Ještě nemáš účet?',
+        tymbeCz: 'login.label.tymbeCz',
+        label: 'login.label.label',
+        noAccount: 'login.label.noAccount',
       ),
       button: const AppLocalizationsDataLoginButton(
-        changeLanguage: 'Změnit jazyk',
-        registration: 'Zaregistruj se',
-        login: 'Přihlásit se',
-        forgottenPassword: 'Zapomenuté heslo',
+        changeLanguage: 'login.button.changeLanguage',
+        registration: 'login.button.registration',
+        login: 'login.button.login',
+        forgottenPassword: 'login.button.forgottenPassword',
       ),
       input: const AppLocalizationsDataLoginInput(
         password: const AppLocalizationsDataLoginInputPassword(
-          hint: '•••••••••••',
-          label: 'Heslo',
+          hint: 'login.input.password.hint',
+          label: 'login.input.password.label',
         ),
         email: const AppLocalizationsDataLoginInputEmail(
-          hint: 'muj@email.cz',
-          label: 'E-mail',
+          hint: 'login.input.email.hint',
+          label: 'login.input.email.label',
         ),
       ),
     ),
     walkthrough: const AppLocalizationsDataWalkthrough(
       step3: const AppLocalizationsDataWalkthroughStep3(
-        description:
-            'S Tymbe si vyděláš víc. Když po brigádě ohodnotíš v aplikaci svou směnu, získáš navíc bonus za každou hodinu práce!',
-        title: 'Získej bonus',
+        description: 'walkthrough.step3.description',
+        title: 'walkthrough.step3.title',
       ),
       step2: const AppLocalizationsDataWalkthroughStep2(
-        description:
-            'Počkej na potvrzení docházky vedoucím a pak je jen na tobě, jestli chceš výplatu co nejdříve po směně a nebo třeba jednou za měsíc.',
-        title: 'Odpracuj si směnu',
+        description: 'walkthrough.step2.description',
+        title: 'walkthrough.step2.title',
       ),
       step1: const AppLocalizationsDataWalkthroughStep1(
-        description:
-            'Sám si řekni, jaká cena je pro tebe fajn, všechny potřebné dokumenty ti připravíme a podepsat je můžeš online.',
-        title: 'Vyber si tu pravou brigádu',
+        description: 'walkthrough.step1.description',
+        title: 'walkthrough.step1.title',
       ),
     ),
     validator: const AppLocalizationsDataValidator(
       czech: const AppLocalizationsDataValidatorCzech(
         zip: const AppLocalizationsDataValidatorCzechZip(
-          error: 'Neplatné PSČ',
+          error: 'validator.czech.zip.error',
         ),
         nationalNumber: const AppLocalizationsDataValidatorCzechNationalNumber(
-          error: 'Nejedná se o české rodné číslo',
+          error: 'validator.czech.nationalNumber.error',
         ),
       ),
     ),
     webAppBackup: const AppLocalizationsDataWebAppBackup(
-      title: 'Webová verze aplikace',
+      title: 'webAppBackup.title',
     ),
     dialog: const AppLocalizationsDataDialog(
-      incorrectPassword: 'Nesprávné heslo',
+      incorrectPassword: 'dialog.incorrectPassword',
       loggedOut: const AppLocalizationsDataDialogLoggedOut(
-        body: 'Pro pokračování je potřeba se znovu přihlásit.',
-        title: 'Přihlášení vypršelo',
+        body: 'dialog.loggedOut.body',
+        title: 'dialog.loggedOut.title',
       ),
-      hint: const AppLocalizationsDataDialogHint(
-        close: 'Zavřít nápovědu',
-      ),
+      hint: const AppLocalizationsDataDialogHint(close: 'dialog.hint.close'),
     ),
     error: const AppLocalizationsDataError(
-      webOpenFailed: 'Nepodařilo se otevřít webovou stránku',
+      webOpenFailed: 'error.webOpenFailed',
     ),
     bottomnav: const AppLocalizationsDataBottomnav(
       temping: const AppLocalizationsDataBottomnavTemping(
@@ -2669,47 +2592,46 @@ final localizedLabels = <Locale, AppLocalizationsData>{
     ),
     hint: const AppLocalizationsDataHint(
       credits: const AppLocalizationsDataHintCredits(
-        message:
-            'Jde o bonusové peníze, které můžeš získat vyplněním dotazníku po potvrzení docházky na směnu. Poté si je můžeš vyplatit jako normální peníze. \n\n 1 kredit = 1 Kč',
-        title: 'Kredity',
+        message: 'hint.credits.message',
+        title: 'hint.credits.title',
         button: const AppLocalizationsDataHintCreditsButton(
-          more: 'Více informací',
+          more: 'hint.credits.button.more',
         ),
       ),
     ),
     global: const AppLocalizationsDataGlobal(
-      tocLink: 'pravidly o zpracování osobních údajů.',
-      tocText: 'Odesláním formuláře potvrzuji, že jsem byl/a obeznámen/a s ',
-      tymbeCredits: 'Tymbe kredity',
-      credits: 'kreditů',
-      inMoreThanOneDay: 'dnů',
-      inOneDay: 'dne',
-      to: 'do',
-      from: 'od',
-      save: 'Uložit',
-      search: 'Hledat',
-      tryAgain: 'Zkusit znovu',
-      no: 'Ne',
-      yes: 'Ano',
-      perHour: '/h',
-      hour: 'h',
-      czechCrowns: 'Kč',
-      creditsPerHour: 'Kr/h',
-      ok: 'OK',
-      contactSupport: 'Live chat',
-      woman: 'Žena',
-      man: 'Muž',
-      skip: 'Přeskočit',
-      goOn: 'Pokračovat',
-      appname: 'Tymbe',
+      tocLink: 'global.tocLink',
+      tocText: 'global.tocText',
+      tymbeCredits: 'global.tymbeCredits',
+      credits: 'global.credits',
+      inMoreThanOneDay: 'global.inMoreThanOneDay',
+      inOneDay: 'global.inOneDay',
+      to: 'global.to',
+      from: 'global.from',
+      save: 'global.save',
+      search: 'global.search',
+      tryAgain: 'global.tryAgain',
+      no: 'global.no',
+      yes: 'global.yes',
+      perHour: 'global.perHour',
+      hour: 'global.hour',
+      czechCrowns: 'global.czechCrowns',
+      creditsPerHour: 'global.creditsPerHour',
+      ok: 'global.ok',
+      contactSupport: 'global.contactSupport',
+      woman: 'global.woman',
+      man: 'global.man',
+      skip: 'global.skip',
+      goOn: 'global.goOn',
+      appname: 'global.appname',
       input: const AppLocalizationsDataGlobalInput(
-        required: 'Povinné pole',
+        required: 'global.input.required',
       ),
       currency: const AppLocalizationsDataGlobalCurrency(
-        creditsShort: 'Kr',
-        credit: 'Kredit',
-        credits: 'Kredity',
-        creditsMoreThan4: 'Kreditů',
+        creditsShort: 'global.currency.creditsShort',
+        credit: 'global.currency.credit',
+        credits: 'global.currency.credits',
+        creditsMoreThan4: 'global.currency.creditsMoreThan4',
       ),
       language: const AppLocalizationsDataGlobalLanguage(
         cs: 't',
@@ -2719,11 +2641,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
   ),
 };
 
-enum Plural {
-  one,
-  zero,
-  multiple,
-}
+enum Plural { one, zero, multiple }
 
 class AppLocalizationsData {
   const AppLocalizationsData({
@@ -2801,81 +2719,117 @@ class AppLocalizationsData {
   final AppLocalizationsDataBottomnav bottomnav;
   final AppLocalizationsDataHint hint;
   final AppLocalizationsDataGlobal global;
-  factory AppLocalizationsData.fromJson(Map<String, Object?> map) =>
+  factory AppLocalizationsData.fromJson(
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsData(
         notifications: AppLocalizationsDataNotifications.fromJson(
-            map['notifications']! as Map<String, Object?>),
+          map['notifications']! as Map<String, Object?>,
+        ),
         select: AppLocalizationsDataSelect.fromJson(
-            map['select']! as Map<String, Object?>),
+          map['select']! as Map<String, Object?>,
+        ),
         absence: AppLocalizationsDataAbsence.fromJson(
-            map['absence']! as Map<String, Object?>),
+          map['absence']! as Map<String, Object?>,
+        ),
         blog: AppLocalizationsDataBlog.fromJson(
-            map['blog']! as Map<String, Object?>),
+          map['blog']! as Map<String, Object?>,
+        ),
         userStatus: AppLocalizationsDataUserStatus.fromJson(
-            map['userStatus']! as Map<String, Object?>),
+          map['userStatus']! as Map<String, Object?>,
+        ),
         documentUpload: AppLocalizationsDataDocumentUpload.fromJson(
-            map['documentUpload']! as Map<String, Object?>),
+          map['documentUpload']! as Map<String, Object?>,
+        ),
         supportChat: AppLocalizationsDataSupportChat.fromJson(
-            map['supportChat']! as Map<String, Object?>),
+          map['supportChat']! as Map<String, Object?>,
+        ),
         documentType: AppLocalizationsDataDocumentType.fromJson(
-            map['documentType']! as Map<String, Object?>),
+          map['documentType']! as Map<String, Object?>,
+        ),
         updateRequired: AppLocalizationsDataUpdateRequired.fromJson(
-            map['updateRequired']! as Map<String, Object?>),
+          map['updateRequired']! as Map<String, Object?>,
+        ),
         emergencyShutdown: AppLocalizationsDataEmergencyShutdown.fromJson(
-            map['emergencyShutdown']! as Map<String, Object?>),
+          map['emergencyShutdown']! as Map<String, Object?>,
+        ),
         components: AppLocalizationsDataComponents.fromJson(
-            map['components']! as Map<String, Object?>),
+          map['components']! as Map<String, Object?>,
+        ),
         documentTileStateEnum:
             AppLocalizationsDataDocumentTileStateEnum.fromJson(
-                map['documentTileStateEnum']! as Map<String, Object?>),
+          map['documentTileStateEnum']! as Map<String, Object?>,
+        ),
         tax: AppLocalizationsDataTax.fromJson(
             map['tax']! as Map<String, Object?>),
         profile: AppLocalizationsDataProfile.fromJson(
-            map['profile']! as Map<String, Object?>),
+          map['profile']! as Map<String, Object?>,
+        ),
         tyApiGender: AppLocalizationsDataTyApiGender.fromJson(
-            map['tyApiGender']! as Map<String, Object?>),
+          map['tyApiGender']! as Map<String, Object?>,
+        ),
         attendance: AppLocalizationsDataAttendance.fromJson(
-            map['attendance']! as Map<String, Object?>),
+          map['attendance']! as Map<String, Object?>,
+        ),
         credits: AppLocalizationsDataCredits.fromJson(
-            map['credits']! as Map<String, Object?>),
+          map['credits']! as Map<String, Object?>,
+        ),
         wallet: AppLocalizationsDataWallet.fromJson(
-            map['wallet']! as Map<String, Object?>),
+          map['wallet']! as Map<String, Object?>,
+        ),
         day: AppLocalizationsDataDay.fromJson(
             map['day']! as Map<String, Object?>),
         month: AppLocalizationsDataMonth.fromJson(
-            map['month']! as Map<String, Object?>),
+          map['month']! as Map<String, Object?>,
+        ),
         failure: AppLocalizationsDataFailure.fromJson(
-            map['failure']! as Map<String, Object?>),
+          map['failure']! as Map<String, Object?>,
+        ),
         appSettings: AppLocalizationsDataAppSettings.fromJson(
-            map['appSettings']! as Map<String, Object?>),
+          map['appSettings']! as Map<String, Object?>,
+        ),
         activateAccount: AppLocalizationsDataActivateAccount.fromJson(
-            map['activateAccount']! as Map<String, Object?>),
+          map['activateAccount']! as Map<String, Object?>,
+        ),
         newPassword: AppLocalizationsDataNewPassword.fromJson(
-            map['newPassword']! as Map<String, Object?>),
+          map['newPassword']! as Map<String, Object?>,
+        ),
         forgottenPassword: AppLocalizationsDataForgottenPassword.fromJson(
-            map['forgottenPassword']! as Map<String, Object?>),
+          map['forgottenPassword']! as Map<String, Object?>,
+        ),
         shifts: AppLocalizationsDataShifts.fromJson(
-            map['shifts']! as Map<String, Object?>),
+          map['shifts']! as Map<String, Object?>,
+        ),
         signup: AppLocalizationsDataSignup.fromJson(
-            map['signup']! as Map<String, Object?>),
+          map['signup']! as Map<String, Object?>,
+        ),
         login: AppLocalizationsDataLogin.fromJson(
-            map['login']! as Map<String, Object?>),
+          map['login']! as Map<String, Object?>,
+        ),
         walkthrough: AppLocalizationsDataWalkthrough.fromJson(
-            map['walkthrough']! as Map<String, Object?>),
+          map['walkthrough']! as Map<String, Object?>,
+        ),
         validator: AppLocalizationsDataValidator.fromJson(
-            map['validator']! as Map<String, Object?>),
+          map['validator']! as Map<String, Object?>,
+        ),
         webAppBackup: AppLocalizationsDataWebAppBackup.fromJson(
-            map['webAppBackup']! as Map<String, Object?>),
+          map['webAppBackup']! as Map<String, Object?>,
+        ),
         dialog: AppLocalizationsDataDialog.fromJson(
-            map['dialog']! as Map<String, Object?>),
+          map['dialog']! as Map<String, Object?>,
+        ),
         error: AppLocalizationsDataError.fromJson(
-            map['error']! as Map<String, Object?>),
+          map['error']! as Map<String, Object?>,
+        ),
         bottomnav: AppLocalizationsDataBottomnav.fromJson(
-            map['bottomnav']! as Map<String, Object?>),
+          map['bottomnav']! as Map<String, Object?>,
+        ),
         hint: AppLocalizationsDataHint.fromJson(
-            map['hint']! as Map<String, Object?>),
+          map['hint']! as Map<String, Object?>,
+        ),
         global: AppLocalizationsDataGlobal.fromJson(
-            map['global']! as Map<String, Object?>),
+          map['global']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsData copyWith({
@@ -3046,7 +3000,8 @@ class AppLocalizationsDataNotifications {
   final String allAsRead;
   final String title;
   factory AppLocalizationsDataNotifications.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataNotifications(
         allAsRead: map['allAsRead']! as String,
         title: map['title']! as String,
@@ -3073,22 +3028,14 @@ class AppLocalizationsDataNotifications {
 }
 
 class AppLocalizationsDataSelect {
-  const AppLocalizationsDataSelect({
-    required this.hint,
-  });
+  const AppLocalizationsDataSelect({required this.hint});
 
   final String hint;
   factory AppLocalizationsDataSelect.fromJson(Map<String, Object?> map) =>
-      AppLocalizationsDataSelect(
-        hint: map['hint']! as String,
-      );
+      AppLocalizationsDataSelect(hint: map['hint']! as String);
 
-  AppLocalizationsDataSelect copyWith({
-    String? hint,
-  }) =>
-      AppLocalizationsDataSelect(
-        hint: hint ?? this.hint,
-      );
+  AppLocalizationsDataSelect copyWith({String? hint}) =>
+      AppLocalizationsDataSelect(hint: hint ?? this.hint);
 
   @override
   bool operator ==(Object other) =>
@@ -3125,16 +3072,10 @@ class AppLocalizationsDataAbsence {
   final AppLocalizationsDataAbsenceClarification clarification;
   final AppLocalizationsDataAbsenceMissing missing;
 
-  String countDown({
-    required String duration,
-    String? locale,
-  }) {
-    return _countDown.insertTemplateValues(
-      {
-        'duration': duration,
-      },
-      locale: locale,
-    );
+  String countDown({required String duration, String? locale}) {
+    return _countDown.insertTemplateValues({
+      'duration': duration,
+    }, locale: locale);
   }
 
   factory AppLocalizationsDataAbsence.fromJson(Map<String, Object?> map) =>
@@ -3144,19 +3085,26 @@ class AppLocalizationsDataAbsence {
         countDown: map['countDown']! as String,
         adminNote: map['adminNote']! as String,
         alert: AppLocalizationsDataAbsenceAlert.fromJson(
-            map['alert']! as Map<String, Object?>),
+          map['alert']! as Map<String, Object?>,
+        ),
         rejected: AppLocalizationsDataAbsenceRejected.fromJson(
-            map['rejected']! as Map<String, Object?>),
+          map['rejected']! as Map<String, Object?>,
+        ),
         processing: AppLocalizationsDataAbsenceProcessing.fromJson(
-            map['processing']! as Map<String, Object?>),
+          map['processing']! as Map<String, Object?>,
+        ),
         approved: AppLocalizationsDataAbsenceApproved.fromJson(
-            map['approved']! as Map<String, Object?>),
+          map['approved']! as Map<String, Object?>,
+        ),
         screen: AppLocalizationsDataAbsenceScreen.fromJson(
-            map['screen']! as Map<String, Object?>),
+          map['screen']! as Map<String, Object?>,
+        ),
         clarification: AppLocalizationsDataAbsenceClarification.fromJson(
-            map['clarification']! as Map<String, Object?>),
+          map['clarification']! as Map<String, Object?>,
+        ),
         missing: AppLocalizationsDataAbsenceMissing.fromJson(
-            map['missing']! as Map<String, Object?>),
+          map['missing']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataAbsence copyWith({
@@ -3231,10 +3179,7 @@ class AppLocalizationsDataAbsenceAlert {
         title: map['title']! as String,
       );
 
-  AppLocalizationsDataAbsenceAlert copyWith({
-    String? body,
-    String? title,
-  }) =>
+  AppLocalizationsDataAbsenceAlert copyWith({String? body, String? title}) =>
       AppLocalizationsDataAbsenceAlert(
         body: body ?? this.body,
         title: title ?? this.title,
@@ -3259,16 +3204,14 @@ class AppLocalizationsDataAbsenceRejected {
   final String chip;
   final String title;
   factory AppLocalizationsDataAbsenceRejected.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAbsenceRejected(
         chip: map['chip']! as String,
         title: map['title']! as String,
       );
 
-  AppLocalizationsDataAbsenceRejected copyWith({
-    String? chip,
-    String? title,
-  }) =>
+  AppLocalizationsDataAbsenceRejected copyWith({String? chip, String? title}) =>
       AppLocalizationsDataAbsenceRejected(
         chip: chip ?? this.chip,
         title: title ?? this.title,
@@ -3297,7 +3240,8 @@ class AppLocalizationsDataAbsenceProcessing {
   final String description;
   final String title;
   factory AppLocalizationsDataAbsenceProcessing.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAbsenceProcessing(
         chip: map['chip']! as String,
         button: map['button']! as String,
@@ -3336,23 +3280,16 @@ class AppLocalizationsDataAbsenceProcessing {
 }
 
 class AppLocalizationsDataAbsenceApproved {
-  const AppLocalizationsDataAbsenceApproved({
-    required this.chip,
-  });
+  const AppLocalizationsDataAbsenceApproved({required this.chip});
 
   final String chip;
   factory AppLocalizationsDataAbsenceApproved.fromJson(
-          Map<String, Object?> map) =>
-      AppLocalizationsDataAbsenceApproved(
-        chip: map['chip']! as String,
-      );
+    Map<String, Object?> map,
+  ) =>
+      AppLocalizationsDataAbsenceApproved(chip: map['chip']! as String);
 
-  AppLocalizationsDataAbsenceApproved copyWith({
-    String? chip,
-  }) =>
-      AppLocalizationsDataAbsenceApproved(
-        chip: chip ?? this.chip,
-      );
+  AppLocalizationsDataAbsenceApproved copyWith({String? chip}) =>
+      AppLocalizationsDataAbsenceApproved(chip: chip ?? this.chip);
 
   @override
   bool operator ==(Object other) =>
@@ -3379,16 +3316,19 @@ class AppLocalizationsDataAbsenceScreen {
   final AppLocalizationsDataAbsenceScreenReason reason;
   final AppLocalizationsDataAbsenceScreenCategory category;
   factory AppLocalizationsDataAbsenceScreen.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAbsenceScreen(
         buttonClarify: map['buttonClarify']! as String,
         buttonExcuse: map['buttonExcuse']! as String,
         description: map['description']! as String,
         title: map['title']! as String,
         reason: AppLocalizationsDataAbsenceScreenReason.fromJson(
-            map['reason']! as Map<String, Object?>),
+          map['reason']! as Map<String, Object?>,
+        ),
         category: AppLocalizationsDataAbsenceScreenCategory.fromJson(
-            map['category']! as Map<String, Object?>),
+          map['category']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataAbsenceScreen copyWith({
@@ -3430,23 +3370,16 @@ class AppLocalizationsDataAbsenceScreen {
 }
 
 class AppLocalizationsDataAbsenceScreenReason {
-  const AppLocalizationsDataAbsenceScreenReason({
-    required this.label,
-  });
+  const AppLocalizationsDataAbsenceScreenReason({required this.label});
 
   final String label;
   factory AppLocalizationsDataAbsenceScreenReason.fromJson(
-          Map<String, Object?> map) =>
-      AppLocalizationsDataAbsenceScreenReason(
-        label: map['label']! as String,
-      );
+    Map<String, Object?> map,
+  ) =>
+      AppLocalizationsDataAbsenceScreenReason(label: map['label']! as String);
 
-  AppLocalizationsDataAbsenceScreenReason copyWith({
-    String? label,
-  }) =>
-      AppLocalizationsDataAbsenceScreenReason(
-        label: label ?? this.label,
-      );
+  AppLocalizationsDataAbsenceScreenReason copyWith({String? label}) =>
+      AppLocalizationsDataAbsenceScreenReason(label: label ?? this.label);
 
   @override
   bool operator ==(Object other) =>
@@ -3474,7 +3407,8 @@ class AppLocalizationsDataAbsenceScreenCategory {
   final String illness;
   final String label;
   factory AppLocalizationsDataAbsenceScreenCategory.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAbsenceScreenCategory(
         other: map['other']! as String,
         familyDeath: map['familyDeath']! as String,
@@ -3531,7 +3465,8 @@ class AppLocalizationsDataAbsenceClarification {
   final String button;
   final String title;
   factory AppLocalizationsDataAbsenceClarification.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAbsenceClarification(
         button: map['button']! as String,
         title: map['title']! as String,
@@ -3567,7 +3502,8 @@ class AppLocalizationsDataAbsenceMissing {
   final String description;
   final String title;
   factory AppLocalizationsDataAbsenceMissing.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAbsenceMissing(
         button: map['button']! as String,
         description: map['description']! as String,
@@ -3601,10 +3537,7 @@ class AppLocalizationsDataAbsenceMissing {
 }
 
 class AppLocalizationsDataBlog {
-  const AppLocalizationsDataBlog({
-    required this.title,
-    required this.banner,
-  });
+  const AppLocalizationsDataBlog({required this.title, required this.banner});
 
   final String title;
   final AppLocalizationsDataBlogBanner banner;
@@ -3612,7 +3545,8 @@ class AppLocalizationsDataBlog {
       AppLocalizationsDataBlog(
         title: map['title']! as String,
         banner: AppLocalizationsDataBlogBanner.fromJson(
-            map['banner']! as Map<String, Object?>),
+          map['banner']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataBlog copyWith({
@@ -3635,22 +3569,14 @@ class AppLocalizationsDataBlog {
 }
 
 class AppLocalizationsDataBlogBanner {
-  const AppLocalizationsDataBlogBanner({
-    required this.hint,
-  });
+  const AppLocalizationsDataBlogBanner({required this.hint});
 
   final String hint;
   factory AppLocalizationsDataBlogBanner.fromJson(Map<String, Object?> map) =>
-      AppLocalizationsDataBlogBanner(
-        hint: map['hint']! as String,
-      );
+      AppLocalizationsDataBlogBanner(hint: map['hint']! as String);
 
-  AppLocalizationsDataBlogBanner copyWith({
-    String? hint,
-  }) =>
-      AppLocalizationsDataBlogBanner(
-        hint: hint ?? this.hint,
-      );
+  AppLocalizationsDataBlogBanner copyWith({String? hint}) =>
+      AppLocalizationsDataBlogBanner(hint: hint ?? this.hint);
 
   @override
   bool operator ==(Object other) =>
@@ -3679,17 +3605,22 @@ class AppLocalizationsDataUserStatus {
       AppLocalizationsDataUserStatus(
         missingHealthInsuranceCard:
             AppLocalizationsDataUserStatusMissingHealthInsuranceCard.fromJson(
-                map['missingHealthInsuranceCard']! as Map<String, Object?>),
+          map['missingHealthInsuranceCard']! as Map<String, Object?>,
+        ),
         missingPhoneNumber:
             AppLocalizationsDataUserStatusMissingPhoneNumber.fromJson(
-                map['missingPhoneNumber']! as Map<String, Object?>),
+          map['missingPhoneNumber']! as Map<String, Object?>,
+        ),
         missingBankAccount:
             AppLocalizationsDataUserStatusMissingBankAccount.fromJson(
-                map['missingBankAccount']! as Map<String, Object?>),
+          map['missingBankAccount']! as Map<String, Object?>,
+        ),
         idNotVerified: AppLocalizationsDataUserStatusIdNotVerified.fromJson(
-            map['idNotVerified']! as Map<String, Object?>),
+          map['idNotVerified']! as Map<String, Object?>,
+        ),
         expiredIdCard: AppLocalizationsDataUserStatusExpiredIdCard.fromJson(
-            map['expiredIdCard']! as Map<String, Object?>),
+          map['expiredIdCard']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataUserStatus copyWith({
@@ -3739,7 +3670,8 @@ class AppLocalizationsDataUserStatusMissingHealthInsuranceCard {
   final String description;
   final String title;
   factory AppLocalizationsDataUserStatusMissingHealthInsuranceCard.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataUserStatusMissingHealthInsuranceCard(
         mainButton: map['mainButton']! as String,
         description: map['description']! as String,
@@ -3783,7 +3715,8 @@ class AppLocalizationsDataUserStatusMissingPhoneNumber {
   final String description;
   final String title;
   factory AppLocalizationsDataUserStatusMissingPhoneNumber.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataUserStatusMissingPhoneNumber(
         mainButton: map['mainButton']! as String,
         description: map['description']! as String,
@@ -3827,7 +3760,8 @@ class AppLocalizationsDataUserStatusMissingBankAccount {
   final String description;
   final String title;
   factory AppLocalizationsDataUserStatusMissingBankAccount.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataUserStatusMissingBankAccount(
         mainButton: map['mainButton']! as String,
         description: map['description']! as String,
@@ -3871,7 +3805,8 @@ class AppLocalizationsDataUserStatusIdNotVerified {
   final String description;
   final String title;
   factory AppLocalizationsDataUserStatusIdNotVerified.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataUserStatusIdNotVerified(
         mainButton: map['mainButton']! as String,
         description: map['description']! as String,
@@ -3915,7 +3850,8 @@ class AppLocalizationsDataUserStatusExpiredIdCard {
   final String description;
   final String title;
   factory AppLocalizationsDataUserStatusExpiredIdCard.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataUserStatusExpiredIdCard(
         mainButton: map['mainButton']! as String,
         description: map['description']! as String,
@@ -3973,29 +3909,39 @@ class AppLocalizationsDataDocumentUpload {
   final AppLocalizationsDataDocumentUploadIdentificationPick identificationPick;
   final AppLocalizationsDataDocumentUploadPopDialog popDialog;
   factory AppLocalizationsDataDocumentUpload.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUpload(
         title: map['title']! as String,
         success: AppLocalizationsDataDocumentUploadSuccess.fromJson(
-            map['success']! as Map<String, Object?>),
+          map['success']! as Map<String, Object?>,
+        ),
         dataFill: AppLocalizationsDataDocumentUploadDataFill.fromJson(
-            map['dataFill']! as Map<String, Object?>),
+          map['dataFill']! as Map<String, Object?>,
+        ),
         filesCheck: AppLocalizationsDataDocumentUploadFilesCheck.fromJson(
-            map['filesCheck']! as Map<String, Object?>),
+          map['filesCheck']! as Map<String, Object?>,
+        ),
         photoCheck: AppLocalizationsDataDocumentUploadPhotoCheck.fromJson(
-            map['photoCheck']! as Map<String, Object?>),
+          map['photoCheck']! as Map<String, Object?>,
+        ),
         filePicker: AppLocalizationsDataDocumentUploadFilePicker.fromJson(
-            map['filePicker']! as Map<String, Object?>),
+          map['filePicker']! as Map<String, Object?>,
+        ),
         photoTake: AppLocalizationsDataDocumentUploadPhotoTake.fromJson(
-            map['photoTake']! as Map<String, Object?>),
+          map['photoTake']! as Map<String, Object?>,
+        ),
         noCameraAvailable:
             AppLocalizationsDataDocumentUploadNoCameraAvailable.fromJson(
-                map['noCameraAvailable']! as Map<String, Object?>),
+          map['noCameraAvailable']! as Map<String, Object?>,
+        ),
         identificationPick:
             AppLocalizationsDataDocumentUploadIdentificationPick.fromJson(
-                map['identificationPick']! as Map<String, Object?>),
+          map['identificationPick']! as Map<String, Object?>,
+        ),
         popDialog: AppLocalizationsDataDocumentUploadPopDialog.fromJson(
-            map['popDialog']! as Map<String, Object?>),
+          map['popDialog']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataDocumentUpload copyWith({
@@ -4063,7 +4009,8 @@ class AppLocalizationsDataDocumentUploadSuccess {
   final String description;
   final String title;
   factory AppLocalizationsDataDocumentUploadSuccess.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadSuccess(
         button: map['button']! as String,
         description: map['description']! as String,
@@ -4134,7 +4081,8 @@ class AppLocalizationsDataDocumentUploadDataFill {
   final AppLocalizationsDataDocumentUploadDataFillPermanentAddress
       permanentAddress;
   factory AppLocalizationsDataDocumentUploadDataFill.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadDataFill(
         button: map['button']! as String,
         info: map['info']! as String,
@@ -4152,10 +4100,12 @@ class AppLocalizationsDataDocumentUploadDataFill {
         title: map['title']! as String,
         duplicateId:
             AppLocalizationsDataDocumentUploadDataFillDuplicateId.fromJson(
-                map['duplicateId']! as Map<String, Object?>),
+          map['duplicateId']! as Map<String, Object?>,
+        ),
         permanentAddress:
             AppLocalizationsDataDocumentUploadDataFillPermanentAddress.fromJson(
-                map['permanentAddress']! as Map<String, Object?>),
+          map['permanentAddress']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataDocumentUploadDataFill copyWith({
@@ -4248,7 +4198,8 @@ class AppLocalizationsDataDocumentUploadDataFillDuplicateId {
   final String message;
   final String title;
   factory AppLocalizationsDataDocumentUploadDataFillDuplicateId.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadDataFillDuplicateId(
         button: map['button']! as String,
         message: map['message']! as String,
@@ -4296,7 +4247,8 @@ class AppLocalizationsDataDocumentUploadDataFillPermanentAddress {
   final String subitle;
   final String title;
   factory AppLocalizationsDataDocumentUploadDataFillPermanentAddress.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadDataFillPermanentAddress(
         appBarTitle: map['appBarTitle']! as String,
         submit: map['submit']! as String,
@@ -4350,12 +4302,14 @@ class AppLocalizationsDataDocumentUploadFilesCheck {
   final String next;
   final AppLocalizationsDataDocumentUploadFilesCheckHint hint;
   factory AppLocalizationsDataDocumentUploadFilesCheck.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadFilesCheck(
         uploadMore: map['uploadMore']! as String,
         next: map['next']! as String,
         hint: AppLocalizationsDataDocumentUploadFilesCheckHint.fromJson(
-            map['hint']! as Map<String, Object?>),
+          map['hint']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataDocumentUploadFilesCheck copyWith({
@@ -4393,7 +4347,8 @@ class AppLocalizationsDataDocumentUploadFilesCheckHint {
   final String description;
   final String title;
   factory AppLocalizationsDataDocumentUploadFilesCheckHint.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadFilesCheckHint(
         description: map['description']! as String,
         title: map['title']! as String,
@@ -4436,7 +4391,8 @@ class AppLocalizationsDataDocumentUploadPhotoCheck {
   final String description;
   final String title;
   factory AppLocalizationsDataDocumentUploadPhotoCheck.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadPhotoCheck(
         upload: map['upload']! as String,
         retake: map['retake']! as String,
@@ -4485,24 +4441,22 @@ class AppLocalizationsDataDocumentUploadPhotoCheck {
 }
 
 class AppLocalizationsDataDocumentUploadFilePicker {
-  const AppLocalizationsDataDocumentUploadFilePicker({
-    required this.type,
-  });
+  const AppLocalizationsDataDocumentUploadFilePicker({required this.type});
 
   final AppLocalizationsDataDocumentUploadFilePickerType type;
   factory AppLocalizationsDataDocumentUploadFilePicker.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadFilePicker(
         type: AppLocalizationsDataDocumentUploadFilePickerType.fromJson(
-            map['type']! as Map<String, Object?>),
+          map['type']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataDocumentUploadFilePicker copyWith({
     AppLocalizationsDataDocumentUploadFilePickerType? type,
   }) =>
-      AppLocalizationsDataDocumentUploadFilePicker(
-        type: type ?? this.type,
-      );
+      AppLocalizationsDataDocumentUploadFilePicker(type: type ?? this.type);
 
   @override
   bool operator ==(Object other) =>
@@ -4524,7 +4478,8 @@ class AppLocalizationsDataDocumentUploadFilePickerType {
   final String files;
   final String title;
   factory AppLocalizationsDataDocumentUploadFilePickerType.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadFilePickerType(
         images: map['images']! as String,
         files: map['files']! as String,
@@ -4565,7 +4520,8 @@ class AppLocalizationsDataDocumentUploadPhotoTake {
   final String backPage;
   final String frontPage;
   factory AppLocalizationsDataDocumentUploadPhotoTake.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadPhotoTake(
         general: map['general']! as String,
         backPage: map['backPage']! as String,
@@ -4607,7 +4563,8 @@ class AppLocalizationsDataDocumentUploadNoCameraAvailable {
   final String description;
   final String title;
   factory AppLocalizationsDataDocumentUploadNoCameraAvailable.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadNoCameraAvailable(
         description: map['description']! as String,
         title: map['title']! as String,
@@ -4650,7 +4607,8 @@ class AppLocalizationsDataDocumentUploadIdentificationPick {
   final String subtitle;
   final String title;
   factory AppLocalizationsDataDocumentUploadIdentificationPick.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadIdentificationPick(
         residencePermit: map['residencePermit']! as String,
         visa: map['visa']! as String,
@@ -4709,12 +4667,14 @@ class AppLocalizationsDataDocumentUploadPopDialog {
   final String title;
   final AppLocalizationsDataDocumentUploadPopDialogButton button;
   factory AppLocalizationsDataDocumentUploadPopDialog.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadPopDialog(
         message: map['message']! as String,
         title: map['title']! as String,
         button: AppLocalizationsDataDocumentUploadPopDialogButton.fromJson(
-            map['button']! as Map<String, Object?>),
+          map['button']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataDocumentUploadPopDialog copyWith({
@@ -4752,7 +4712,8 @@ class AppLocalizationsDataDocumentUploadPopDialogButton {
   final String continueUpload;
   final String leaveScreen;
   factory AppLocalizationsDataDocumentUploadPopDialogButton.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentUploadPopDialogButton(
         continueUpload: map['continueUpload']! as String,
         leaveScreen: map['leaveScreen']! as String,
@@ -4779,22 +4740,14 @@ class AppLocalizationsDataDocumentUploadPopDialogButton {
 }
 
 class AppLocalizationsDataSupportChat {
-  const AppLocalizationsDataSupportChat({
-    required this.title,
-  });
+  const AppLocalizationsDataSupportChat({required this.title});
 
   final String title;
   factory AppLocalizationsDataSupportChat.fromJson(Map<String, Object?> map) =>
-      AppLocalizationsDataSupportChat(
-        title: map['title']! as String,
-      );
+      AppLocalizationsDataSupportChat(title: map['title']! as String);
 
-  AppLocalizationsDataSupportChat copyWith({
-    String? title,
-  }) =>
-      AppLocalizationsDataSupportChat(
-        title: title ?? this.title,
-      );
+  AppLocalizationsDataSupportChat copyWith({String? title}) =>
+      AppLocalizationsDataSupportChat(title: title ?? this.title);
 
   @override
   bool operator ==(Object other) =>
@@ -5013,7 +4966,8 @@ class AppLocalizationsDataUpdateRequired {
   final String description;
   final String title;
   factory AppLocalizationsDataUpdateRequired.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataUpdateRequired(
         button: map['button']! as String,
         description: map['description']! as String,
@@ -5057,12 +5011,14 @@ class AppLocalizationsDataEmergencyShutdown {
   final String title;
   final AppLocalizationsDataEmergencyShutdownButton button;
   factory AppLocalizationsDataEmergencyShutdown.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataEmergencyShutdown(
         description: map['description']! as String,
         title: map['title']! as String,
         button: AppLocalizationsDataEmergencyShutdownButton.fromJson(
-            map['button']! as Map<String, Object?>),
+          map['button']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataEmergencyShutdown copyWith({
@@ -5102,7 +5058,8 @@ class AppLocalizationsDataEmergencyShutdownButton {
   final String launchWebApp;
   final String closeApp;
   factory AppLocalizationsDataEmergencyShutdownButton.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataEmergencyShutdownButton(
         contactSupport: map['contactSupport']! as String,
         launchWebApp: map['launchWebApp']! as String,
@@ -5136,23 +5093,20 @@ class AppLocalizationsDataEmergencyShutdownButton {
 }
 
 class AppLocalizationsDataComponents {
-  const AppLocalizationsDataComponents({
-    required this.scrollView,
-  });
+  const AppLocalizationsDataComponents({required this.scrollView});
 
   final AppLocalizationsDataComponentsScrollView scrollView;
   factory AppLocalizationsDataComponents.fromJson(Map<String, Object?> map) =>
       AppLocalizationsDataComponents(
         scrollView: AppLocalizationsDataComponentsScrollView.fromJson(
-            map['scrollView']! as Map<String, Object?>),
+          map['scrollView']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataComponents copyWith({
     AppLocalizationsDataComponentsScrollView? scrollView,
   }) =>
-      AppLocalizationsDataComponents(
-        scrollView: scrollView ?? this.scrollView,
-      );
+      AppLocalizationsDataComponents(scrollView: scrollView ?? this.scrollView);
 
   @override
   bool operator ==(Object other) =>
@@ -5164,33 +5118,23 @@ class AppLocalizationsDataComponents {
 }
 
 class AppLocalizationsDataComponentsScrollView {
-  const AppLocalizationsDataComponentsScrollView({
-    required String loadMoreFun,
-  }) : _loadMoreFun = loadMoreFun;
+  const AppLocalizationsDataComponentsScrollView({required String loadMoreFun})
+      : _loadMoreFun = loadMoreFun;
 
   final String _loadMoreFun;
 
-  String loadMoreFun({
-    required String left,
-    String? locale,
-  }) {
-    return _loadMoreFun.insertTemplateValues(
-      {
-        'left': left,
-      },
-      locale: locale,
-    );
+  String loadMoreFun({required String left, String? locale}) {
+    return _loadMoreFun.insertTemplateValues({'left': left}, locale: locale);
   }
 
   factory AppLocalizationsDataComponentsScrollView.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataComponentsScrollView(
         loadMoreFun: map['loadMoreFun']! as String,
       );
 
-  AppLocalizationsDataComponentsScrollView copyWith({
-    String? loadMoreFun,
-  }) =>
+  AppLocalizationsDataComponentsScrollView copyWith({String? loadMoreFun}) =>
       AppLocalizationsDataComponentsScrollView(
         loadMoreFun: loadMoreFun ?? _loadMoreFun,
       );
@@ -5219,20 +5163,13 @@ class AppLocalizationsDataDocumentTileStateEnum {
   final String notUploaded;
   final String rejected;
 
-  String valid({
-    required String date,
-    String? locale,
-  }) {
-    return _valid.insertTemplateValues(
-      {
-        'date': date,
-      },
-      locale: locale,
-    );
+  String valid({required String date, String? locale}) {
+    return _valid.insertTemplateValues({'date': date}, locale: locale);
   }
 
   factory AppLocalizationsDataDocumentTileStateEnum.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDocumentTileStateEnum(
         valid: map['valid']! as String,
         processing: map['processing']! as String,
@@ -5294,17 +5231,23 @@ class AppLocalizationsDataTax {
   factory AppLocalizationsDataTax.fromJson(Map<String, Object?> map) =>
       AppLocalizationsDataTax(
         adjustment: AppLocalizationsDataTaxAdjustment.fromJson(
-            map['adjustment']! as Map<String, Object?>),
+          map['adjustment']! as Map<String, Object?>,
+        ),
         income: AppLocalizationsDataTaxIncome.fromJson(
-            map['income']! as Map<String, Object?>),
+          map['income']! as Map<String, Object?>,
+        ),
         blocking: AppLocalizationsDataTaxBlocking.fromJson(
-            map['blocking']! as Map<String, Object?>),
+          map['blocking']! as Map<String, Object?>,
+        ),
         health: AppLocalizationsDataTaxHealth.fromJson(
-            map['health']! as Map<String, Object?>),
+          map['health']! as Map<String, Object?>,
+        ),
         social: AppLocalizationsDataTaxSocial.fromJson(
-            map['social']! as Map<String, Object?>),
+          map['social']! as Map<String, Object?>,
+        ),
         advance: AppLocalizationsDataTaxAdvance.fromJson(
-            map['advance']! as Map<String, Object?>),
+          map['advance']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataTax copyWith({
@@ -5363,25 +5306,31 @@ class AppLocalizationsDataTaxAdjustment {
   final AppLocalizationsDataTaxAdjustmentStudentDiscount studentDiscount;
   final AppLocalizationsDataTaxAdjustmentTaxpayerDiscount taxpayerDiscount;
   factory AppLocalizationsDataTaxAdjustment.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataTaxAdjustment(
         base: map['base']! as String,
         healthAdditional:
             AppLocalizationsDataTaxAdjustmentHealthAdditional.fromJson(
-                map['healthAdditional']! as Map<String, Object?>),
+          map['healthAdditional']! as Map<String, Object?>,
+        ),
         disabilityDiscount:
             AppLocalizationsDataTaxAdjustmentDisabilityDiscount.fromJson(
-                map['disabilityDiscount']! as Map<String, Object?>),
+          map['disabilityDiscount']! as Map<String, Object?>,
+        ),
         disabilityRetirementDiscount:
             AppLocalizationsDataTaxAdjustmentDisabilityRetirementDiscount
-                .fromJson(map['disabilityRetirementDiscount']!
-                    as Map<String, Object?>),
+                .fromJson(
+          map['disabilityRetirementDiscount']! as Map<String, Object?>,
+        ),
         studentDiscount:
             AppLocalizationsDataTaxAdjustmentStudentDiscount.fromJson(
-                map['studentDiscount']! as Map<String, Object?>),
+          map['studentDiscount']! as Map<String, Object?>,
+        ),
         taxpayerDiscount:
             AppLocalizationsDataTaxAdjustmentTaxpayerDiscount.fromJson(
-                map['taxpayerDiscount']! as Map<String, Object?>),
+          map['taxpayerDiscount']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataTaxAdjustment copyWith({
@@ -5433,7 +5382,8 @@ class AppLocalizationsDataTaxAdjustmentHealthAdditional {
   final String desc;
   final String name;
   factory AppLocalizationsDataTaxAdjustmentHealthAdditional.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataTaxAdjustmentHealthAdditional(
         desc: map['desc']! as String,
         name: map['name']! as String,
@@ -5465,7 +5415,8 @@ class AppLocalizationsDataTaxAdjustmentDisabilityDiscount {
 
   final String name;
   factory AppLocalizationsDataTaxAdjustmentDisabilityDiscount.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataTaxAdjustmentDisabilityDiscount(
         name: map['name']! as String,
       );
@@ -5493,7 +5444,8 @@ class AppLocalizationsDataTaxAdjustmentDisabilityRetirementDiscount {
 
   final String name;
   factory AppLocalizationsDataTaxAdjustmentDisabilityRetirementDiscount.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataTaxAdjustmentDisabilityRetirementDiscount(
         name: map['name']! as String,
       );
@@ -5515,23 +5467,18 @@ class AppLocalizationsDataTaxAdjustmentDisabilityRetirementDiscount {
 }
 
 class AppLocalizationsDataTaxAdjustmentStudentDiscount {
-  const AppLocalizationsDataTaxAdjustmentStudentDiscount({
-    required this.name,
-  });
+  const AppLocalizationsDataTaxAdjustmentStudentDiscount({required this.name});
 
   final String name;
   factory AppLocalizationsDataTaxAdjustmentStudentDiscount.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataTaxAdjustmentStudentDiscount(
         name: map['name']! as String,
       );
 
-  AppLocalizationsDataTaxAdjustmentStudentDiscount copyWith({
-    String? name,
-  }) =>
-      AppLocalizationsDataTaxAdjustmentStudentDiscount(
-        name: name ?? this.name,
-      );
+  AppLocalizationsDataTaxAdjustmentStudentDiscount copyWith({String? name}) =>
+      AppLocalizationsDataTaxAdjustmentStudentDiscount(name: name ?? this.name);
 
   @override
   bool operator ==(Object other) =>
@@ -5543,20 +5490,17 @@ class AppLocalizationsDataTaxAdjustmentStudentDiscount {
 }
 
 class AppLocalizationsDataTaxAdjustmentTaxpayerDiscount {
-  const AppLocalizationsDataTaxAdjustmentTaxpayerDiscount({
-    required this.name,
-  });
+  const AppLocalizationsDataTaxAdjustmentTaxpayerDiscount({required this.name});
 
   final String name;
   factory AppLocalizationsDataTaxAdjustmentTaxpayerDiscount.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataTaxAdjustmentTaxpayerDiscount(
         name: map['name']! as String,
       );
 
-  AppLocalizationsDataTaxAdjustmentTaxpayerDiscount copyWith({
-    String? name,
-  }) =>
+  AppLocalizationsDataTaxAdjustmentTaxpayerDiscount copyWith({String? name}) =>
       AppLocalizationsDataTaxAdjustmentTaxpayerDiscount(
         name: name ?? this.name,
       );
@@ -5571,10 +5515,7 @@ class AppLocalizationsDataTaxAdjustmentTaxpayerDiscount {
 }
 
 class AppLocalizationsDataTaxIncome {
-  const AppLocalizationsDataTaxIncome({
-    required this.desc,
-    required this.name,
-  });
+  const AppLocalizationsDataTaxIncome({required this.desc, required this.name});
 
   final String desc;
   final String name;
@@ -5584,10 +5525,7 @@ class AppLocalizationsDataTaxIncome {
         name: map['name']! as String,
       );
 
-  AppLocalizationsDataTaxIncome copyWith({
-    String? desc,
-    String? name,
-  }) =>
+  AppLocalizationsDataTaxIncome copyWith({String? desc, String? name}) =>
       AppLocalizationsDataTaxIncome(
         desc: desc ?? this.desc,
         name: name ?? this.name,
@@ -5617,10 +5555,7 @@ class AppLocalizationsDataTaxBlocking {
         name: map['name']! as String,
       );
 
-  AppLocalizationsDataTaxBlocking copyWith({
-    String? desc,
-    String? name,
-  }) =>
+  AppLocalizationsDataTaxBlocking copyWith({String? desc, String? name}) =>
       AppLocalizationsDataTaxBlocking(
         desc: desc ?? this.desc,
         name: name ?? this.name,
@@ -5637,10 +5572,7 @@ class AppLocalizationsDataTaxBlocking {
 }
 
 class AppLocalizationsDataTaxHealth {
-  const AppLocalizationsDataTaxHealth({
-    required this.desc,
-    required this.name,
-  });
+  const AppLocalizationsDataTaxHealth({required this.desc, required this.name});
 
   final String desc;
   final String name;
@@ -5650,10 +5582,7 @@ class AppLocalizationsDataTaxHealth {
         name: map['name']! as String,
       );
 
-  AppLocalizationsDataTaxHealth copyWith({
-    String? desc,
-    String? name,
-  }) =>
+  AppLocalizationsDataTaxHealth copyWith({String? desc, String? name}) =>
       AppLocalizationsDataTaxHealth(
         desc: desc ?? this.desc,
         name: name ?? this.name,
@@ -5670,10 +5599,7 @@ class AppLocalizationsDataTaxHealth {
 }
 
 class AppLocalizationsDataTaxSocial {
-  const AppLocalizationsDataTaxSocial({
-    required this.desc,
-    required this.name,
-  });
+  const AppLocalizationsDataTaxSocial({required this.desc, required this.name});
 
   final String desc;
   final String name;
@@ -5683,10 +5609,7 @@ class AppLocalizationsDataTaxSocial {
         name: map['name']! as String,
       );
 
-  AppLocalizationsDataTaxSocial copyWith({
-    String? desc,
-    String? name,
-  }) =>
+  AppLocalizationsDataTaxSocial copyWith({String? desc, String? name}) =>
       AppLocalizationsDataTaxSocial(
         desc: desc ?? this.desc,
         name: name ?? this.name,
@@ -5716,10 +5639,7 @@ class AppLocalizationsDataTaxAdvance {
         name: map['name']! as String,
       );
 
-  AppLocalizationsDataTaxAdvance copyWith({
-    String? desc,
-    String? name,
-  }) =>
+  AppLocalizationsDataTaxAdvance copyWith({String? desc, String? name}) =>
       AppLocalizationsDataTaxAdvance(
         desc: desc ?? this.desc,
         name: name ?? this.name,
@@ -5832,16 +5752,10 @@ class AppLocalizationsDataProfile {
       fontSizeSettingsScreen;
   final AppLocalizationsDataProfileFooter footer;
 
-  String allContractsFun({
-    required String total,
-    String? locale,
-  }) {
-    return _allContractsFun.insertTemplateValues(
-      {
-        'total': total,
-      },
-      locale: locale,
-    );
+  String allContractsFun({required String total, String? locale}) {
+    return _allContractsFun.insertTemplateValues({
+      'total': total,
+    }, locale: locale);
   }
 
   factory AppLocalizationsDataProfile.fromJson(Map<String, Object?> map) =>
@@ -5874,46 +5788,62 @@ class AppLocalizationsDataProfile {
         age: map['age']! as String,
         title: map['title']! as String,
         vacation: AppLocalizationsDataProfileVacation.fromJson(
-            map['vacation']! as Map<String, Object?>),
+          map['vacation']! as Map<String, Object?>,
+        ),
         salaryLimit: AppLocalizationsDataProfileSalaryLimit.fromJson(
-            map['salaryLimit']! as Map<String, Object?>),
+          map['salaryLimit']! as Map<String, Object?>,
+        ),
         accountVerification:
             AppLocalizationsDataProfileAccountVerification.fromJson(
-                map['accountVerification']! as Map<String, Object?>),
+          map['accountVerification']! as Map<String, Object?>,
+        ),
         editProfile: AppLocalizationsDataProfileEditProfile.fromJson(
-            map['editProfile']! as Map<String, Object?>),
+          map['editProfile']! as Map<String, Object?>,
+        ),
         editContactInformation:
             AppLocalizationsDataProfileEditContactInformation.fromJson(
-                map['editContactInformation']! as Map<String, Object?>),
+          map['editContactInformation']! as Map<String, Object?>,
+        ),
         changePasswordScreen:
             AppLocalizationsDataProfileChangePasswordScreen.fromJson(
-                map['changePasswordScreen']! as Map<String, Object?>),
+          map['changePasswordScreen']! as Map<String, Object?>,
+        ),
         paymentInfoScreen:
             AppLocalizationsDataProfilePaymentInfoScreen.fromJson(
-                map['paymentInfoScreen']! as Map<String, Object?>),
+          map['paymentInfoScreen']! as Map<String, Object?>,
+        ),
         utilities: AppLocalizationsDataProfileUtilities.fromJson(
-            map['utilities']! as Map<String, Object?>),
+          map['utilities']! as Map<String, Object?>,
+        ),
         signableDocs: AppLocalizationsDataProfileSignableDocs.fromJson(
-            map['signableDocs']! as Map<String, Object?>),
+          map['signableDocs']! as Map<String, Object?>,
+        ),
         nonSignableDocs: AppLocalizationsDataProfileNonSignableDocs.fromJson(
-            map['nonSignableDocs']! as Map<String, Object?>),
+          map['nonSignableDocs']! as Map<String, Object?>,
+        ),
         nonSignableDocsDetailScreen:
             AppLocalizationsDataProfileNonSignableDocsDetailScreen.fromJson(
-                map['nonSignableDocsDetailScreen']! as Map<String, Object?>),
+          map['nonSignableDocsDetailScreen']! as Map<String, Object?>,
+        ),
         nonSignableDocsDetailStatus:
             AppLocalizationsDataProfileNonSignableDocsDetailStatus.fromJson(
-                map['nonSignableDocsDetailStatus']! as Map<String, Object?>),
+          map['nonSignableDocsDetailStatus']! as Map<String, Object?>,
+        ),
         applicationSettingsScreen:
             AppLocalizationsDataProfileApplicationSettingsScreen.fromJson(
-                map['applicationSettingsScreen']! as Map<String, Object?>),
+          map['applicationSettingsScreen']! as Map<String, Object?>,
+        ),
         notificationSettingsScreen:
             AppLocalizationsDataProfileNotificationSettingsScreen.fromJson(
-                map['notificationSettingsScreen']! as Map<String, Object?>),
+          map['notificationSettingsScreen']! as Map<String, Object?>,
+        ),
         fontSizeSettingsScreen:
             AppLocalizationsDataProfileFontSizeSettingsScreen.fromJson(
-                map['fontSizeSettingsScreen']! as Map<String, Object?>),
+          map['fontSizeSettingsScreen']! as Map<String, Object?>,
+        ),
         footer: AppLocalizationsDataProfileFooter.fromJson(
-            map['footer']! as Map<String, Object?>),
+          map['footer']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfile copyWith({
@@ -6123,12 +6053,14 @@ class AppLocalizationsDataProfileVacation {
   final String title;
   final AppLocalizationsDataProfileVacationScreen screen;
   factory AppLocalizationsDataProfileVacation.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileVacation(
         link: map['link']! as String,
         title: map['title']! as String,
         screen: AppLocalizationsDataProfileVacationScreen.fromJson(
-            map['screen']! as Map<String, Object?>),
+          map['screen']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileVacation copyWith({
@@ -6171,7 +6103,8 @@ class AppLocalizationsDataProfileVacationScreen {
   final AppLocalizationsDataProfileVacationScreenHourlyWage hourlyWage;
   final AppLocalizationsDataProfileVacationScreenRelax relax;
   factory AppLocalizationsDataProfileVacationScreen.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileVacationScreen(
         selectDate: map['selectDate']! as String,
         noVacation: map['noVacation']! as String,
@@ -6179,9 +6112,11 @@ class AppLocalizationsDataProfileVacationScreen {
         title: map['title']! as String,
         hourlyWage:
             AppLocalizationsDataProfileVacationScreenHourlyWage.fromJson(
-                map['hourlyWage']! as Map<String, Object?>),
+          map['hourlyWage']! as Map<String, Object?>,
+        ),
         relax: AppLocalizationsDataProfileVacationScreenRelax.fromJson(
-            map['relax']! as Map<String, Object?>),
+          map['relax']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileVacationScreen copyWith({
@@ -6231,7 +6166,8 @@ class AppLocalizationsDataProfileVacationScreenHourlyWage {
   final String description;
   final String title;
   factory AppLocalizationsDataProfileVacationScreenHourlyWage.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileVacationScreenHourlyWage(
         description: map['description']! as String,
         title: map['title']! as String,
@@ -6266,7 +6202,8 @@ class AppLocalizationsDataProfileVacationScreenRelax {
   final String description;
   final String title;
   factory AppLocalizationsDataProfileVacationScreenRelax.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileVacationScreenRelax(
         description: map['description']! as String,
         title: map['title']! as String,
@@ -6303,12 +6240,14 @@ class AppLocalizationsDataProfileSalaryLimit {
   final String title;
   final AppLocalizationsDataProfileSalaryLimitError error;
   factory AppLocalizationsDataProfileSalaryLimit.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileSalaryLimit(
         description: map['description']! as String,
         title: map['title']! as String,
         error: AppLocalizationsDataProfileSalaryLimitError.fromJson(
-            map['error']! as Map<String, Object?>),
+          map['error']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileSalaryLimit copyWith({
@@ -6346,7 +6285,8 @@ class AppLocalizationsDataProfileSalaryLimitError {
   final String typeAvoidTaxes;
   final String typeNone;
   factory AppLocalizationsDataProfileSalaryLimitError.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileSalaryLimitError(
         typeAvoidTaxes: map['typeAvoidTaxes']! as String,
         typeNone: map['typeNone']! as String,
@@ -6387,18 +6327,25 @@ class AppLocalizationsDataProfileAccountVerification {
       personalDataChanges;
   final AppLocalizationsDataProfileAccountVerificationIntro intro;
   factory AppLocalizationsDataProfileAccountVerification.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileAccountVerification(
         changeSuccess:
             AppLocalizationsDataProfileAccountVerificationChangeSuccess
-                .fromJson(map['changeSuccess']! as Map<String, Object?>),
+                .fromJson(
+          map['changeSuccess']! as Map<String, Object?>,
+        ),
         success: AppLocalizationsDataProfileAccountVerificationSuccess.fromJson(
-            map['success']! as Map<String, Object?>),
+          map['success']! as Map<String, Object?>,
+        ),
         personalDataChanges:
             AppLocalizationsDataProfileAccountVerificationPersonalDataChanges
-                .fromJson(map['personalDataChanges']! as Map<String, Object?>),
+                .fromJson(
+          map['personalDataChanges']! as Map<String, Object?>,
+        ),
         intro: AppLocalizationsDataProfileAccountVerificationIntro.fromJson(
-            map['intro']! as Map<String, Object?>),
+          map['intro']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileAccountVerification copyWith({
@@ -6443,7 +6390,8 @@ class AppLocalizationsDataProfileAccountVerificationChangeSuccess {
   final String message;
   final String title;
   factory AppLocalizationsDataProfileAccountVerificationChangeSuccess.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileAccountVerificationChangeSuccess(
         button: map['button']! as String,
         message: map['message']! as String,
@@ -6487,7 +6435,8 @@ class AppLocalizationsDataProfileAccountVerificationSuccess {
   final String message;
   final String title;
   factory AppLocalizationsDataProfileAccountVerificationSuccess.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileAccountVerificationSuccess(
         button: map['button']! as String,
         message: map['message']! as String,
@@ -6531,7 +6480,8 @@ class AppLocalizationsDataProfileAccountVerificationPersonalDataChanges {
   final String message;
   final String title;
   factory AppLocalizationsDataProfileAccountVerificationPersonalDataChanges.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileAccountVerificationPersonalDataChanges(
         button: map['button']! as String,
         message: map['message']! as String,
@@ -6587,7 +6537,8 @@ class AppLocalizationsDataProfileAccountVerificationIntro {
   final String title;
   final String pageTitle;
   factory AppLocalizationsDataProfileAccountVerificationIntro.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileAccountVerificationIntro(
         stepFour: map['stepFour']! as String,
         stepThree: map['stepThree']! as String,
@@ -6691,7 +6642,8 @@ class AppLocalizationsDataProfileEditProfile {
   final AppLocalizationsDataProfileEditProfileSetPhoneNumber setPhoneNumber;
   final AppLocalizationsDataProfileEditProfileAppBar appBar;
   factory AppLocalizationsDataProfileEditProfile.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditProfile(
         access: map['access']! as String,
         gender: map['gender']! as String,
@@ -6710,12 +6662,15 @@ class AppLocalizationsDataProfileEditProfile {
         title: map['title']! as String,
         editPhoneNumber:
             AppLocalizationsDataProfileEditProfileEditPhoneNumber.fromJson(
-                map['editPhoneNumber']! as Map<String, Object?>),
+          map['editPhoneNumber']! as Map<String, Object?>,
+        ),
         setPhoneNumber:
             AppLocalizationsDataProfileEditProfileSetPhoneNumber.fromJson(
-                map['setPhoneNumber']! as Map<String, Object?>),
+          map['setPhoneNumber']! as Map<String, Object?>,
+        ),
         appBar: AppLocalizationsDataProfileEditProfileAppBar.fromJson(
-            map['appBar']! as Map<String, Object?>),
+          map['appBar']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileEditProfile copyWith({
@@ -6822,19 +6777,25 @@ class AppLocalizationsDataProfileEditProfileEditPhoneNumber {
   final AppLocalizationsDataProfileEditProfileEditPhoneNumberButton button;
   final AppLocalizationsDataProfileEditProfileEditPhoneNumberInput input;
   factory AppLocalizationsDataProfileEditProfileEditPhoneNumber.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditProfileEditPhoneNumber(
         subtitle: map['subtitle']! as String,
         title: map['title']! as String,
         appBarTitle: map['appBarTitle']! as String,
         duplicateError:
             AppLocalizationsDataProfileEditProfileEditPhoneNumberDuplicateError
-                .fromJson(map['duplicateError']! as Map<String, Object?>),
+                .fromJson(
+          map['duplicateError']! as Map<String, Object?>,
+        ),
         button: AppLocalizationsDataProfileEditProfileEditPhoneNumberButton
-            .fromJson(map['button']! as Map<String, Object?>),
+            .fromJson(
+          map['button']! as Map<String, Object?>,
+        ),
         input:
             AppLocalizationsDataProfileEditProfileEditPhoneNumberInput.fromJson(
-                map['input']! as Map<String, Object?>),
+          map['input']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileEditProfileEditPhoneNumber copyWith({
@@ -6885,7 +6846,8 @@ class AppLocalizationsDataProfileEditProfileEditPhoneNumberDuplicateError {
   final String message;
   final String title;
   factory AppLocalizationsDataProfileEditProfileEditPhoneNumberDuplicateError.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditProfileEditPhoneNumberDuplicateError(
         message: map['message']! as String,
         title: map['title']! as String,
@@ -6917,7 +6879,8 @@ class AppLocalizationsDataProfileEditProfileEditPhoneNumberButton {
 
   final String text;
   factory AppLocalizationsDataProfileEditProfileEditPhoneNumberButton.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditProfileEditPhoneNumberButton(
         text: map['text']! as String,
       );
@@ -6947,11 +6910,14 @@ class AppLocalizationsDataProfileEditProfileEditPhoneNumberInput {
   final String label;
   final AppLocalizationsDataProfileEditProfileEditPhoneNumberInputError error;
   factory AppLocalizationsDataProfileEditProfileEditPhoneNumberInput.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditProfileEditPhoneNumberInput(
         label: map['label']! as String,
         error: AppLocalizationsDataProfileEditProfileEditPhoneNumberInputError
-            .fromJson(map['error']! as Map<String, Object?>),
+            .fromJson(
+          map['error']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileEditProfileEditPhoneNumberInput copyWith({
@@ -6984,7 +6950,8 @@ class AppLocalizationsDataProfileEditProfileEditPhoneNumberInputError {
   final String prefix;
   final String format;
   factory AppLocalizationsDataProfileEditProfileEditPhoneNumberInputError.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditProfileEditPhoneNumberInputError(
         empty: map['empty']! as String,
         prefix: map['prefix']! as String,
@@ -7021,7 +6988,8 @@ class AppLocalizationsDataProfileEditProfileSetPhoneNumber {
 
   final String title;
   factory AppLocalizationsDataProfileEditProfileSetPhoneNumber.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditProfileSetPhoneNumber(
         title: map['title']! as String,
       );
@@ -7043,23 +7011,18 @@ class AppLocalizationsDataProfileEditProfileSetPhoneNumber {
 }
 
 class AppLocalizationsDataProfileEditProfileAppBar {
-  const AppLocalizationsDataProfileEditProfileAppBar({
-    required this.title,
-  });
+  const AppLocalizationsDataProfileEditProfileAppBar({required this.title});
 
   final String title;
   factory AppLocalizationsDataProfileEditProfileAppBar.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditProfileAppBar(
         title: map['title']! as String,
       );
 
-  AppLocalizationsDataProfileEditProfileAppBar copyWith({
-    String? title,
-  }) =>
-      AppLocalizationsDataProfileEditProfileAppBar(
-        title: title ?? this.title,
-      );
+  AppLocalizationsDataProfileEditProfileAppBar copyWith({String? title}) =>
+      AppLocalizationsDataProfileEditProfileAppBar(title: title ?? this.title);
 
   @override
   bool operator ==(Object other) =>
@@ -7091,24 +7054,30 @@ class AppLocalizationsDataProfileEditContactInformation {
   final AppLocalizationsDataProfileEditContactInformationCity city;
   final AppLocalizationsDataProfileEditContactInformationStreet street;
   factory AppLocalizationsDataProfileEditContactInformation.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditContactInformation(
         title: map['title']! as String,
         subtitle: map['subtitle']! as String,
         sameAsPermanent: map['sameAsPermanent']! as String,
         button:
             AppLocalizationsDataProfileEditContactInformationButton.fromJson(
-                map['button']! as Map<String, Object?>),
+          map['button']! as Map<String, Object?>,
+        ),
         country:
             AppLocalizationsDataProfileEditContactInformationCountry.fromJson(
-                map['country']! as Map<String, Object?>),
+          map['country']! as Map<String, Object?>,
+        ),
         zip: AppLocalizationsDataProfileEditContactInformationZip.fromJson(
-            map['zip']! as Map<String, Object?>),
+          map['zip']! as Map<String, Object?>,
+        ),
         city: AppLocalizationsDataProfileEditContactInformationCity.fromJson(
-            map['city']! as Map<String, Object?>),
+          map['city']! as Map<String, Object?>,
+        ),
         street:
             AppLocalizationsDataProfileEditContactInformationStreet.fromJson(
-                map['street']! as Map<String, Object?>),
+          map['street']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileEditContactInformation copyWith({
@@ -7164,7 +7133,8 @@ class AppLocalizationsDataProfileEditContactInformationButton {
 
   final String submit;
   factory AppLocalizationsDataProfileEditContactInformationButton.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditContactInformationButton(
         submit: map['submit']! as String,
       );
@@ -7194,7 +7164,8 @@ class AppLocalizationsDataProfileEditContactInformationCountry {
   final String hint;
   final String label;
   factory AppLocalizationsDataProfileEditContactInformationCountry.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditContactInformationCountry(
         hint: map['hint']! as String,
         label: map['label']! as String,
@@ -7228,7 +7199,8 @@ class AppLocalizationsDataProfileEditContactInformationZip {
   final String hint;
   final String label;
   factory AppLocalizationsDataProfileEditContactInformationZip.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditContactInformationZip(
         hint: map['hint']! as String,
         label: map['label']! as String,
@@ -7262,7 +7234,8 @@ class AppLocalizationsDataProfileEditContactInformationCity {
   final String hint;
   final String label;
   factory AppLocalizationsDataProfileEditContactInformationCity.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditContactInformationCity(
         hint: map['hint']! as String,
         label: map['label']! as String,
@@ -7296,7 +7269,8 @@ class AppLocalizationsDataProfileEditContactInformationStreet {
   final String hint;
   final String label;
   factory AppLocalizationsDataProfileEditContactInformationStreet.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileEditContactInformationStreet(
         hint: map['hint']! as String,
         label: map['label']! as String,
@@ -7334,14 +7308,17 @@ class AppLocalizationsDataProfileChangePasswordScreen {
   final AppLocalizationsDataProfileChangePasswordScreenAppBar appBar;
   final AppLocalizationsDataProfileChangePasswordScreenInput input;
   factory AppLocalizationsDataProfileChangePasswordScreen.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileChangePasswordScreen(
         title: map['title']! as String,
         button: map['button']! as String,
         appBar: AppLocalizationsDataProfileChangePasswordScreenAppBar.fromJson(
-            map['appBar']! as Map<String, Object?>),
+          map['appBar']! as Map<String, Object?>,
+        ),
         input: AppLocalizationsDataProfileChangePasswordScreenInput.fromJson(
-            map['input']! as Map<String, Object?>),
+          map['input']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileChangePasswordScreen copyWith({
@@ -7381,7 +7358,8 @@ class AppLocalizationsDataProfileChangePasswordScreenAppBar {
 
   final String title;
   factory AppLocalizationsDataProfileChangePasswordScreenAppBar.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileChangePasswordScreenAppBar(
         title: map['title']! as String,
       );
@@ -7413,14 +7391,19 @@ class AppLocalizationsDataProfileChangePasswordScreenInput {
   final AppLocalizationsDataProfileChangePasswordScreenInputOldPassword
       oldPassword;
   factory AppLocalizationsDataProfileChangePasswordScreenInput.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileChangePasswordScreenInput(
         newPassword:
             AppLocalizationsDataProfileChangePasswordScreenInputNewPassword
-                .fromJson(map['newPassword']! as Map<String, Object?>),
+                .fromJson(
+          map['newPassword']! as Map<String, Object?>,
+        ),
         oldPassword:
             AppLocalizationsDataProfileChangePasswordScreenInputOldPassword
-                .fromJson(map['oldPassword']! as Map<String, Object?>),
+                .fromJson(
+          map['oldPassword']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileChangePasswordScreenInput copyWith({
@@ -7454,7 +7437,8 @@ class AppLocalizationsDataProfileChangePasswordScreenInputNewPassword {
   final String label;
   final String hint;
   factory AppLocalizationsDataProfileChangePasswordScreenInputNewPassword.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileChangePasswordScreenInputNewPassword(
         label: map['label']! as String,
         hint: map['hint']! as String,
@@ -7488,7 +7472,8 @@ class AppLocalizationsDataProfileChangePasswordScreenInputOldPassword {
   final String label;
   final String hint;
   factory AppLocalizationsDataProfileChangePasswordScreenInputOldPassword.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileChangePasswordScreenInputOldPassword(
         label: map['label']! as String,
         hint: map['hint']! as String,
@@ -7530,7 +7515,8 @@ class AppLocalizationsDataProfilePaymentInfoScreen {
   final String bankCode;
   final String accountNumber;
   factory AppLocalizationsDataProfilePaymentInfoScreen.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfilePaymentInfoScreen(
         paymentNote: map['paymentNote']! as String,
         invalidBankCode: map['invalidBankCode']! as String,
@@ -7593,27 +7579,23 @@ class AppLocalizationsDataProfileUtilities {
   final String heading;
   final AppLocalizationsDataProfileUtilitiesHint hint;
 
-  String allUtilitiesFun({
-    required String total,
-    String? locale,
-  }) {
-    return _allUtilitiesFun.insertTemplateValues(
-      {
-        'total': total,
-      },
-      locale: locale,
-    );
+  String allUtilitiesFun({required String total, String? locale}) {
+    return _allUtilitiesFun.insertTemplateValues({
+      'total': total,
+    }, locale: locale);
   }
 
   factory AppLocalizationsDataProfileUtilities.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileUtilities(
         own: map['own']! as String,
         allUtilitiesFun: map['allUtilitiesFun']! as String,
         empty: map['empty']! as String,
         heading: map['heading']! as String,
         hint: AppLocalizationsDataProfileUtilitiesHint.fromJson(
-            map['hint']! as Map<String, Object?>),
+          map['hint']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileUtilities copyWith({
@@ -7659,7 +7641,8 @@ class AppLocalizationsDataProfileUtilitiesHint {
   final String description;
   final String title;
   factory AppLocalizationsDataProfileUtilitiesHint.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileUtilitiesHint(
         description: map['description']! as String,
         title: map['title']! as String,
@@ -7692,7 +7675,8 @@ class AppLocalizationsDataProfileSignableDocs {
 
   final String olderDocumentsHelp;
   factory AppLocalizationsDataProfileSignableDocs.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileSignableDocs(
         olderDocumentsHelp: map['olderDocumentsHelp']! as String,
       );
@@ -7738,34 +7722,26 @@ class AppLocalizationsDataProfileNonSignableDocs {
     String? locale,
   }) {
     if (plural == Plural.one) {
-      return _invalidOne.insertTemplateValues(
-        {
-          'amount': amount,
-        },
-        locale: locale,
-      );
+      return _invalidOne.insertTemplateValues({
+        'amount': amount,
+      }, locale: locale);
     }
     if (plural == Plural.zero) {
-      return _invalidZero.insertTemplateValues(
-        {
-          'amount': amount,
-        },
-        locale: locale,
-      );
+      return _invalidZero.insertTemplateValues({
+        'amount': amount,
+      }, locale: locale);
     }
     if (plural == Plural.multiple) {
-      return _invalidMultiple.insertTemplateValues(
-        {
-          'amount': amount,
-        },
-        locale: locale,
-      );
+      return _invalidMultiple.insertTemplateValues({
+        'amount': amount,
+      }, locale: locale);
     }
     throw Exception();
   }
 
   factory AppLocalizationsDataProfileNonSignableDocs.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileNonSignableDocs(
         empty: map['empty']! as String,
         invalidOne: map['invalidOne']! as String,
@@ -7773,7 +7749,8 @@ class AppLocalizationsDataProfileNonSignableDocs {
         invalidMultiple: map['invalidMultiple']! as String,
         heading: map['heading']! as String,
         snackbar: AppLocalizationsDataProfileNonSignableDocsSnackbar.fromJson(
-            map['snackbar']! as Map<String, Object?>),
+          map['snackbar']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileNonSignableDocs copyWith({
@@ -7821,7 +7798,8 @@ class AppLocalizationsDataProfileNonSignableDocsSnackbar {
 
   final String documentDeleted;
   factory AppLocalizationsDataProfileNonSignableDocsSnackbar.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileNonSignableDocsSnackbar(
         documentDeleted: map['documentDeleted']! as String,
       );
@@ -7858,7 +7836,8 @@ class AppLocalizationsDataProfileNonSignableDocsDetailScreen {
   final AppLocalizationsDataProfileNonSignableDocsDetailScreenApprovedDelete
       approvedDelete;
   factory AppLocalizationsDataProfileNonSignableDocsDetailScreen.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileNonSignableDocsDetailScreen(
         verifyNewDocument: map['verifyNewDocument']! as String,
         unsupportedFormat: map['unsupportedFormat']! as String,
@@ -7866,7 +7845,9 @@ class AppLocalizationsDataProfileNonSignableDocsDetailScreen {
         serverError: map['serverError']! as String,
         approvedDelete:
             AppLocalizationsDataProfileNonSignableDocsDetailScreenApprovedDelete
-                .fromJson(map['approvedDelete']! as Map<String, Object?>),
+                .fromJson(
+          map['approvedDelete']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileNonSignableDocsDetailScreen copyWith({
@@ -7913,21 +7894,19 @@ class AppLocalizationsDataProfileNonSignableDocsDetailScreenApprovedDelete {
   final String subtitle;
   final String title;
   factory AppLocalizationsDataProfileNonSignableDocsDetailScreenApprovedDelete.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileNonSignableDocsDetailScreenApprovedDelete(
         subtitle: map['subtitle']! as String,
         title: map['title']! as String,
       );
 
-  AppLocalizationsDataProfileNonSignableDocsDetailScreenApprovedDelete
-      copyWith({
-    String? subtitle,
-    String? title,
-  }) =>
-          AppLocalizationsDataProfileNonSignableDocsDetailScreenApprovedDelete(
-            subtitle: subtitle ?? this.subtitle,
-            title: title ?? this.title,
-          );
+  AppLocalizationsDataProfileNonSignableDocsDetailScreenApprovedDelete copyWith(
+          {String? subtitle, String? title}) =>
+      AppLocalizationsDataProfileNonSignableDocsDetailScreenApprovedDelete(
+        subtitle: subtitle ?? this.subtitle,
+        title: title ?? this.title,
+      );
 
   @override
   bool operator ==(Object other) =>
@@ -7956,20 +7935,31 @@ class AppLocalizationsDataProfileNonSignableDocsDetailStatus {
       notUploaded;
   final AppLocalizationsDataProfileNonSignableDocsDetailStatusRejected rejected;
   factory AppLocalizationsDataProfileNonSignableDocsDetailStatus.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileNonSignableDocsDetailStatus(
         verified: AppLocalizationsDataProfileNonSignableDocsDetailStatusVerified
-            .fromJson(map['verified']! as Map<String, Object?>),
+            .fromJson(
+          map['verified']! as Map<String, Object?>,
+        ),
         processing:
             AppLocalizationsDataProfileNonSignableDocsDetailStatusProcessing
-                .fromJson(map['processing']! as Map<String, Object?>),
+                .fromJson(
+          map['processing']! as Map<String, Object?>,
+        ),
         expired: AppLocalizationsDataProfileNonSignableDocsDetailStatusExpired
-            .fromJson(map['expired']! as Map<String, Object?>),
+            .fromJson(
+          map['expired']! as Map<String, Object?>,
+        ),
         notUploaded:
             AppLocalizationsDataProfileNonSignableDocsDetailStatusNotUploaded
-                .fromJson(map['notUploaded']! as Map<String, Object?>),
+                .fromJson(
+          map['notUploaded']! as Map<String, Object?>,
+        ),
         rejected: AppLocalizationsDataProfileNonSignableDocsDetailStatusRejected
-            .fromJson(map['rejected']! as Map<String, Object?>),
+            .fromJson(
+          map['rejected']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileNonSignableDocsDetailStatus copyWith({
@@ -8017,7 +8007,8 @@ class AppLocalizationsDataProfileNonSignableDocsDetailStatusVerified {
   final String subtitle;
   final String title;
   factory AppLocalizationsDataProfileNonSignableDocsDetailStatusVerified.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileNonSignableDocsDetailStatusVerified(
         subtitle: map['subtitle']! as String,
         title: map['title']! as String,
@@ -8051,7 +8042,8 @@ class AppLocalizationsDataProfileNonSignableDocsDetailStatusProcessing {
   final String subtitle;
   final String title;
   factory AppLocalizationsDataProfileNonSignableDocsDetailStatusProcessing.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileNonSignableDocsDetailStatusProcessing(
         subtitle: map['subtitle']! as String,
         title: map['title']! as String,
@@ -8085,7 +8077,8 @@ class AppLocalizationsDataProfileNonSignableDocsDetailStatusExpired {
   final String subtitle;
   final String title;
   factory AppLocalizationsDataProfileNonSignableDocsDetailStatusExpired.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileNonSignableDocsDetailStatusExpired(
         subtitle: map['subtitle']! as String,
         title: map['title']! as String,
@@ -8119,7 +8112,8 @@ class AppLocalizationsDataProfileNonSignableDocsDetailStatusNotUploaded {
   final String subtitle;
   final String title;
   factory AppLocalizationsDataProfileNonSignableDocsDetailStatusNotUploaded.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileNonSignableDocsDetailStatusNotUploaded(
         subtitle: map['subtitle']! as String,
         title: map['title']! as String,
@@ -8153,7 +8147,8 @@ class AppLocalizationsDataProfileNonSignableDocsDetailStatusRejected {
   final String subtitle;
   final String title;
   factory AppLocalizationsDataProfileNonSignableDocsDetailStatusRejected.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileNonSignableDocsDetailStatusRejected(
         subtitle: map['subtitle']! as String,
         title: map['title']! as String,
@@ -8196,19 +8191,25 @@ class AppLocalizationsDataProfileApplicationSettingsScreen {
   final AppLocalizationsDataProfileApplicationSettingsScreenSignOut signOut;
   final AppLocalizationsDataProfileApplicationSettingsScreenAppBar appBar;
   factory AppLocalizationsDataProfileApplicationSettingsScreen.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileApplicationSettingsScreen(
         toc: map['toc']! as String,
         language: map['language']! as String,
         localization: map['localization']! as String,
         deleteAccount:
             AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccount
-                .fromJson(map['deleteAccount']! as Map<String, Object?>),
+                .fromJson(
+          map['deleteAccount']! as Map<String, Object?>,
+        ),
         signOut: AppLocalizationsDataProfileApplicationSettingsScreenSignOut
-            .fromJson(map['signOut']! as Map<String, Object?>),
+            .fromJson(
+          map['signOut']! as Map<String, Object?>,
+        ),
         appBar:
             AppLocalizationsDataProfileApplicationSettingsScreenAppBar.fromJson(
-                map['appBar']! as Map<String, Object?>),
+          map['appBar']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileApplicationSettingsScreen copyWith({
@@ -8266,7 +8267,8 @@ class AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccount {
   final AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccountAppBar
       appBar;
   factory AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccount.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccount(
         title: map['title']! as String,
         subtitle: map['subtitle']! as String,
@@ -8274,7 +8276,9 @@ class AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccount {
         later: map['later']! as String,
         appBar:
             AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccountAppBar
-                .fromJson(map['appBar']! as Map<String, Object?>),
+                .fromJson(
+          map['appBar']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccount copyWith({
@@ -8319,15 +8323,14 @@ class AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccountAppBar {
 
   final String title;
   factory AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccountAppBar.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccountAppBar(
         title: map['title']! as String,
       );
 
   AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccountAppBar
-      copyWith({
-    String? title,
-  }) =>
+      copyWith({String? title}) =>
           AppLocalizationsDataProfileApplicationSettingsScreenDeleteAccountAppBar(
             title: title ?? this.title,
           );
@@ -8357,7 +8360,8 @@ class AppLocalizationsDataProfileApplicationSettingsScreenSignOut {
   final AppLocalizationsDataProfileApplicationSettingsScreenSignOutAppBar
       appBar;
   factory AppLocalizationsDataProfileApplicationSettingsScreenSignOut.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileApplicationSettingsScreenSignOut(
         title: map['title']! as String,
         subtitle: map['subtitle']! as String,
@@ -8365,7 +8369,9 @@ class AppLocalizationsDataProfileApplicationSettingsScreenSignOut {
         buttonOutlined: map['buttonOutlined']! as String,
         appBar:
             AppLocalizationsDataProfileApplicationSettingsScreenSignOutAppBar
-                .fromJson(map['appBar']! as Map<String, Object?>),
+                .fromJson(
+          map['appBar']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileApplicationSettingsScreenSignOut copyWith({
@@ -8409,7 +8415,8 @@ class AppLocalizationsDataProfileApplicationSettingsScreenSignOutAppBar {
 
   final String title;
   factory AppLocalizationsDataProfileApplicationSettingsScreenSignOutAppBar.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileApplicationSettingsScreenSignOutAppBar(
         title: map['title']! as String,
       );
@@ -8437,7 +8444,8 @@ class AppLocalizationsDataProfileApplicationSettingsScreenAppBar {
 
   final String title;
   factory AppLocalizationsDataProfileApplicationSettingsScreenAppBar.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileApplicationSettingsScreenAppBar(
         title: map['title']! as String,
       );
@@ -8468,12 +8476,15 @@ class AppLocalizationsDataProfileNotificationSettingsScreen {
   final AppLocalizationsDataProfileNotificationSettingsScreenInvitationEmail
       invitationEmail;
   factory AppLocalizationsDataProfileNotificationSettingsScreen.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileNotificationSettingsScreen(
         title: map['title']! as String,
         invitationEmail:
             AppLocalizationsDataProfileNotificationSettingsScreenInvitationEmail
-                .fromJson(map['invitationEmail']! as Map<String, Object?>),
+                .fromJson(
+          map['invitationEmail']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileNotificationSettingsScreen copyWith({
@@ -8506,21 +8517,19 @@ class AppLocalizationsDataProfileNotificationSettingsScreenInvitationEmail {
   final String description;
   final String label;
   factory AppLocalizationsDataProfileNotificationSettingsScreenInvitationEmail.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileNotificationSettingsScreenInvitationEmail(
         description: map['description']! as String,
         label: map['label']! as String,
       );
 
-  AppLocalizationsDataProfileNotificationSettingsScreenInvitationEmail
-      copyWith({
-    String? description,
-    String? label,
-  }) =>
-          AppLocalizationsDataProfileNotificationSettingsScreenInvitationEmail(
-            description: description ?? this.description,
-            label: label ?? this.label,
-          );
+  AppLocalizationsDataProfileNotificationSettingsScreenInvitationEmail copyWith(
+          {String? description, String? label}) =>
+      AppLocalizationsDataProfileNotificationSettingsScreenInvitationEmail(
+        description: description ?? this.description,
+        label: label ?? this.label,
+      );
 
   @override
   bool operator ==(Object other) =>
@@ -8544,13 +8553,15 @@ class AppLocalizationsDataProfileFontSizeSettingsScreen {
   final String label;
   final AppLocalizationsDataProfileFontSizeSettingsScreenOption option;
   factory AppLocalizationsDataProfileFontSizeSettingsScreen.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileFontSizeSettingsScreen(
         title: map['title']! as String,
         label: map['label']! as String,
         option:
             AppLocalizationsDataProfileFontSizeSettingsScreenOption.fromJson(
-                map['option']! as Map<String, Object?>),
+          map['option']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataProfileFontSizeSettingsScreen copyWith({
@@ -8591,7 +8602,8 @@ class AppLocalizationsDataProfileFontSizeSettingsScreenOption {
   final String value2;
   final String value1;
   factory AppLocalizationsDataProfileFontSizeSettingsScreenOption.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataProfileFontSizeSettingsScreenOption(
         value5: map['value5']! as String,
         value4: map['value4']! as String,
@@ -8635,9 +8647,8 @@ class AppLocalizationsDataProfileFontSizeSettingsScreenOption {
 }
 
 class AppLocalizationsDataProfileFooter {
-  const AppLocalizationsDataProfileFooter({
-    required String version,
-  }) : _version = version;
+  const AppLocalizationsDataProfileFooter({required String version})
+      : _version = version;
 
   final String _version;
 
@@ -8646,27 +8657,19 @@ class AppLocalizationsDataProfileFooter {
     required String buildNumber,
     String? locale,
   }) {
-    return _version.insertTemplateValues(
-      {
-        'version': version,
-        'buildNumber': buildNumber,
-      },
-      locale: locale,
-    );
+    return _version.insertTemplateValues({
+      'version': version,
+      'buildNumber': buildNumber,
+    }, locale: locale);
   }
 
   factory AppLocalizationsDataProfileFooter.fromJson(
-          Map<String, Object?> map) =>
-      AppLocalizationsDataProfileFooter(
-        version: map['version']! as String,
-      );
+    Map<String, Object?> map,
+  ) =>
+      AppLocalizationsDataProfileFooter(version: map['version']! as String);
 
-  AppLocalizationsDataProfileFooter copyWith({
-    String? version,
-  }) =>
-      AppLocalizationsDataProfileFooter(
-        version: version ?? _version,
-      );
+  AppLocalizationsDataProfileFooter copyWith({String? version}) =>
+      AppLocalizationsDataProfileFooter(version: version ?? _version);
 
   @override
   bool operator ==(Object other) =>
@@ -8691,10 +8694,7 @@ class AppLocalizationsDataTyApiGender {
         male: map['male']! as String,
       );
 
-  AppLocalizationsDataTyApiGender copyWith({
-    String? female,
-    String? male,
-  }) =>
+  AppLocalizationsDataTyApiGender copyWith({String? female, String? male}) =>
       AppLocalizationsDataTyApiGender(
         female: female ?? this.female,
         male: male ?? this.male,
@@ -8782,16 +8782,8 @@ class AppLocalizationsDataAttendance {
   final AppLocalizationsDataAttendanceCancelApplicationWithExcuse
       cancelApplicationWithExcuse;
 
-  String getCredits({
-    required String amount,
-    String? locale,
-  }) {
-    return _getCredits.insertTemplateValues(
-      {
-        'amount': amount,
-      },
-      locale: locale,
-    );
+  String getCredits({required String amount, String? locale}) {
+    return _getCredits.insertTemplateValues({'amount': amount}, locale: locale);
   }
 
   factory AppLocalizationsDataAttendance.fromJson(Map<String, Object?> map) =>
@@ -8824,19 +8816,25 @@ class AppLocalizationsDataAttendance {
         youAreSignedOn: map['youAreSignedOn']! as String,
         getCredits: map['getCredits']! as String,
         review: AppLocalizationsDataAttendanceReview.fromJson(
-            map['review']! as Map<String, Object?>),
+          map['review']! as Map<String, Object?>,
+        ),
         detail: AppLocalizationsDataAttendanceDetail.fromJson(
-            map['detail']! as Map<String, Object?>),
+          map['detail']! as Map<String, Object?>,
+        ),
         absence: AppLocalizationsDataAttendanceAbsence.fromJson(
-            map['absence']! as Map<String, Object?>),
+          map['absence']! as Map<String, Object?>,
+        ),
         cancelApplication:
             AppLocalizationsDataAttendanceCancelApplication.fromJson(
-                map['cancelApplication']! as Map<String, Object?>),
+          map['cancelApplication']! as Map<String, Object?>,
+        ),
         vacation: AppLocalizationsDataAttendanceVacation.fromJson(
-            map['vacation']! as Map<String, Object?>),
+          map['vacation']! as Map<String, Object?>,
+        ),
         cancelApplicationWithExcuse:
             AppLocalizationsDataAttendanceCancelApplicationWithExcuse.fromJson(
-                map['cancelApplicationWithExcuse']! as Map<String, Object?>),
+          map['cancelApplicationWithExcuse']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataAttendance copyWith({
@@ -9002,16 +9000,20 @@ class AppLocalizationsDataAttendanceReview {
   final AppLocalizationsDataAttendanceReviewOption option;
   final AppLocalizationsDataAttendanceReviewHint hint;
   factory AppLocalizationsDataAttendanceReview.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAttendanceReview(
         finish: map['finish']! as String,
         title: map['title']! as String,
         success: AppLocalizationsDataAttendanceReviewSuccess.fromJson(
-            map['success']! as Map<String, Object?>),
+          map['success']! as Map<String, Object?>,
+        ),
         option: AppLocalizationsDataAttendanceReviewOption.fromJson(
-            map['option']! as Map<String, Object?>),
+          map['option']! as Map<String, Object?>,
+        ),
         hint: AppLocalizationsDataAttendanceReviewHint.fromJson(
-            map['hint']! as Map<String, Object?>),
+          map['hint']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataAttendanceReview copyWith({
@@ -9057,20 +9059,13 @@ class AppLocalizationsDataAttendanceReviewSuccess {
   final String button;
   final String _title;
 
-  String title({
-    required String amount,
-    String? locale,
-  }) {
-    return _title.insertTemplateValues(
-      {
-        'amount': amount,
-      },
-      locale: locale,
-    );
+  String title({required String amount, String? locale}) {
+    return _title.insertTemplateValues({'amount': amount}, locale: locale);
   }
 
   factory AppLocalizationsDataAttendanceReviewSuccess.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAttendanceReviewSuccess(
         button: map['button']! as String,
         title: map['title']! as String,
@@ -9104,7 +9099,8 @@ class AppLocalizationsDataAttendanceReviewOption {
   final String great;
   final String bad;
   factory AppLocalizationsDataAttendanceReviewOption.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAttendanceReviewOption(
         great: map['great']! as String,
         bad: map['bad']! as String,
@@ -9148,7 +9144,8 @@ class AppLocalizationsDataAttendanceReviewHint {
   final String body;
   final String title;
   factory AppLocalizationsDataAttendanceReviewHint.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAttendanceReviewHint(
         button: map['button']! as String,
         body4: map['body4']! as String,
@@ -9232,20 +9229,15 @@ class AppLocalizationsDataAttendanceDetail {
   final String workHours;
   final String shiftDate;
 
-  String rateShiftFun({
-    required String amount,
-    String? locale,
-  }) {
-    return _rateShiftFun.insertTemplateValues(
-      {
-        'amount': amount,
-      },
-      locale: locale,
-    );
+  String rateShiftFun({required String amount, String? locale}) {
+    return _rateShiftFun.insertTemplateValues({
+      'amount': amount,
+    }, locale: locale);
   }
 
   factory AppLocalizationsDataAttendanceDetail.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAttendanceDetail(
         absencesHeader: map['absencesHeader']! as String,
         shiftHeader: map['shiftHeader']! as String,
@@ -9344,7 +9336,8 @@ class AppLocalizationsDataAttendanceAbsence {
   final String processing;
   final String missing;
   factory AppLocalizationsDataAttendanceAbsence.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAttendanceAbsence(
         approved: map['approved']! as String,
         rejected: map['rejected']! as String,
@@ -9396,7 +9389,8 @@ class AppLocalizationsDataAttendanceCancelApplication {
   final String blogHint;
   final String title;
   factory AppLocalizationsDataAttendanceCancelApplication.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAttendanceCancelApplication(
         blogHint: map['blogHint']! as String,
         title: map['title']! as String,
@@ -9422,24 +9416,22 @@ class AppLocalizationsDataAttendanceCancelApplication {
 }
 
 class AppLocalizationsDataAttendanceVacation {
-  const AppLocalizationsDataAttendanceVacation({
-    required this.cancel,
-  });
+  const AppLocalizationsDataAttendanceVacation({required this.cancel});
 
   final AppLocalizationsDataAttendanceVacationCancel cancel;
   factory AppLocalizationsDataAttendanceVacation.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAttendanceVacation(
         cancel: AppLocalizationsDataAttendanceVacationCancel.fromJson(
-            map['cancel']! as Map<String, Object?>),
+          map['cancel']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataAttendanceVacation copyWith({
     AppLocalizationsDataAttendanceVacationCancel? cancel,
   }) =>
-      AppLocalizationsDataAttendanceVacation(
-        cancel: cancel ?? this.cancel,
-      );
+      AppLocalizationsDataAttendanceVacation(cancel: cancel ?? this.cancel);
 
   @override
   bool operator ==(Object other) =>
@@ -9461,7 +9453,8 @@ class AppLocalizationsDataAttendanceVacationCancel {
   final String title;
   final String button;
   factory AppLocalizationsDataAttendanceVacationCancel.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAttendanceVacationCancel(
         body: map['body']! as String,
         title: map['title']! as String,
@@ -9500,7 +9493,8 @@ class AppLocalizationsDataAttendanceCancelApplicationWithExcuse {
   final String body;
   final String title;
   factory AppLocalizationsDataAttendanceCancelApplicationWithExcuse.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataAttendanceCancelApplicationWithExcuse(
         body: map['body']! as String,
         title: map['title']! as String,
@@ -9555,13 +9549,17 @@ class AppLocalizationsDataCredits {
         claimedCredits: map['claimedCredits']! as String,
         title: map['title']! as String,
         payoutScreen: AppLocalizationsDataCreditsPayoutScreen.fromJson(
-            map['payoutScreen']! as Map<String, Object?>),
+          map['payoutScreen']! as Map<String, Object?>,
+        ),
         history: AppLocalizationsDataCreditsHistory.fromJson(
-            map['history']! as Map<String, Object?>),
+          map['history']! as Map<String, Object?>,
+        ),
         claimableCredits: AppLocalizationsDataCreditsClaimableCredits.fromJson(
-            map['claimableCredits']! as Map<String, Object?>),
+          map['claimableCredits']! as Map<String, Object?>,
+        ),
         hint: AppLocalizationsDataCreditsHint.fromJson(
-            map['hint']! as Map<String, Object?>),
+          map['hint']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataCredits copyWith({
@@ -9615,23 +9613,16 @@ class AppLocalizationsDataCredits {
 }
 
 class AppLocalizationsDataCreditsPayoutScreen {
-  const AppLocalizationsDataCreditsPayoutScreen({
-    required this.title,
-  });
+  const AppLocalizationsDataCreditsPayoutScreen({required this.title});
 
   final String title;
   factory AppLocalizationsDataCreditsPayoutScreen.fromJson(
-          Map<String, Object?> map) =>
-      AppLocalizationsDataCreditsPayoutScreen(
-        title: map['title']! as String,
-      );
+    Map<String, Object?> map,
+  ) =>
+      AppLocalizationsDataCreditsPayoutScreen(title: map['title']! as String);
 
-  AppLocalizationsDataCreditsPayoutScreen copyWith({
-    String? title,
-  }) =>
-      AppLocalizationsDataCreditsPayoutScreen(
-        title: title ?? this.title,
-      );
+  AppLocalizationsDataCreditsPayoutScreen copyWith({String? title}) =>
+      AppLocalizationsDataCreditsPayoutScreen(title: title ?? this.title);
 
   @override
   bool operator ==(Object other) =>
@@ -9643,23 +9634,16 @@ class AppLocalizationsDataCreditsPayoutScreen {
 }
 
 class AppLocalizationsDataCreditsHistory {
-  const AppLocalizationsDataCreditsHistory({
-    required this.title,
-  });
+  const AppLocalizationsDataCreditsHistory({required this.title});
 
   final String title;
   factory AppLocalizationsDataCreditsHistory.fromJson(
-          Map<String, Object?> map) =>
-      AppLocalizationsDataCreditsHistory(
-        title: map['title']! as String,
-      );
+    Map<String, Object?> map,
+  ) =>
+      AppLocalizationsDataCreditsHistory(title: map['title']! as String);
 
-  AppLocalizationsDataCreditsHistory copyWith({
-    String? title,
-  }) =>
-      AppLocalizationsDataCreditsHistory(
-        title: title ?? this.title,
-      );
+  AppLocalizationsDataCreditsHistory copyWith({String? title}) =>
+      AppLocalizationsDataCreditsHistory(title: title ?? this.title);
 
   @override
   bool operator ==(Object other) =>
@@ -9670,23 +9654,18 @@ class AppLocalizationsDataCreditsHistory {
 }
 
 class AppLocalizationsDataCreditsClaimableCredits {
-  const AppLocalizationsDataCreditsClaimableCredits({
-    required this.empty,
-  });
+  const AppLocalizationsDataCreditsClaimableCredits({required this.empty});
 
   final String empty;
   factory AppLocalizationsDataCreditsClaimableCredits.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataCreditsClaimableCredits(
         empty: map['empty']! as String,
       );
 
-  AppLocalizationsDataCreditsClaimableCredits copyWith({
-    String? empty,
-  }) =>
-      AppLocalizationsDataCreditsClaimableCredits(
-        empty: empty ?? this.empty,
-      );
+  AppLocalizationsDataCreditsClaimableCredits copyWith({String? empty}) =>
+      AppLocalizationsDataCreditsClaimableCredits(empty: empty ?? this.empty);
 
   @override
   bool operator ==(Object other) =>
@@ -9801,57 +9780,38 @@ class AppLocalizationsDataWallet {
     String? locale,
   }) {
     if (plural == Plural.one) {
-      return _inNWorkingDaysOne.insertTemplateValues(
-        {
-          'amount': amount,
-        },
-        locale: locale,
-      );
+      return _inNWorkingDaysOne.insertTemplateValues({
+        'amount': amount,
+      }, locale: locale);
     }
     if (plural == Plural.multiple) {
-      return _inNWorkingDaysMultiple.insertTemplateValues(
-        {
-          'amount': amount,
-        },
-        locale: locale,
-      );
+      return _inNWorkingDaysMultiple.insertTemplateValues({
+        'amount': amount,
+      }, locale: locale);
     }
     if (plural == Plural.zero) {
-      return _inNWorkingDaysZero.insertTemplateValues(
-        {
-          'amount': amount,
-        },
-        locale: locale,
-      );
+      return _inNWorkingDaysZero.insertTemplateValues({
+        'amount': amount,
+      }, locale: locale);
     }
     throw Exception();
   }
 
-  String isOnTheWayFun({
-    required String amount,
-    String? locale,
-  }) {
-    return _isOnTheWayFun.insertTemplateValues(
-      {
-        'amount': amount,
-      },
-      locale: locale,
-    );
+  String isOnTheWayFun({required String amount, String? locale}) {
+    return _isOnTheWayFun.insertTemplateValues({
+      'amount': amount,
+    }, locale: locale);
   }
 
-  String totalEarnedCongratulations({
-    required String amount,
-    String? locale,
-  }) {
-    return _totalEarnedCongratulations.insertTemplateValues(
-      {
-        'amount': amount,
-      },
-      locale: locale,
-    );
+  String totalEarnedCongratulations({required String amount, String? locale}) {
+    return _totalEarnedCongratulations.insertTemplateValues({
+      'amount': amount,
+    }, locale: locale);
   }
 
-  factory AppLocalizationsDataWallet.fromJson(Map<String, Object?> map) =>
+  factory AppLocalizationsDataWallet.fromJson(
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataWallet(
         inNWorkingDaysOne: map['inNWorkingDaysOne']! as String,
         inNWorkingDaysMultiple: map['inNWorkingDaysMultiple']! as String,
@@ -9867,28 +9827,39 @@ class AppLocalizationsDataWallet {
         payout: map['payout']! as String,
         toPayout: map['toPayout']! as String,
         payoutStatus: AppLocalizationsDataWalletPayoutStatus.fromJson(
-            map['payoutStatus']! as Map<String, Object?>),
+          map['payoutStatus']! as Map<String, Object?>,
+        ),
         dialog: AppLocalizationsDataWalletDialog.fromJson(
-            map['dialog']! as Map<String, Object?>),
+          map['dialog']! as Map<String, Object?>,
+        ),
         paymentTransaction:
             AppLocalizationsDataWalletPaymentTransaction.fromJson(
-                map['paymentTransaction']! as Map<String, Object?>),
+          map['paymentTransaction']! as Map<String, Object?>,
+        ),
         paymentRequest: AppLocalizationsDataWalletPaymentRequest.fromJson(
-            map['paymentRequest']! as Map<String, Object?>),
+          map['paymentRequest']! as Map<String, Object?>,
+        ),
         processing: AppLocalizationsDataWalletProcessing.fromJson(
-            map['processing']! as Map<String, Object?>),
+          map['processing']! as Map<String, Object?>,
+        ),
         payoutSuccess: AppLocalizationsDataWalletPayoutSuccess.fromJson(
-            map['payoutSuccess']! as Map<String, Object?>),
+          map['payoutSuccess']! as Map<String, Object?>,
+        ),
         exekuce: AppLocalizationsDataWalletExekuce.fromJson(
-            map['exekuce']! as Map<String, Object?>),
+          map['exekuce']! as Map<String, Object?>,
+        ),
         payoutScreen: AppLocalizationsDataWalletPayoutScreen.fromJson(
-            map['payoutScreen']! as Map<String, Object?>),
+          map['payoutScreen']! as Map<String, Object?>,
+        ),
         payoutsScreen: AppLocalizationsDataWalletPayoutsScreen.fromJson(
-            map['payoutsScreen']! as Map<String, Object?>),
+          map['payoutsScreen']! as Map<String, Object?>,
+        ),
         detail: AppLocalizationsDataWalletDetail.fromJson(
-            map['detail']! as Map<String, Object?>),
+          map['detail']! as Map<String, Object?>,
+        ),
         hint: AppLocalizationsDataWalletHint.fromJson(
-            map['hint']! as Map<String, Object?>),
+          map['hint']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataWallet copyWith({
@@ -10008,20 +9979,13 @@ class AppLocalizationsDataWalletPayoutStatus {
   final String processing;
   final String _text;
 
-  String text({
-    required String days,
-    String? locale,
-  }) {
-    return _text.insertTemplateValues(
-      {
-        'days': days,
-      },
-      locale: locale,
-    );
+  String text({required String days, String? locale}) {
+    return _text.insertTemplateValues({'days': days}, locale: locale);
   }
 
   factory AppLocalizationsDataWalletPayoutStatus.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataWalletPayoutStatus(
         processing: map['processing']! as String,
         text: map['text']! as String,
@@ -10059,28 +10023,12 @@ class AppLocalizationsDataWalletDialog {
   final String _body;
   final String _title;
 
-  String body({
-    required String days,
-    String? locale,
-  }) {
-    return _body.insertTemplateValues(
-      {
-        'days': days,
-      },
-      locale: locale,
-    );
+  String body({required String days, String? locale}) {
+    return _body.insertTemplateValues({'days': days}, locale: locale);
   }
 
-  String title({
-    required String days,
-    String? locale,
-  }) {
-    return _title.insertTemplateValues(
-      {
-        'days': days,
-      },
-      locale: locale,
-    );
+  String title({required String days, String? locale}) {
+    return _title.insertTemplateValues({'days': days}, locale: locale);
   }
 
   factory AppLocalizationsDataWalletDialog.fromJson(Map<String, Object?> map) =>
@@ -10124,20 +10072,13 @@ class AppLocalizationsDataWalletPaymentTransaction {
   final String moneySent;
   final String _sentToBankAt;
 
-  String sentToBankAt({
-    required String date,
-    String? locale,
-  }) {
-    return _sentToBankAt.insertTemplateValues(
-      {
-        'date': date,
-      },
-      locale: locale,
-    );
+  String sentToBankAt({required String date, String? locale}) {
+    return _sentToBankAt.insertTemplateValues({'date': date}, locale: locale);
   }
 
   factory AppLocalizationsDataWalletPaymentTransaction.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataWalletPaymentTransaction(
         paymentNote: map['paymentNote']! as String,
         moneySent: map['moneySent']! as String,
@@ -10190,32 +10131,17 @@ class AppLocalizationsDataWalletPaymentRequest {
   final String heading;
   final String title;
 
-  String requested({
-    required String date,
-    String? locale,
-  }) {
-    return _requested.insertTemplateValues(
-      {
-        'date': date,
-      },
-      locale: locale,
-    );
+  String requested({required String date, String? locale}) {
+    return _requested.insertTemplateValues({'date': date}, locale: locale);
   }
 
-  String paidOut({
-    required String date,
-    String? locale,
-  }) {
-    return _paidOut.insertTemplateValues(
-      {
-        'date': date,
-      },
-      locale: locale,
-    );
+  String paidOut({required String date, String? locale}) {
+    return _paidOut.insertTemplateValues({'date': date}, locale: locale);
   }
 
   factory AppLocalizationsDataWalletPaymentRequest.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataWalletPaymentRequest(
         requested: map['requested']! as String,
         paidOut: map['paidOut']! as String,
@@ -10277,7 +10203,8 @@ class AppLocalizationsDataWalletProcessing {
   final String empty;
   final String title;
   factory AppLocalizationsDataWalletProcessing.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataWalletProcessing(
         empty: map['empty']! as String,
         title: map['title']! as String,
@@ -10313,7 +10240,8 @@ class AppLocalizationsDataWalletPayoutSuccess {
   final String body;
   final String title;
   factory AppLocalizationsDataWalletPayoutSuccess.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataWalletPayoutSuccess(
         bodyBottom: map['bodyBottom']! as String,
         body: map['body']! as String,
@@ -10347,33 +10275,25 @@ class AppLocalizationsDataWalletPayoutSuccess {
 }
 
 class AppLocalizationsDataWalletExekuce {
-  const AppLocalizationsDataWalletExekuce({
-    required String blockedAmount,
-  }) : _blockedAmount = blockedAmount;
+  const AppLocalizationsDataWalletExekuce({required String blockedAmount})
+      : _blockedAmount = blockedAmount;
 
   final String _blockedAmount;
 
-  String blockedAmount({
-    required String amountWithCurrency,
-    String? locale,
-  }) {
-    return _blockedAmount.insertTemplateValues(
-      {
-        'amountWithCurrency': amountWithCurrency,
-      },
-      locale: locale,
-    );
+  String blockedAmount({required String amountWithCurrency, String? locale}) {
+    return _blockedAmount.insertTemplateValues({
+      'amountWithCurrency': amountWithCurrency,
+    }, locale: locale);
   }
 
   factory AppLocalizationsDataWalletExekuce.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataWalletExekuce(
         blockedAmount: map['blockedAmount']! as String,
       );
 
-  AppLocalizationsDataWalletExekuce copyWith({
-    String? blockedAmount,
-  }) =>
+  AppLocalizationsDataWalletExekuce copyWith({String? blockedAmount}) =>
       AppLocalizationsDataWalletExekuce(
         blockedAmount: blockedAmount ?? _blockedAmount,
       );
@@ -10412,20 +10332,15 @@ class AppLocalizationsDataWalletPayoutScreen {
   final String choosePayouts;
   final String title;
 
-  String youCanPayMax({
-    required String amountWithCurrency,
-    String? locale,
-  }) {
-    return _youCanPayMax.insertTemplateValues(
-      {
-        'amountWithCurrency': amountWithCurrency,
-      },
-      locale: locale,
-    );
+  String youCanPayMax({required String amountWithCurrency, String? locale}) {
+    return _youCanPayMax.insertTemplateValues({
+      'amountWithCurrency': amountWithCurrency,
+    }, locale: locale);
   }
 
   factory AppLocalizationsDataWalletPayoutScreen.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataWalletPayoutScreen(
         youCanPayMax: map['youCanPayMax']! as String,
         exekuceWarning: map['exekuceWarning']! as String,
@@ -10494,23 +10409,16 @@ class AppLocalizationsDataWalletPayoutScreen {
 }
 
 class AppLocalizationsDataWalletPayoutsScreen {
-  const AppLocalizationsDataWalletPayoutsScreen({
-    required this.title,
-  });
+  const AppLocalizationsDataWalletPayoutsScreen({required this.title});
 
   final String title;
   factory AppLocalizationsDataWalletPayoutsScreen.fromJson(
-          Map<String, Object?> map) =>
-      AppLocalizationsDataWalletPayoutsScreen(
-        title: map['title']! as String,
-      );
+    Map<String, Object?> map,
+  ) =>
+      AppLocalizationsDataWalletPayoutsScreen(title: map['title']! as String);
 
-  AppLocalizationsDataWalletPayoutsScreen copyWith({
-    String? title,
-  }) =>
-      AppLocalizationsDataWalletPayoutsScreen(
-        title: title ?? this.title,
-      );
+  AppLocalizationsDataWalletPayoutsScreen copyWith({String? title}) =>
+      AppLocalizationsDataWalletPayoutsScreen(title: title ?? this.title);
 
   @override
   bool operator ==(Object other) =>
@@ -10554,7 +10462,8 @@ class AppLocalizationsDataWalletDetail {
         payoutReceipt: map['payoutReceipt']! as String,
         cutsAndTaxes: map['cutsAndTaxes']! as String,
         payroll: AppLocalizationsDataWalletDetailPayroll.fromJson(
-            map['payroll']! as Map<String, Object?>),
+          map['payroll']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataWalletDetail copyWith({
@@ -10609,20 +10518,17 @@ class AppLocalizationsDataWalletDetail {
 }
 
 class AppLocalizationsDataWalletDetailPayroll {
-  const AppLocalizationsDataWalletDetailPayroll({
-    required this.notReadyYet,
-  });
+  const AppLocalizationsDataWalletDetailPayroll({required this.notReadyYet});
 
   final String notReadyYet;
   factory AppLocalizationsDataWalletDetailPayroll.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataWalletDetailPayroll(
         notReadyYet: map['notReadyYet']! as String,
       );
 
-  AppLocalizationsDataWalletDetailPayroll copyWith({
-    String? notReadyYet,
-  }) =>
+  AppLocalizationsDataWalletDetailPayroll copyWith({String? notReadyYet}) =>
       AppLocalizationsDataWalletDetailPayroll(
         notReadyYet: notReadyYet ?? this.notReadyYet,
       );
@@ -10866,15 +10772,19 @@ class AppLocalizationsDataFailure {
         invalidVerifyToken: map['invalidVerifyToken']! as String,
         noInternet: map['noInternet']! as String,
         invitation: AppLocalizationsDataFailureInvitation.fromJson(
-            map['invitation']! as Map<String, Object?>),
+          map['invitation']! as Map<String, Object?>,
+        ),
         phoneNumberAlreadyTaken:
             AppLocalizationsDataFailurePhoneNumberAlreadyTaken.fromJson(
-                map['phoneNumberAlreadyTaken']! as Map<String, Object?>),
+          map['phoneNumberAlreadyTaken']! as Map<String, Object?>,
+        ),
         invalidResetPasswordToken:
             AppLocalizationsDataFailureInvalidResetPasswordToken.fromJson(
-                map['invalidResetPasswordToken']! as Map<String, Object?>),
+          map['invalidResetPasswordToken']! as Map<String, Object?>,
+        ),
         general: AppLocalizationsDataFailureGeneral.fromJson(
-            map['general']! as Map<String, Object?>),
+          map['general']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataFailure copyWith({
@@ -10955,7 +10865,8 @@ class AppLocalizationsDataFailureInvitation {
   final String accept;
   final String fetch;
   factory AppLocalizationsDataFailureInvitation.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataFailureInvitation(
         reject: map['reject']! as String,
         accept: map['accept']! as String,
@@ -10994,7 +10905,8 @@ class AppLocalizationsDataFailurePhoneNumberAlreadyTaken {
   final String body;
   final String title;
   factory AppLocalizationsDataFailurePhoneNumberAlreadyTaken.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataFailurePhoneNumberAlreadyTaken(
         body: map['body']! as String,
         title: map['title']! as String,
@@ -11028,7 +10940,8 @@ class AppLocalizationsDataFailureInvalidResetPasswordToken {
   final String message;
   final String title;
   factory AppLocalizationsDataFailureInvalidResetPasswordToken.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataFailureInvalidResetPasswordToken(
         message: map['message']! as String,
         title: map['title']! as String,
@@ -11062,7 +10975,8 @@ class AppLocalizationsDataFailureGeneral {
   final String message;
   final String title;
   factory AppLocalizationsDataFailureGeneral.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataFailureGeneral(
         message: map['message']! as String,
         title: map['title']! as String,
@@ -11101,10 +11015,7 @@ class AppLocalizationsDataAppSettings {
         title: map['title']! as String,
       );
 
-  AppLocalizationsDataAppSettings copyWith({
-    String? language,
-    String? title,
-  }) =>
+  AppLocalizationsDataAppSettings copyWith({String? language, String? title}) =>
       AppLocalizationsDataAppSettings(
         language: language ?? this.language,
         title: title ?? this.title,
@@ -11129,7 +11040,8 @@ class AppLocalizationsDataActivateAccount {
   final String successMessage;
   final String success;
   factory AppLocalizationsDataActivateAccount.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataActivateAccount(
         successMessage: map['successMessage']! as String,
         success: map['success']! as String,
@@ -11170,7 +11082,8 @@ class AppLocalizationsDataNewPassword {
         button: map['button']! as String,
         title: map['title']! as String,
         success: AppLocalizationsDataNewPasswordSuccess.fromJson(
-            map['success']! as Map<String, Object?>),
+          map['success']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataNewPassword copyWith({
@@ -11208,7 +11121,8 @@ class AppLocalizationsDataNewPasswordSuccess {
   final String body;
   final String title;
   factory AppLocalizationsDataNewPasswordSuccess.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataNewPasswordSuccess(
         body: map['body']! as String,
         title: map['title']! as String,
@@ -11248,15 +11162,18 @@ class AppLocalizationsDataForgottenPassword {
   final AppLocalizationsDataForgottenPasswordSuccess success;
   final AppLocalizationsDataForgottenPasswordAppbar appbar;
   factory AppLocalizationsDataForgottenPassword.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataForgottenPassword(
         button: map['button']! as String,
         body: map['body']! as String,
         title: map['title']! as String,
         success: AppLocalizationsDataForgottenPasswordSuccess.fromJson(
-            map['success']! as Map<String, Object?>),
+          map['success']! as Map<String, Object?>,
+        ),
         appbar: AppLocalizationsDataForgottenPasswordAppbar.fromJson(
-            map['appbar']! as Map<String, Object?>),
+          map['appbar']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataForgottenPassword copyWith({
@@ -11306,7 +11223,8 @@ class AppLocalizationsDataForgottenPasswordSuccess {
   final String body;
   final String title;
   factory AppLocalizationsDataForgottenPasswordSuccess.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataForgottenPasswordSuccess(
         techSupport: map['techSupport']! as String,
         sendEmailAgain: map['sendEmailAgain']! as String,
@@ -11345,23 +11263,18 @@ class AppLocalizationsDataForgottenPasswordSuccess {
 }
 
 class AppLocalizationsDataForgottenPasswordAppbar {
-  const AppLocalizationsDataForgottenPasswordAppbar({
-    required this.title,
-  });
+  const AppLocalizationsDataForgottenPasswordAppbar({required this.title});
 
   final String title;
   factory AppLocalizationsDataForgottenPasswordAppbar.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataForgottenPasswordAppbar(
         title: map['title']! as String,
       );
 
-  AppLocalizationsDataForgottenPasswordAppbar copyWith({
-    String? title,
-  }) =>
-      AppLocalizationsDataForgottenPasswordAppbar(
-        title: title ?? this.title,
-      );
+  AppLocalizationsDataForgottenPasswordAppbar copyWith({String? title}) =>
+      AppLocalizationsDataForgottenPasswordAppbar(title: title ?? this.title);
 
   @override
   bool operator ==(Object other) =>
@@ -11393,19 +11306,26 @@ class AppLocalizationsDataShifts {
   factory AppLocalizationsDataShifts.fromJson(Map<String, Object?> map) =>
       AppLocalizationsDataShifts(
         knowledgeTest: AppLocalizationsDataShiftsKnowledgeTest.fromJson(
-            map['knowledgeTest']! as Map<String, Object?>),
+          map['knowledgeTest']! as Map<String, Object?>,
+        ),
         claim: AppLocalizationsDataShiftsClaim.fromJson(
-            map['claim']! as Map<String, Object?>),
+          map['claim']! as Map<String, Object?>,
+        ),
         label: AppLocalizationsDataShiftsLabel.fromJson(
-            map['label']! as Map<String, Object?>),
+          map['label']! as Map<String, Object?>,
+        ),
         detail: AppLocalizationsDataShiftsDetail.fromJson(
-            map['detail']! as Map<String, Object?>),
+          map['detail']! as Map<String, Object?>,
+        ),
         filter: AppLocalizationsDataShiftsFilter.fromJson(
-            map['filter']! as Map<String, Object?>),
+          map['filter']! as Map<String, Object?>,
+        ),
         feed: AppLocalizationsDataShiftsFeed.fromJson(
-            map['feed']! as Map<String, Object?>),
+          map['feed']! as Map<String, Object?>,
+        ),
         list: AppLocalizationsDataShiftsList.fromJson(
-            map['list']! as Map<String, Object?>),
+          map['list']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShifts copyWith({
@@ -11464,16 +11384,10 @@ class AppLocalizationsDataShiftsKnowledgeTest {
   final String finishTest;
   final String fillOutTest;
 
-  String errorMessage({
-    required String amount,
-    String? locale,
-  }) {
-    return _errorMessage.insertTemplateValues(
-      {
-        'amount': amount,
-      },
-      locale: locale,
-    );
+  String errorMessage({required String amount, String? locale}) {
+    return _errorMessage.insertTemplateValues({
+      'amount': amount,
+    }, locale: locale);
   }
 
   String points({
@@ -11481,17 +11395,15 @@ class AppLocalizationsDataShiftsKnowledgeTest {
     required String total,
     String? locale,
   }) {
-    return _points.insertTemplateValues(
-      {
-        'amount': amount,
-        'total': total,
-      },
-      locale: locale,
-    );
+    return _points.insertTemplateValues({
+      'amount': amount,
+      'total': total,
+    }, locale: locale);
   }
 
   factory AppLocalizationsDataShiftsKnowledgeTest.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsKnowledgeTest(
         errorMessage: map['errorMessage']! as String,
         points: map['points']! as String,
@@ -11552,16 +11464,21 @@ class AppLocalizationsDataShiftsClaim {
         title: map['title']! as String,
         completed: map['completed']! as String,
         overview: AppLocalizationsDataShiftsClaimOverview.fromJson(
-            map['overview']! as Map<String, Object?>),
+          map['overview']! as Map<String, Object?>,
+        ),
         signature: AppLocalizationsDataShiftsClaimSignature.fromJson(
-            map['signature']! as Map<String, Object?>),
+          map['signature']! as Map<String, Object?>,
+        ),
         limitsPredictions:
             AppLocalizationsDataShiftsClaimLimitsPredictions.fromJson(
-                map['limitsPredictions']! as Map<String, Object?>),
+          map['limitsPredictions']! as Map<String, Object?>,
+        ),
         button: AppLocalizationsDataShiftsClaimButton.fromJson(
-            map['button']! as Map<String, Object?>),
+          map['button']! as Map<String, Object?>,
+        ),
         hint: AppLocalizationsDataShiftsClaimHint.fromJson(
-            map['hint']! as Map<String, Object?>),
+          map['hint']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsClaim copyWith({
@@ -11617,7 +11534,8 @@ class AppLocalizationsDataShiftsClaimOverview {
   final String confirm;
   final String title;
   factory AppLocalizationsDataShiftsClaimOverview.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsClaimOverview(
         button: map['button']! as String,
         confirm: map['confirm']! as String,
@@ -11661,12 +11579,14 @@ class AppLocalizationsDataShiftsClaimSignature {
   final String title;
   final AppLocalizationsDataShiftsClaimSignatureButton button;
   factory AppLocalizationsDataShiftsClaimSignature.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsClaimSignature(
         hint: map['hint']! as String,
         title: map['title']! as String,
         button: AppLocalizationsDataShiftsClaimSignatureButton.fromJson(
-            map['button']! as Map<String, Object?>),
+          map['button']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsClaimSignature copyWith({
@@ -11701,7 +11621,8 @@ class AppLocalizationsDataShiftsClaimSignatureButton {
   final String next;
   final String signAgain;
   factory AppLocalizationsDataShiftsClaimSignatureButton.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsClaimSignatureButton(
         next: map['next']! as String,
         signAgain: map['signAgain']! as String,
@@ -11751,7 +11672,8 @@ class AppLocalizationsDataShiftsClaimLimitsPredictions {
   final String title;
   final AppLocalizationsDataShiftsClaimLimitsPredictionsWarning warning;
   factory AppLocalizationsDataShiftsClaimLimitsPredictions.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsClaimLimitsPredictions(
         rejectShift: map['rejectShift']! as String,
         assumption: map['assumption']! as String,
@@ -11764,7 +11686,8 @@ class AppLocalizationsDataShiftsClaimLimitsPredictions {
         title: map['title']! as String,
         warning:
             AppLocalizationsDataShiftsClaimLimitsPredictionsWarning.fromJson(
-                map['warning']! as Map<String, Object?>),
+          map['warning']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsClaimLimitsPredictions copyWith({
@@ -11830,7 +11753,8 @@ class AppLocalizationsDataShiftsClaimLimitsPredictionsWarning {
   final String description;
   final String title;
   factory AppLocalizationsDataShiftsClaimLimitsPredictionsWarning.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsClaimLimitsPredictionsWarning(
         description: map['description']! as String,
         title: map['title']! as String,
@@ -11857,20 +11781,17 @@ class AppLocalizationsDataShiftsClaimLimitsPredictionsWarning {
 }
 
 class AppLocalizationsDataShiftsClaimButton {
-  const AppLocalizationsDataShiftsClaimButton({
-    required this.readAndAgree,
-  });
+  const AppLocalizationsDataShiftsClaimButton({required this.readAndAgree});
 
   final String readAndAgree;
   factory AppLocalizationsDataShiftsClaimButton.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsClaimButton(
         readAndAgree: map['readAndAgree']! as String,
       );
 
-  AppLocalizationsDataShiftsClaimButton copyWith({
-    String? readAndAgree,
-  }) =>
+  AppLocalizationsDataShiftsClaimButton copyWith({String? readAndAgree}) =>
       AppLocalizationsDataShiftsClaimButton(
         readAndAgree: readAndAgree ?? this.readAndAgree,
       );
@@ -11893,7 +11814,8 @@ class AppLocalizationsDataShiftsClaimHint {
   final String button;
   final String title;
   factory AppLocalizationsDataShiftsClaimHint.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsClaimHint(
         button: map['button']! as String,
         title: map['title']! as String,
@@ -12003,37 +11925,51 @@ class AppLocalizationsDataShiftsDetail {
   final AppLocalizationsDataShiftsDetailSection section;
   final AppLocalizationsDataShiftsDetailLabel label;
   final AppLocalizationsDataShiftsDetailButton button;
-  factory AppLocalizationsDataShiftsDetail.fromJson(Map<String, Object?> map) =>
+  factory AppLocalizationsDataShiftsDetail.fromJson(
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetail(
         claimError: map['claimError']! as String,
         showOnMap: map['showOnMap']! as String,
         loading: map['loading']! as String,
         issue: AppLocalizationsDataShiftsDetailIssue.fromJson(
-            map['issue']! as Map<String, Object?>),
+          map['issue']! as Map<String, Object?>,
+        ),
         vacation: AppLocalizationsDataShiftsDetailVacation.fromJson(
-            map['vacation']! as Map<String, Object?>),
+          map['vacation']! as Map<String, Object?>,
+        ),
         footer: AppLocalizationsDataShiftsDetailFooter.fromJson(
-            map['footer']! as Map<String, Object?>),
+          map['footer']! as Map<String, Object?>,
+        ),
         accountInReview:
             AppLocalizationsDataShiftsDetailAccountInReview.fromJson(
-                map['accountInReview']! as Map<String, Object?>),
+          map['accountInReview']! as Map<String, Object?>,
+        ),
         accountInactive:
             AppLocalizationsDataShiftsDetailAccountInactive.fromJson(
-                map['accountInactive']! as Map<String, Object?>),
+          map['accountInactive']! as Map<String, Object?>,
+        ),
         error: AppLocalizationsDataShiftsDetailError.fromJson(
-            map['error']! as Map<String, Object?>),
+          map['error']! as Map<String, Object?>,
+        ),
         surcharge: AppLocalizationsDataShiftsDetailSurcharge.fromJson(
-            map['surcharge']! as Map<String, Object?>),
+          map['surcharge']! as Map<String, Object?>,
+        ),
         loadingError: AppLocalizationsDataShiftsDetailLoadingError.fromJson(
-            map['loadingError']! as Map<String, Object?>),
+          map['loadingError']! as Map<String, Object?>,
+        ),
         notAvailable: AppLocalizationsDataShiftsDetailNotAvailable.fromJson(
-            map['notAvailable']! as Map<String, Object?>),
+          map['notAvailable']! as Map<String, Object?>,
+        ),
         section: AppLocalizationsDataShiftsDetailSection.fromJson(
-            map['section']! as Map<String, Object?>),
+          map['section']! as Map<String, Object?>,
+        ),
         label: AppLocalizationsDataShiftsDetailLabel.fromJson(
-            map['label']! as Map<String, Object?>),
+          map['label']! as Map<String, Object?>,
+        ),
         button: AppLocalizationsDataShiftsDetailButton.fromJson(
-            map['button']! as Map<String, Object?>),
+          map['button']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsDetail copyWith({
@@ -12119,7 +12055,8 @@ class AppLocalizationsDataShiftsDetailIssue {
   final String hpp;
   final String salaryLimit;
   factory AppLocalizationsDataShiftsDetailIssue.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailIssue(
         hpp: map['hpp']! as String,
         salaryLimit: map['salaryLimit']! as String,
@@ -12154,11 +12091,13 @@ class AppLocalizationsDataShiftsDetailVacation {
   final String title;
   final AppLocalizationsDataShiftsDetailVacationInfo info;
   factory AppLocalizationsDataShiftsDetailVacation.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailVacation(
         title: map['title']! as String,
         info: AppLocalizationsDataShiftsDetailVacationInfo.fromJson(
-            map['info']! as Map<String, Object?>),
+          map['info']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsDetailVacation copyWith({
@@ -12189,7 +12128,8 @@ class AppLocalizationsDataShiftsDetailVacationInfo {
   final String description;
   final String title;
   factory AppLocalizationsDataShiftsDetailVacationInfo.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailVacationInfo(
         description: map['description']! as String,
         title: map['title']! as String,
@@ -12216,16 +12156,16 @@ class AppLocalizationsDataShiftsDetailVacationInfo {
 }
 
 class AppLocalizationsDataShiftsDetailFooter {
-  const AppLocalizationsDataShiftsDetailFooter({
-    required this.invitation,
-  });
+  const AppLocalizationsDataShiftsDetailFooter({required this.invitation});
 
   final AppLocalizationsDataShiftsDetailFooterInvitation invitation;
   factory AppLocalizationsDataShiftsDetailFooter.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailFooter(
         invitation: AppLocalizationsDataShiftsDetailFooterInvitation.fromJson(
-            map['invitation']! as Map<String, Object?>),
+          map['invitation']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsDetailFooter copyWith({
@@ -12245,20 +12185,17 @@ class AppLocalizationsDataShiftsDetailFooter {
 }
 
 class AppLocalizationsDataShiftsDetailFooterInvitation {
-  const AppLocalizationsDataShiftsDetailFooterInvitation({
-    required this.title,
-  });
+  const AppLocalizationsDataShiftsDetailFooterInvitation({required this.title});
 
   final String title;
   factory AppLocalizationsDataShiftsDetailFooterInvitation.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailFooterInvitation(
         title: map['title']! as String,
       );
 
-  AppLocalizationsDataShiftsDetailFooterInvitation copyWith({
-    String? title,
-  }) =>
+  AppLocalizationsDataShiftsDetailFooterInvitation copyWith({String? title}) =>
       AppLocalizationsDataShiftsDetailFooterInvitation(
         title: title ?? this.title,
       );
@@ -12281,7 +12218,8 @@ class AppLocalizationsDataShiftsDetailAccountInReview {
   final String description;
   final String title;
   factory AppLocalizationsDataShiftsDetailAccountInReview.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailAccountInReview(
         description: map['description']! as String,
         title: map['title']! as String,
@@ -12318,12 +12256,14 @@ class AppLocalizationsDataShiftsDetailAccountInactive {
   final String title;
   final AppLocalizationsDataShiftsDetailAccountInactiveButton button;
   factory AppLocalizationsDataShiftsDetailAccountInactive.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailAccountInactive(
         description: map['description']! as String,
         title: map['title']! as String,
         button: AppLocalizationsDataShiftsDetailAccountInactiveButton.fromJson(
-            map['button']! as Map<String, Object?>),
+          map['button']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsDetailAccountInactive copyWith({
@@ -12361,7 +12301,8 @@ class AppLocalizationsDataShiftsDetailAccountInactiveButton {
   final String back;
   final String verifyAccount;
   factory AppLocalizationsDataShiftsDetailAccountInactiveButton.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailAccountInactiveButton(
         back: map['back']! as String,
         verifyAccount: map['verifyAccount']! as String,
@@ -12396,7 +12337,8 @@ class AppLocalizationsDataShiftsDetailError {
   final String missingDocument;
   final String salaryLimitExceeded;
   factory AppLocalizationsDataShiftsDetailError.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailError(
         missingDocument: map['missingDocument']! as String,
         salaryLimitExceeded: map['salaryLimitExceeded']! as String,
@@ -12437,7 +12379,8 @@ class AppLocalizationsDataShiftsDetailSurcharge {
   final String forHoliday;
   final String reason;
   factory AppLocalizationsDataShiftsDetailSurcharge.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSurcharge(
         forWeekend: map['forWeekend']! as String,
         forNight: map['forNight']! as String,
@@ -12484,7 +12427,8 @@ class AppLocalizationsDataShiftsDetailLoadingError {
   final String retry;
   final String title;
   factory AppLocalizationsDataShiftsDetailLoadingError.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailLoadingError(
         retry: map['retry']! as String,
         title: map['title']! as String,
@@ -12510,23 +12454,18 @@ class AppLocalizationsDataShiftsDetailLoadingError {
 }
 
 class AppLocalizationsDataShiftsDetailNotAvailable {
-  const AppLocalizationsDataShiftsDetailNotAvailable({
-    required this.title,
-  });
+  const AppLocalizationsDataShiftsDetailNotAvailable({required this.title});
 
   final String title;
   factory AppLocalizationsDataShiftsDetailNotAvailable.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailNotAvailable(
         title: map['title']! as String,
       );
 
-  AppLocalizationsDataShiftsDetailNotAvailable copyWith({
-    String? title,
-  }) =>
-      AppLocalizationsDataShiftsDetailNotAvailable(
-        title: title ?? this.title,
-      );
+  AppLocalizationsDataShiftsDetailNotAvailable copyWith({String? title}) =>
+      AppLocalizationsDataShiftsDetailNotAvailable(title: title ?? this.title);
 
   @override
   bool operator ==(Object other) =>
@@ -12560,30 +12499,39 @@ class AppLocalizationsDataShiftsDetailSection {
   final AppLocalizationsDataShiftsDetailSectionUtilities utilities;
   final AppLocalizationsDataShiftsDetailSectionRequirements requirements;
   factory AppLocalizationsDataShiftsDetailSection.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSection(
         location: AppLocalizationsDataShiftsDetailSectionLocation.fromJson(
-            map['location']! as Map<String, Object?>),
+          map['location']! as Map<String, Object?>,
+        ),
         instructionNewcommers:
             AppLocalizationsDataShiftsDetailSectionInstructionNewcommers
                 .fromJson(
-                    map['instructionNewcommers']! as Map<String, Object?>),
+          map['instructionNewcommers']! as Map<String, Object?>,
+        ),
         emergencyContact:
             AppLocalizationsDataShiftsDetailSectionEmergencyContact.fromJson(
-                map['emergencyContact']! as Map<String, Object?>),
+          map['emergencyContact']! as Map<String, Object?>,
+        ),
         description:
             AppLocalizationsDataShiftsDetailSectionDescription.fromJson(
-                map['description']! as Map<String, Object?>),
+          map['description']! as Map<String, Object?>,
+        ),
         instruction:
             AppLocalizationsDataShiftsDetailSectionInstruction.fromJson(
-                map['instruction']! as Map<String, Object?>),
+          map['instruction']! as Map<String, Object?>,
+        ),
         documents: AppLocalizationsDataShiftsDetailSectionDocuments.fromJson(
-            map['documents']! as Map<String, Object?>),
+          map['documents']! as Map<String, Object?>,
+        ),
         utilities: AppLocalizationsDataShiftsDetailSectionUtilities.fromJson(
-            map['utilities']! as Map<String, Object?>),
+          map['utilities']! as Map<String, Object?>,
+        ),
         requirements:
             AppLocalizationsDataShiftsDetailSectionRequirements.fromJson(
-                map['requirements']! as Map<String, Object?>),
+          map['requirements']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsDetailSection copyWith({
@@ -12635,20 +12583,17 @@ class AppLocalizationsDataShiftsDetailSection {
 }
 
 class AppLocalizationsDataShiftsDetailSectionLocation {
-  const AppLocalizationsDataShiftsDetailSectionLocation({
-    required this.title,
-  });
+  const AppLocalizationsDataShiftsDetailSectionLocation({required this.title});
 
   final String title;
   factory AppLocalizationsDataShiftsDetailSectionLocation.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSectionLocation(
         title: map['title']! as String,
       );
 
-  AppLocalizationsDataShiftsDetailSectionLocation copyWith({
-    String? title,
-  }) =>
+  AppLocalizationsDataShiftsDetailSectionLocation copyWith({String? title}) =>
       AppLocalizationsDataShiftsDetailSectionLocation(
         title: title ?? this.title,
       );
@@ -12669,7 +12614,8 @@ class AppLocalizationsDataShiftsDetailSectionInstructionNewcommers {
 
   final String title;
   factory AppLocalizationsDataShiftsDetailSectionInstructionNewcommers.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSectionInstructionNewcommers(
         title: map['title']! as String,
       );
@@ -12699,7 +12645,8 @@ class AppLocalizationsDataShiftsDetailSectionEmergencyContact {
   final String copied;
   final String title;
   factory AppLocalizationsDataShiftsDetailSectionEmergencyContact.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSectionEmergencyContact(
         copied: map['copied']! as String,
         title: map['title']! as String,
@@ -12731,7 +12678,8 @@ class AppLocalizationsDataShiftsDetailSectionDescription {
 
   final String title;
   factory AppLocalizationsDataShiftsDetailSectionDescription.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSectionDescription(
         title: map['title']! as String,
       );
@@ -12759,7 +12707,8 @@ class AppLocalizationsDataShiftsDetailSectionInstruction {
 
   final String title;
   factory AppLocalizationsDataShiftsDetailSectionInstruction.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSectionInstruction(
         title: map['title']! as String,
       );
@@ -12781,20 +12730,17 @@ class AppLocalizationsDataShiftsDetailSectionInstruction {
 }
 
 class AppLocalizationsDataShiftsDetailSectionDocuments {
-  const AppLocalizationsDataShiftsDetailSectionDocuments({
-    required this.title,
-  });
+  const AppLocalizationsDataShiftsDetailSectionDocuments({required this.title});
 
   final String title;
   factory AppLocalizationsDataShiftsDetailSectionDocuments.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSectionDocuments(
         title: map['title']! as String,
       );
 
-  AppLocalizationsDataShiftsDetailSectionDocuments copyWith({
-    String? title,
-  }) =>
+  AppLocalizationsDataShiftsDetailSectionDocuments copyWith({String? title}) =>
       AppLocalizationsDataShiftsDetailSectionDocuments(
         title: title ?? this.title,
       );
@@ -12819,13 +12765,16 @@ class AppLocalizationsDataShiftsDetailSectionUtilities {
   final AppLocalizationsDataShiftsDetailSectionUtilitiesError error;
   final AppLocalizationsDataShiftsDetailSectionUtilitiesItem item;
   factory AppLocalizationsDataShiftsDetailSectionUtilities.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSectionUtilities(
         title: map['title']! as String,
         error: AppLocalizationsDataShiftsDetailSectionUtilitiesError.fromJson(
-            map['error']! as Map<String, Object?>),
+          map['error']! as Map<String, Object?>,
+        ),
         item: AppLocalizationsDataShiftsDetailSectionUtilitiesItem.fromJson(
-            map['item']! as Map<String, Object?>),
+          map['item']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsDetailSectionUtilities copyWith({
@@ -12860,7 +12809,8 @@ class AppLocalizationsDataShiftsDetailSectionUtilitiesError {
   final String description;
   final String title;
   factory AppLocalizationsDataShiftsDetailSectionUtilitiesError.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSectionUtilitiesError(
         description: map['description']! as String,
         title: map['title']! as String,
@@ -12893,7 +12843,8 @@ class AppLocalizationsDataShiftsDetailSectionUtilitiesItem {
 
   final String added;
   factory AppLocalizationsDataShiftsDetailSectionUtilitiesItem.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSectionUtilitiesItem(
         added: map['added']! as String,
       );
@@ -12923,12 +12874,14 @@ class AppLocalizationsDataShiftsDetailSectionRequirements {
   final String title;
   final AppLocalizationsDataShiftsDetailSectionRequirementsError error;
   factory AppLocalizationsDataShiftsDetailSectionRequirements.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSectionRequirements(
         title: map['title']! as String,
         error:
             AppLocalizationsDataShiftsDetailSectionRequirementsError.fromJson(
-                map['error']! as Map<String, Object?>),
+          map['error']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsDetailSectionRequirements copyWith({
@@ -12963,7 +12916,8 @@ class AppLocalizationsDataShiftsDetailSectionRequirementsError {
   final String description;
   final String title;
   factory AppLocalizationsDataShiftsDetailSectionRequirementsError.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailSectionRequirementsError(
         expired: map['expired']! as String,
         notInProfile: map['notInProfile']! as String,
@@ -13036,7 +12990,8 @@ class AppLocalizationsDataShiftsDetailLabel {
   final String addedDate;
   final AppLocalizationsDataShiftsDetailLabelExtra extra;
   factory AppLocalizationsDataShiftsDetailLabel.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailLabel(
         contractType: map['contractType']! as String,
         employer: map['employer']! as String,
@@ -13053,7 +13008,8 @@ class AppLocalizationsDataShiftsDetailLabel {
         addedDateToday: map['addedDateToday']! as String,
         addedDate: map['addedDate']! as String,
         extra: AppLocalizationsDataShiftsDetailLabelExtra.fromJson(
-            map['extra']! as Map<String, Object?>),
+          map['extra']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsDetailLabel copyWith({
@@ -13139,7 +13095,8 @@ class AppLocalizationsDataShiftsDetailLabelExtra {
   final String holiday;
   final String weekendNight;
   factory AppLocalizationsDataShiftsDetailLabelExtra.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsDetailLabelExtra(
         holiday: map['holiday']! as String,
         weekendNight: map['weekendNight']! as String,
@@ -13166,23 +13123,16 @@ class AppLocalizationsDataShiftsDetailLabelExtra {
 }
 
 class AppLocalizationsDataShiftsDetailButton {
-  const AppLocalizationsDataShiftsDetailButton({
-    required this.apply,
-  });
+  const AppLocalizationsDataShiftsDetailButton({required this.apply});
 
   final String apply;
   factory AppLocalizationsDataShiftsDetailButton.fromJson(
-          Map<String, Object?> map) =>
-      AppLocalizationsDataShiftsDetailButton(
-        apply: map['apply']! as String,
-      );
+    Map<String, Object?> map,
+  ) =>
+      AppLocalizationsDataShiftsDetailButton(apply: map['apply']! as String);
 
-  AppLocalizationsDataShiftsDetailButton copyWith({
-    String? apply,
-  }) =>
-      AppLocalizationsDataShiftsDetailButton(
-        apply: apply ?? this.apply,
-      );
+  AppLocalizationsDataShiftsDetailButton copyWith({String? apply}) =>
+      AppLocalizationsDataShiftsDetailButton(apply: apply ?? this.apply);
 
   @override
   bool operator ==(Object other) =>
@@ -13205,11 +13155,14 @@ class AppLocalizationsDataShiftsFilter {
   factory AppLocalizationsDataShiftsFilter.fromJson(Map<String, Object?> map) =>
       AppLocalizationsDataShiftsFilter(
         date: AppLocalizationsDataShiftsFilterDate.fromJson(
-            map['date']! as Map<String, Object?>),
+          map['date']! as Map<String, Object?>,
+        ),
         search: AppLocalizationsDataShiftsFilterSearch.fromJson(
-            map['search']! as Map<String, Object?>),
+          map['search']! as Map<String, Object?>,
+        ),
         locality: AppLocalizationsDataShiftsFilterLocality.fromJson(
-            map['locality']! as Map<String, Object?>),
+          map['locality']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsFilter copyWith({
@@ -13256,32 +13209,17 @@ class AppLocalizationsDataShiftsFilterDate {
   final String save;
   final AppLocalizationsDataShiftsFilterDateBottomSheet bottomSheet;
 
-  String to({
-    required String date,
-    String? locale,
-  }) {
-    return _to.insertTemplateValues(
-      {
-        'date': date,
-      },
-      locale: locale,
-    );
+  String to({required String date, String? locale}) {
+    return _to.insertTemplateValues({'date': date}, locale: locale);
   }
 
-  String from({
-    required String date,
-    String? locale,
-  }) {
-    return _from.insertTemplateValues(
-      {
-        'date': date,
-      },
-      locale: locale,
-    );
+  String from({required String date, String? locale}) {
+    return _from.insertTemplateValues({'date': date}, locale: locale);
   }
 
   factory AppLocalizationsDataShiftsFilterDate.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsFilterDate(
         to: map['to']! as String,
         from: map['from']! as String,
@@ -13289,7 +13227,8 @@ class AppLocalizationsDataShiftsFilterDate {
         reset: map['reset']! as String,
         save: map['save']! as String,
         bottomSheet: AppLocalizationsDataShiftsFilterDateBottomSheet.fromJson(
-            map['bottomSheet']! as Map<String, Object?>),
+          map['bottomSheet']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsFilterDate copyWith({
@@ -13347,7 +13286,8 @@ class AppLocalizationsDataShiftsFilterDateBottomSheet {
   final String title;
   final AppLocalizationsDataShiftsFilterDateBottomSheetHint hint;
   factory AppLocalizationsDataShiftsFilterDateBottomSheet.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsFilterDateBottomSheet(
         error: map['error']! as String,
         show: map['show']! as String,
@@ -13355,7 +13295,8 @@ class AppLocalizationsDataShiftsFilterDateBottomSheet {
         from: map['from']! as String,
         title: map['title']! as String,
         hint: AppLocalizationsDataShiftsFilterDateBottomSheetHint.fromJson(
-            map['hint']! as Map<String, Object?>),
+          map['hint']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsFilterDateBottomSheet copyWith({
@@ -13405,7 +13346,8 @@ class AppLocalizationsDataShiftsFilterDateBottomSheetHint {
   final String to;
   final String from;
   factory AppLocalizationsDataShiftsFilterDateBottomSheetHint.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsFilterDateBottomSheetHint(
         to: map['to']! as String,
         from: map['from']! as String,
@@ -13441,7 +13383,8 @@ class AppLocalizationsDataShiftsFilterSearch {
   final String hint;
   final String title;
   factory AppLocalizationsDataShiftsFilterSearch.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsFilterSearch(
         save: map['save']! as String,
         hint: map['hint']! as String,
@@ -13480,7 +13423,8 @@ class AppLocalizationsDataShiftsFilterLocality {
   final String anywhere;
   final String title;
   factory AppLocalizationsDataShiftsFilterLocality.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsFilterLocality(
         anywhere: map['anywhere']! as String,
         title: map['title']! as String,
@@ -13539,11 +13483,14 @@ class AppLocalizationsDataShiftsFeed {
         errorLoading: map['errorLoading']! as String,
         errorLoadingInternet: map['errorLoadingInternet']! as String,
         ban: AppLocalizationsDataShiftsFeedBan.fromJson(
-            map['ban']! as Map<String, Object?>),
+          map['ban']! as Map<String, Object?>,
+        ),
         invitation: AppLocalizationsDataShiftsFeedInvitation.fromJson(
-            map['invitation']! as Map<String, Object?>),
+          map['invitation']! as Map<String, Object?>,
+        ),
         empty: AppLocalizationsDataShiftsFeedEmpty.fromJson(
-            map['empty']! as Map<String, Object?>),
+          map['empty']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsFeed copyWith({
@@ -13613,7 +13560,8 @@ class AppLocalizationsDataShiftsFeedBan {
   final String unlimited;
   final String title;
   factory AppLocalizationsDataShiftsFeedBan.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsFeedBan(
         labelNote: map['labelNote']! as String,
         description: map['description']! as String,
@@ -13662,12 +13610,14 @@ class AppLocalizationsDataShiftsFeedInvitation {
   final String expiration;
   final AppLocalizationsDataShiftsFeedInvitationButton button;
   factory AppLocalizationsDataShiftsFeedInvitation.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsFeedInvitation(
         title: map['title']! as String,
         expiration: map['expiration']! as String,
         button: AppLocalizationsDataShiftsFeedInvitationButton.fromJson(
-            map['button']! as Map<String, Object?>),
+          map['button']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataShiftsFeedInvitation copyWith({
@@ -13705,7 +13655,8 @@ class AppLocalizationsDataShiftsFeedInvitationButton {
   final String reject;
   final String accept;
   factory AppLocalizationsDataShiftsFeedInvitationButton.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsFeedInvitationButton(
         reject: map['reject']! as String,
         accept: map['accept']! as String,
@@ -13743,7 +13694,8 @@ class AppLocalizationsDataShiftsFeedEmpty {
   final String loadAgainWithoutFilter;
   final String activeFilter;
   factory AppLocalizationsDataShiftsFeedEmpty.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataShiftsFeedEmpty(
         loadAgain: map['loadAgain']! as String,
         noFilter: map['noFilter']! as String,
@@ -13860,17 +13812,23 @@ class AppLocalizationsDataSignup {
         tocAgree: map['tocAgree']! as String,
         title: map['title']! as String,
         finish: AppLocalizationsDataSignupFinish.fromJson(
-            map['finish']! as Map<String, Object?>),
+          map['finish']! as Map<String, Object?>,
+        ),
         success: AppLocalizationsDataSignupSuccess.fromJson(
-            map['success']! as Map<String, Object?>),
+          map['success']! as Map<String, Object?>,
+        ),
         error: AppLocalizationsDataSignupError.fromJson(
-            map['error']! as Map<String, Object?>),
+          map['error']! as Map<String, Object?>,
+        ),
         button: AppLocalizationsDataSignupButton.fromJson(
-            map['button']! as Map<String, Object?>),
+          map['button']! as Map<String, Object?>,
+        ),
         input: AppLocalizationsDataSignupInput.fromJson(
-            map['input']! as Map<String, Object?>),
+          map['input']! as Map<String, Object?>,
+        ),
         appbar: AppLocalizationsDataSignupAppbar.fromJson(
-            map['appbar']! as Map<String, Object?>),
+          map['appbar']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataSignup copyWith({
@@ -13940,15 +13898,20 @@ class AppLocalizationsDataSignupFinish {
   factory AppLocalizationsDataSignupFinish.fromJson(Map<String, Object?> map) =>
       AppLocalizationsDataSignupFinish(
         success: AppLocalizationsDataSignupFinishSuccess.fromJson(
-            map['success']! as Map<String, Object?>),
+          map['success']! as Map<String, Object?>,
+        ),
         source: AppLocalizationsDataSignupFinishSource.fromJson(
-            map['source']! as Map<String, Object?>),
+          map['source']! as Map<String, Object?>,
+        ),
         gender: AppLocalizationsDataSignupFinishGender.fromJson(
-            map['gender']! as Map<String, Object?>),
+          map['gender']! as Map<String, Object?>,
+        ),
         locality: AppLocalizationsDataSignupFinishLocality.fromJson(
-            map['locality']! as Map<String, Object?>),
+          map['locality']! as Map<String, Object?>,
+        ),
         password: AppLocalizationsDataSignupFinishPassword.fromJson(
-            map['password']! as Map<String, Object?>),
+          map['password']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataSignupFinish copyWith({
@@ -13996,7 +13959,8 @@ class AppLocalizationsDataSignupFinishSuccess {
   final String body;
   final String title;
   factory AppLocalizationsDataSignupFinishSuccess.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataSignupFinishSuccess(
         button: map['button']! as String,
         body: map['body']! as String,
@@ -14035,7 +13999,8 @@ class AppLocalizationsDataSignupFinishSource {
   final String otherHint;
   final String other;
   factory AppLocalizationsDataSignupFinishSource.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataSignupFinishSource(
         otherHint: map['otherHint']! as String,
         other: map['other']! as String,
@@ -14074,7 +14039,8 @@ class AppLocalizationsDataSignupFinishGender {
   final String body;
   final String title;
   factory AppLocalizationsDataSignupFinishGender.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataSignupFinishGender(
         woman: map['woman']! as String,
         man: map['man']! as String,
@@ -14127,7 +14093,8 @@ class AppLocalizationsDataSignupFinishLocality {
   final String body;
   final String title;
   factory AppLocalizationsDataSignupFinishLocality.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataSignupFinishLocality(
         invalid: map['invalid']! as String,
         hint: map['hint']! as String,
@@ -14181,7 +14148,8 @@ class AppLocalizationsDataSignupFinishPassword {
   final String submit;
   final String title;
   factory AppLocalizationsDataSignupFinishPassword.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataSignupFinishPassword(
         tooShort: map['tooShort']! as String,
         submit: map['submit']! as String,
@@ -14227,7 +14195,8 @@ class AppLocalizationsDataSignupSuccess {
   final String body;
   final String title;
   factory AppLocalizationsDataSignupSuccess.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataSignupSuccess(
         techSupport: map['techSupport']! as String,
         sendEmailAgain: map['sendEmailAgain']! as String,
@@ -14266,19 +14235,13 @@ class AppLocalizationsDataSignupSuccess {
 }
 
 class AppLocalizationsDataSignupError {
-  const AppLocalizationsDataSignupError({
-    required this.emailTaken,
-  });
+  const AppLocalizationsDataSignupError({required this.emailTaken});
 
   final String emailTaken;
   factory AppLocalizationsDataSignupError.fromJson(Map<String, Object?> map) =>
-      AppLocalizationsDataSignupError(
-        emailTaken: map['emailTaken']! as String,
-      );
+      AppLocalizationsDataSignupError(emailTaken: map['emailTaken']! as String);
 
-  AppLocalizationsDataSignupError copyWith({
-    String? emailTaken,
-  }) =>
+  AppLocalizationsDataSignupError copyWith({String? emailTaken}) =>
       AppLocalizationsDataSignupError(
         emailTaken: emailTaken ?? this.emailTaken,
       );
@@ -14293,22 +14256,14 @@ class AppLocalizationsDataSignupError {
 }
 
 class AppLocalizationsDataSignupButton {
-  const AppLocalizationsDataSignupButton({
-    required this.signup,
-  });
+  const AppLocalizationsDataSignupButton({required this.signup});
 
   final String signup;
   factory AppLocalizationsDataSignupButton.fromJson(Map<String, Object?> map) =>
-      AppLocalizationsDataSignupButton(
-        signup: map['signup']! as String,
-      );
+      AppLocalizationsDataSignupButton(signup: map['signup']! as String);
 
-  AppLocalizationsDataSignupButton copyWith({
-    String? signup,
-  }) =>
-      AppLocalizationsDataSignupButton(
-        signup: signup ?? this.signup,
-      );
+  AppLocalizationsDataSignupButton copyWith({String? signup}) =>
+      AppLocalizationsDataSignupButton(signup: signup ?? this.signup);
 
   @override
   bool operator ==(Object other) =>
@@ -14331,11 +14286,14 @@ class AppLocalizationsDataSignupInput {
   factory AppLocalizationsDataSignupInput.fromJson(Map<String, Object?> map) =>
       AppLocalizationsDataSignupInput(
         email: AppLocalizationsDataSignupInputEmail.fromJson(
-            map['email']! as Map<String, Object?>),
+          map['email']! as Map<String, Object?>,
+        ),
         lastName: AppLocalizationsDataSignupInputLastName.fromJson(
-            map['lastName']! as Map<String, Object?>),
+          map['lastName']! as Map<String, Object?>,
+        ),
         firstName: AppLocalizationsDataSignupInputFirstName.fromJson(
-            map['firstName']! as Map<String, Object?>),
+          map['firstName']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataSignupInput copyWith({
@@ -14377,7 +14335,8 @@ class AppLocalizationsDataSignupInputEmail {
   final String hint;
   final String label;
   factory AppLocalizationsDataSignupInputEmail.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataSignupInputEmail(
         notValid: map['notValid']! as String,
         missing: map['missing']! as String,
@@ -14426,7 +14385,8 @@ class AppLocalizationsDataSignupInputLastName {
   final String hint;
   final String label;
   factory AppLocalizationsDataSignupInputLastName.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataSignupInputLastName(
         missing: map['missing']! as String,
         hint: map['hint']! as String,
@@ -14467,7 +14427,8 @@ class AppLocalizationsDataSignupInputFirstName {
   final String hint;
   final String label;
   factory AppLocalizationsDataSignupInputFirstName.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataSignupInputFirstName(
         missing: map['missing']! as String,
         hint: map['hint']! as String,
@@ -14498,22 +14459,14 @@ class AppLocalizationsDataSignupInputFirstName {
 }
 
 class AppLocalizationsDataSignupAppbar {
-  const AppLocalizationsDataSignupAppbar({
-    required this.title,
-  });
+  const AppLocalizationsDataSignupAppbar({required this.title});
 
   final String title;
   factory AppLocalizationsDataSignupAppbar.fromJson(Map<String, Object?> map) =>
-      AppLocalizationsDataSignupAppbar(
-        title: map['title']! as String,
-      );
+      AppLocalizationsDataSignupAppbar(title: map['title']! as String);
 
-  AppLocalizationsDataSignupAppbar copyWith({
-    String? title,
-  }) =>
-      AppLocalizationsDataSignupAppbar(
-        title: title ?? this.title,
-      );
+  AppLocalizationsDataSignupAppbar copyWith({String? title}) =>
+      AppLocalizationsDataSignupAppbar(title: title ?? this.title);
 
   @override
   bool operator ==(Object other) =>
@@ -14545,11 +14498,14 @@ class AppLocalizationsDataLogin {
         subtitle: map['subtitle']! as String,
         title: map['title']! as String,
         label: AppLocalizationsDataLoginLabel.fromJson(
-            map['label']! as Map<String, Object?>),
+          map['label']! as Map<String, Object?>,
+        ),
         button: AppLocalizationsDataLoginButton.fromJson(
-            map['button']! as Map<String, Object?>),
+          map['button']! as Map<String, Object?>,
+        ),
         input: AppLocalizationsDataLoginInput.fromJson(
-            map['input']! as Map<String, Object?>),
+          map['input']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataLogin copyWith({
@@ -14694,9 +14650,11 @@ class AppLocalizationsDataLoginInput {
   factory AppLocalizationsDataLoginInput.fromJson(Map<String, Object?> map) =>
       AppLocalizationsDataLoginInput(
         password: AppLocalizationsDataLoginInputPassword.fromJson(
-            map['password']! as Map<String, Object?>),
+          map['password']! as Map<String, Object?>,
+        ),
         email: AppLocalizationsDataLoginInputEmail.fromJson(
-            map['email']! as Map<String, Object?>),
+          map['email']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataLoginInput copyWith({
@@ -14727,7 +14685,8 @@ class AppLocalizationsDataLoginInputPassword {
   final String hint;
   final String label;
   factory AppLocalizationsDataLoginInputPassword.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataLoginInputPassword(
         hint: map['hint']! as String,
         label: map['label']! as String,
@@ -14761,16 +14720,14 @@ class AppLocalizationsDataLoginInputEmail {
   final String hint;
   final String label;
   factory AppLocalizationsDataLoginInputEmail.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataLoginInputEmail(
         hint: map['hint']! as String,
         label: map['label']! as String,
       );
 
-  AppLocalizationsDataLoginInputEmail copyWith({
-    String? hint,
-    String? label,
-  }) =>
+  AppLocalizationsDataLoginInputEmail copyWith({String? hint, String? label}) =>
       AppLocalizationsDataLoginInputEmail(
         hint: hint ?? this.hint,
         label: label ?? this.label,
@@ -14799,11 +14756,14 @@ class AppLocalizationsDataWalkthrough {
   factory AppLocalizationsDataWalkthrough.fromJson(Map<String, Object?> map) =>
       AppLocalizationsDataWalkthrough(
         step3: AppLocalizationsDataWalkthroughStep3.fromJson(
-            map['step3']! as Map<String, Object?>),
+          map['step3']! as Map<String, Object?>,
+        ),
         step2: AppLocalizationsDataWalkthroughStep2.fromJson(
-            map['step2']! as Map<String, Object?>),
+          map['step2']! as Map<String, Object?>,
+        ),
         step1: AppLocalizationsDataWalkthroughStep1.fromJson(
-            map['step1']! as Map<String, Object?>),
+          map['step1']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataWalkthrough copyWith({
@@ -14838,7 +14798,8 @@ class AppLocalizationsDataWalkthroughStep3 {
   final String description;
   final String title;
   factory AppLocalizationsDataWalkthroughStep3.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataWalkthroughStep3(
         description: map['description']! as String,
         title: map['title']! as String,
@@ -14873,7 +14834,8 @@ class AppLocalizationsDataWalkthroughStep2 {
   final String description;
   final String title;
   factory AppLocalizationsDataWalkthroughStep2.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataWalkthroughStep2(
         description: map['description']! as String,
         title: map['title']! as String,
@@ -14908,7 +14870,8 @@ class AppLocalizationsDataWalkthroughStep1 {
   final String description;
   final String title;
   factory AppLocalizationsDataWalkthroughStep1.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataWalkthroughStep1(
         description: map['description']! as String,
         title: map['title']! as String,
@@ -14935,23 +14898,20 @@ class AppLocalizationsDataWalkthroughStep1 {
 }
 
 class AppLocalizationsDataValidator {
-  const AppLocalizationsDataValidator({
-    required this.czech,
-  });
+  const AppLocalizationsDataValidator({required this.czech});
 
   final AppLocalizationsDataValidatorCzech czech;
   factory AppLocalizationsDataValidator.fromJson(Map<String, Object?> map) =>
       AppLocalizationsDataValidator(
         czech: AppLocalizationsDataValidatorCzech.fromJson(
-            map['czech']! as Map<String, Object?>),
+          map['czech']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataValidator copyWith({
     AppLocalizationsDataValidatorCzech? czech,
   }) =>
-      AppLocalizationsDataValidator(
-        czech: czech ?? this.czech,
-      );
+      AppLocalizationsDataValidator(czech: czech ?? this.czech);
 
   @override
   bool operator ==(Object other) =>
@@ -14970,13 +14930,16 @@ class AppLocalizationsDataValidatorCzech {
   final AppLocalizationsDataValidatorCzechZip zip;
   final AppLocalizationsDataValidatorCzechNationalNumber nationalNumber;
   factory AppLocalizationsDataValidatorCzech.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataValidatorCzech(
         zip: AppLocalizationsDataValidatorCzechZip.fromJson(
-            map['zip']! as Map<String, Object?>),
+          map['zip']! as Map<String, Object?>,
+        ),
         nationalNumber:
             AppLocalizationsDataValidatorCzechNationalNumber.fromJson(
-                map['nationalNumber']! as Map<String, Object?>),
+          map['nationalNumber']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataValidatorCzech copyWith({
@@ -15000,23 +14963,16 @@ class AppLocalizationsDataValidatorCzech {
 }
 
 class AppLocalizationsDataValidatorCzechZip {
-  const AppLocalizationsDataValidatorCzechZip({
-    required this.error,
-  });
+  const AppLocalizationsDataValidatorCzechZip({required this.error});
 
   final String error;
   factory AppLocalizationsDataValidatorCzechZip.fromJson(
-          Map<String, Object?> map) =>
-      AppLocalizationsDataValidatorCzechZip(
-        error: map['error']! as String,
-      );
+    Map<String, Object?> map,
+  ) =>
+      AppLocalizationsDataValidatorCzechZip(error: map['error']! as String);
 
-  AppLocalizationsDataValidatorCzechZip copyWith({
-    String? error,
-  }) =>
-      AppLocalizationsDataValidatorCzechZip(
-        error: error ?? this.error,
-      );
+  AppLocalizationsDataValidatorCzechZip copyWith({String? error}) =>
+      AppLocalizationsDataValidatorCzechZip(error: error ?? this.error);
 
   @override
   bool operator ==(Object other) =>
@@ -15027,20 +14983,17 @@ class AppLocalizationsDataValidatorCzechZip {
 }
 
 class AppLocalizationsDataValidatorCzechNationalNumber {
-  const AppLocalizationsDataValidatorCzechNationalNumber({
-    required this.error,
-  });
+  const AppLocalizationsDataValidatorCzechNationalNumber({required this.error});
 
   final String error;
   factory AppLocalizationsDataValidatorCzechNationalNumber.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataValidatorCzechNationalNumber(
         error: map['error']! as String,
       );
 
-  AppLocalizationsDataValidatorCzechNationalNumber copyWith({
-    String? error,
-  }) =>
+  AppLocalizationsDataValidatorCzechNationalNumber copyWith({String? error}) =>
       AppLocalizationsDataValidatorCzechNationalNumber(
         error: error ?? this.error,
       );
@@ -15055,22 +15008,14 @@ class AppLocalizationsDataValidatorCzechNationalNumber {
 }
 
 class AppLocalizationsDataWebAppBackup {
-  const AppLocalizationsDataWebAppBackup({
-    required this.title,
-  });
+  const AppLocalizationsDataWebAppBackup({required this.title});
 
   final String title;
   factory AppLocalizationsDataWebAppBackup.fromJson(Map<String, Object?> map) =>
-      AppLocalizationsDataWebAppBackup(
-        title: map['title']! as String,
-      );
+      AppLocalizationsDataWebAppBackup(title: map['title']! as String);
 
-  AppLocalizationsDataWebAppBackup copyWith({
-    String? title,
-  }) =>
-      AppLocalizationsDataWebAppBackup(
-        title: title ?? this.title,
-      );
+  AppLocalizationsDataWebAppBackup copyWith({String? title}) =>
+      AppLocalizationsDataWebAppBackup(title: title ?? this.title);
 
   @override
   bool operator ==(Object other) =>
@@ -15094,9 +15039,11 @@ class AppLocalizationsDataDialog {
       AppLocalizationsDataDialog(
         incorrectPassword: map['incorrectPassword']! as String,
         loggedOut: AppLocalizationsDataDialogLoggedOut.fromJson(
-            map['loggedOut']! as Map<String, Object?>),
+          map['loggedOut']! as Map<String, Object?>,
+        ),
         hint: AppLocalizationsDataDialogHint.fromJson(
-            map['hint']! as Map<String, Object?>),
+          map['hint']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataDialog copyWith({
@@ -15134,16 +15081,14 @@ class AppLocalizationsDataDialogLoggedOut {
   final String body;
   final String title;
   factory AppLocalizationsDataDialogLoggedOut.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataDialogLoggedOut(
         body: map['body']! as String,
         title: map['title']! as String,
       );
 
-  AppLocalizationsDataDialogLoggedOut copyWith({
-    String? body,
-    String? title,
-  }) =>
+  AppLocalizationsDataDialogLoggedOut copyWith({String? body, String? title}) =>
       AppLocalizationsDataDialogLoggedOut(
         body: body ?? this.body,
         title: title ?? this.title,
@@ -15160,22 +15105,14 @@ class AppLocalizationsDataDialogLoggedOut {
 }
 
 class AppLocalizationsDataDialogHint {
-  const AppLocalizationsDataDialogHint({
-    required this.close,
-  });
+  const AppLocalizationsDataDialogHint({required this.close});
 
   final String close;
   factory AppLocalizationsDataDialogHint.fromJson(Map<String, Object?> map) =>
-      AppLocalizationsDataDialogHint(
-        close: map['close']! as String,
-      );
+      AppLocalizationsDataDialogHint(close: map['close']! as String);
 
-  AppLocalizationsDataDialogHint copyWith({
-    String? close,
-  }) =>
-      AppLocalizationsDataDialogHint(
-        close: close ?? this.close,
-      );
+  AppLocalizationsDataDialogHint copyWith({String? close}) =>
+      AppLocalizationsDataDialogHint(close: close ?? this.close);
 
   @override
   bool operator ==(Object other) =>
@@ -15186,19 +15123,13 @@ class AppLocalizationsDataDialogHint {
 }
 
 class AppLocalizationsDataError {
-  const AppLocalizationsDataError({
-    required this.webOpenFailed,
-  });
+  const AppLocalizationsDataError({required this.webOpenFailed});
 
   final String webOpenFailed;
   factory AppLocalizationsDataError.fromJson(Map<String, Object?> map) =>
-      AppLocalizationsDataError(
-        webOpenFailed: map['webOpenFailed']! as String,
-      );
+      AppLocalizationsDataError(webOpenFailed: map['webOpenFailed']! as String);
 
-  AppLocalizationsDataError copyWith({
-    String? webOpenFailed,
-  }) =>
+  AppLocalizationsDataError copyWith({String? webOpenFailed}) =>
       AppLocalizationsDataError(
         webOpenFailed: webOpenFailed ?? this.webOpenFailed,
       );
@@ -15213,23 +15144,20 @@ class AppLocalizationsDataError {
 }
 
 class AppLocalizationsDataBottomnav {
-  const AppLocalizationsDataBottomnav({
-    required this.temping,
-  });
+  const AppLocalizationsDataBottomnav({required this.temping});
 
   final AppLocalizationsDataBottomnavTemping temping;
   factory AppLocalizationsDataBottomnav.fromJson(Map<String, Object?> map) =>
       AppLocalizationsDataBottomnav(
         temping: AppLocalizationsDataBottomnavTemping.fromJson(
-            map['temping']! as Map<String, Object?>),
+          map['temping']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataBottomnav copyWith({
     AppLocalizationsDataBottomnavTemping? temping,
   }) =>
-      AppLocalizationsDataBottomnav(
-        temping: temping ?? this.temping,
-      );
+      AppLocalizationsDataBottomnav(temping: temping ?? this.temping);
 
   @override
   bool operator ==(Object other) =>
@@ -15250,7 +15178,8 @@ class AppLocalizationsDataBottomnavTemping {
   final String attendance;
   final String shifts;
   factory AppLocalizationsDataBottomnavTemping.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataBottomnavTemping(
         wallet: map['wallet']! as String,
         attendance: map['attendance']! as String,
@@ -15284,23 +15213,20 @@ class AppLocalizationsDataBottomnavTemping {
 }
 
 class AppLocalizationsDataHint {
-  const AppLocalizationsDataHint({
-    required this.credits,
-  });
+  const AppLocalizationsDataHint({required this.credits});
 
   final AppLocalizationsDataHintCredits credits;
   factory AppLocalizationsDataHint.fromJson(Map<String, Object?> map) =>
       AppLocalizationsDataHint(
         credits: AppLocalizationsDataHintCredits.fromJson(
-            map['credits']! as Map<String, Object?>),
+          map['credits']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataHint copyWith({
     AppLocalizationsDataHintCredits? credits,
   }) =>
-      AppLocalizationsDataHint(
-        credits: credits ?? this.credits,
-      );
+      AppLocalizationsDataHint(credits: credits ?? this.credits);
 
   @override
   bool operator ==(Object other) =>
@@ -15325,7 +15251,8 @@ class AppLocalizationsDataHintCredits {
         message: map['message']! as String,
         title: map['title']! as String,
         button: AppLocalizationsDataHintCreditsButton.fromJson(
-            map['button']! as Map<String, Object?>),
+          map['button']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataHintCredits copyWith({
@@ -15355,23 +15282,16 @@ class AppLocalizationsDataHintCredits {
 }
 
 class AppLocalizationsDataHintCreditsButton {
-  const AppLocalizationsDataHintCreditsButton({
-    required this.more,
-  });
+  const AppLocalizationsDataHintCreditsButton({required this.more});
 
   final String more;
   factory AppLocalizationsDataHintCreditsButton.fromJson(
-          Map<String, Object?> map) =>
-      AppLocalizationsDataHintCreditsButton(
-        more: map['more']! as String,
-      );
+    Map<String, Object?> map,
+  ) =>
+      AppLocalizationsDataHintCreditsButton(more: map['more']! as String);
 
-  AppLocalizationsDataHintCreditsButton copyWith({
-    String? more,
-  }) =>
-      AppLocalizationsDataHintCreditsButton(
-        more: more ?? this.more,
-      );
+  AppLocalizationsDataHintCreditsButton copyWith({String? more}) =>
+      AppLocalizationsDataHintCreditsButton(more: more ?? this.more);
 
   @override
   bool operator ==(Object other) =>
@@ -15466,11 +15386,14 @@ class AppLocalizationsDataGlobal {
         goOn: map['goOn']! as String,
         appname: map['appname']! as String,
         input: AppLocalizationsDataGlobalInput.fromJson(
-            map['input']! as Map<String, Object?>),
+          map['input']! as Map<String, Object?>,
+        ),
         currency: AppLocalizationsDataGlobalCurrency.fromJson(
-            map['currency']! as Map<String, Object?>),
+          map['currency']! as Map<String, Object?>,
+        ),
         language: AppLocalizationsDataGlobalLanguage.fromJson(
-            map['language']! as Map<String, Object?>),
+          map['language']! as Map<String, Object?>,
+        ),
       );
 
   AppLocalizationsDataGlobal copyWith({
@@ -15596,22 +15519,14 @@ class AppLocalizationsDataGlobal {
 }
 
 class AppLocalizationsDataGlobalInput {
-  const AppLocalizationsDataGlobalInput({
-    required this.required,
-  });
+  const AppLocalizationsDataGlobalInput({required this.required});
 
   final String required;
   factory AppLocalizationsDataGlobalInput.fromJson(Map<String, Object?> map) =>
-      AppLocalizationsDataGlobalInput(
-        required: map['required']! as String,
-      );
+      AppLocalizationsDataGlobalInput(required: map['required']! as String);
 
-  AppLocalizationsDataGlobalInput copyWith({
-    String? required,
-  }) =>
-      AppLocalizationsDataGlobalInput(
-        required: required ?? this.required,
-      );
+  AppLocalizationsDataGlobalInput copyWith({String? required}) =>
+      AppLocalizationsDataGlobalInput(required: required ?? this.required);
 
   @override
   bool operator ==(Object other) =>
@@ -15634,7 +15549,8 @@ class AppLocalizationsDataGlobalCurrency {
   final String credits;
   final String creditsMoreThan4;
   factory AppLocalizationsDataGlobalCurrency.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataGlobalCurrency(
         creditsShort: map['creditsShort']! as String,
         credit: map['credit']! as String,
@@ -15681,20 +15597,15 @@ class AppLocalizationsDataGlobalLanguage {
   final String cs;
   final String uk;
   factory AppLocalizationsDataGlobalLanguage.fromJson(
-          Map<String, Object?> map) =>
+    Map<String, Object?> map,
+  ) =>
       AppLocalizationsDataGlobalLanguage(
         cs: map['cs']! as String,
         uk: map['uk']! as String,
       );
 
-  AppLocalizationsDataGlobalLanguage copyWith({
-    String? cs,
-    String? uk,
-  }) =>
-      AppLocalizationsDataGlobalLanguage(
-        cs: cs ?? this.cs,
-        uk: uk ?? this.uk,
-      );
+  AppLocalizationsDataGlobalLanguage copyWith({String? cs, String? uk}) =>
+      AppLocalizationsDataGlobalLanguage(cs: cs ?? this.cs, uk: uk ?? this.uk);
 
   @override
   bool operator ==(Object other) =>
